@@ -28,6 +28,7 @@ const teamMembers = [
     name: 'Akash Prajapati',
     role: 'Full Stack Developer & Project Lead',
     roll: 'Roll No: 237092010005',
+    year: 'BCA 3rd Year',
     bio: 'Passionate developer and tech enthusiast building AI-driven tools to make learning easier for BCA students.',
     socials: [
       { icon: 'fa-brands fa-linkedin-in', label: 'LinkedIn', href: 'https://www.linkedin.com/in/akash-prajapati1232/' },
@@ -42,6 +43,7 @@ const teamMembers = [
     name: 'Vivek Yadav',
     role: 'UI/UX Designer & Developer',
     roll: 'Roll No: 237092010053',
+    year: 'BCA 3rd Year',
     bio: 'Creative designer and developer focused on crafting intuitive, beautiful interfaces that enhance the student experience.',
     socials: [
       { icon: 'fa-brands fa-linkedin-in', label: 'LinkedIn', href: '#' },
@@ -182,6 +184,7 @@ export default function About() {
                 </div>
                 <h3>{member.name}</h3>
                 <div className="team-role">{member.role}</div>
+                <div className="team-year">{member.year}</div>
                 <div className="team-roll">{member.roll}</div>
                 <p className="team-bio">{member.bio}</p>
                 <div className="team-socials">
@@ -200,6 +203,33 @@ export default function About() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PROJECT GUIDE ===== */}
+      <section className="about-guide section">
+        <div className="container">
+          <div className="about-team-header">
+            <div className="section-tag">Project Guide</div>
+            <h2 className="section-title">
+              Our <span className="gradient-text">Mentor</span>
+            </h2>
+            <p className="section-subtitle">
+              Guided and mentored by an experienced faculty member from the Department of Computer Science.
+            </p>
+          </div>
+
+          <div className="guide-card-wrapper">
+            <div className="guide-card">
+              <div className="guide-icon">👨‍🏫</div>
+              <div className="guide-info">
+                <h3>Mr. Ashish Sharma</h3>
+                <div className="guide-role">Project Guide &amp; Mentor</div>
+                <div className="guide-dept">Department of Computer Science Engineering &amp; Application</div>
+                <div className="guide-inst">Bhagwant Institute of Technology, Muzaffarnagar</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

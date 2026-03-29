@@ -5,22 +5,31 @@ const infoItems = [
   {
     icon: '📧',
     title: 'Email Us',
-    text: 'akashprajapati1232@gmail.com',
+    lines: [
+      'akashprajapati1232@gmail.com',
+      'vivekyadav2434@gmail.com',
+    ],
   },
   {
     icon: '🎓',
     title: 'Institution',
-    text: 'BCA Department — Academic Year 2023-2026',
+    lines: [
+      'Bhagwant Institute of Technology, Muzaffarnagar',
+      'BCA Department — Academic Year 2023–2026',
+    ],
   },
   {
     icon: '💻',
     title: 'Developer',
-    text: 'github.com/akashprajapati1232',
+    links: [
+      { label: 'github.com/akashprajapati1232', href: 'https://github.com/akashprajapati1232' },
+      { label: 'github.com/vivekyadav2434', href: 'https://github.com/vivekyadav2434' },
+    ],
   },
   {
     icon: '📍',
     title: 'Location',
-    text: 'India',
+    lines: ['India'],
   },
 ];
 
@@ -81,7 +90,7 @@ export default function Contact() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="section-tag">Get In Touch</div>
           <h1>
-            We'd Love to <span className="gradient-text">Hear From You</span>
+            <span className="gradient-text">Get in Touch</span>
           </h1>
           <p>
             Have questions, suggestions, or want to collaborate? Drop us a message
@@ -105,7 +114,16 @@ export default function Contact() {
                   <div className="contact-info-icon">{item.icon}</div>
                   <div className="contact-info-text">
                     <h4>{item.title}</h4>
-                    <p>{item.text}</p>
+                    {item.lines && item.lines.map((line, li) => (
+                      <p key={li}>{line}</p>
+                    ))}
+                    {item.links && item.links.map((link, li) => (
+                      <p key={li}>
+                        <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary-light)', wordBreak: 'break-all' }}>
+                          {link.label}
+                        </a>
+                      </p>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -143,7 +161,7 @@ export default function Contact() {
                           type="text"
                           name="name"
                           className={`form-control ${errors.name ? 'error' : ''}`}
-                          placeholder="Akash Prajapati"
+                          placeholder="Your Name"
                           value={form.name}
                           onChange={handleChange}
                           autoComplete="name"

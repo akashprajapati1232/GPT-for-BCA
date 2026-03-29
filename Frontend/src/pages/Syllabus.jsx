@@ -58,13 +58,14 @@ function SemCard({ sem }) {
         <div className="sem-header-right">
           <a
             href={sem.pdf}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="sem-download-btn"
             onClick={e => e.stopPropagation()}
-            title={`Download ${sem.title} PDF`}
-            id={`download-sem-${sem.semester}`}
+            title={`View ${sem.title} PDF`}
+            id={`view-sem-${sem.semester}`}
           >
-            📥 <span>Download PDF</span>
+            👁️ <span>View Syllabus</span>
           </a>
           <div className="sem-chevron">▼</div>
         </div>
@@ -82,15 +83,6 @@ function SemCard({ sem }) {
 }
 
 export default function Syllabus() {
-  const [search, setSearch] = useState('');
-
-  const filtered = syllabusData.filter(sem =>
-    sem.title.toLowerCase().includes(search.toLowerCase()) ||
-    sem.subjects.some(s =>
-      s.name.toLowerCase().includes(search.toLowerCase()) ||
-      s.units.some(u => u.toLowerCase().includes(search.toLowerCase()))
-    )
-  );
 
   return (
     <main className="page-wrapper">
@@ -116,21 +108,20 @@ export default function Syllabus() {
             >
               📥 Download Full Syllabus PDF
             </a>
+            <a
+              href="/pdfs/all-semesters.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-all-btn view-all-btn"
+              id="view-all-pdf"
+            >
+              👁️ View Full Syllabus
+            </a>
           </div>
 
-          {/* Search */}
-          <div style={{ marginTop: '24px' }}>
-            <div className="syllabus-filter">
-              <span className="syllabus-filter-icon">🔍</span>
-              <input
-                type="text"
-                placeholder="Search subjects, topics..."
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                id="syllabus-search"
-                aria-label="Search syllabus"
-              />
-            </div>
+          {/* Warning Note */}
+          <div className="syllabus-warning">
+            ⚠️ <strong>Note:</strong> The syllabus may change over time. Always verify with your institution for the latest updates.
           </div>
         </div>
       </section>
@@ -138,17 +129,17 @@ export default function Syllabus() {
       {/* ===== SYLLABUS LIST ===== */}
       <section className="syllabus-section">
         <div className="container">
-          {filtered.length > 0 ? (
+          {syllabusData.length > 0 ? (
             <div className="syllabus-list">
-              {filtered.map(sem => (
+              {syllabusData.map(sem => (
                 <SemCard key={sem.semester} sem={sem} />
               ))}
             </div>
           ) : (
             <div style={{ textAlign: 'center', padding: '64px 0', color: 'var(--color-text-muted)' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🔍</div>
-              <h3 style={{ fontFamily: 'var(--font-heading)', marginBottom: '8px' }}>No results found</h3>
-              <p>Try searching for a subject name or topic.</p>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📚</div>
+              <h3 style={{ fontFamily: 'var(--font-heading)', marginBottom: '8px' }}>No syllabus data found</h3>
+              <p>Please check back later.</p>
             </div>
           )}
         </div>
