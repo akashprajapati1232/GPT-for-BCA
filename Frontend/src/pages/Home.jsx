@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 import '../styles/Home.css';
 
 const features = [
@@ -41,29 +42,82 @@ const steps = [
   { num: '04', title: 'Ace Your Exams', desc: 'Practice, revise and download syllabus PDFs to excel.' },
 ];
 
+const TYPING_PHRASES = [
+  'Explain recursion in C with examples.',
+  'What are the topics in BCA Sem 3?',
+  'Summarize DBMS normalization forms.',
+  'Give me key points for OS scheduling.',
+  'Explain OOP concepts with diagrams.',
+];
+
+const chatMessages = [
+  { role: 'user', text: 'Explain recursion in C with an example.' },
+  {
+    role: 'ai',
+    text: 'Recursion is when a function calls itself. Here\'s a factorial example:\n\nint fact(int n) {\n  if (n == 0) return 1;\n  return n * fact(n-1);\n}\n\nfact(4) → 4×3×2×1 = 24',
+  },
+  { role: 'user', text: 'What are BCA Sem 3 subjects?' },
+  { role: 'ai', text: 'BCA Sem 3 includes: Data Structures, DBMS, Computer Networks, OOP with Java, and Mathematics III.' },
+];
+
+function TypingText() {
+  const [phraseIdx, setPhraseIdx] = useState(0);
+  const [displayed, setDisplayed] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const phrase = TYPING_PHRASES[phraseIdx];
+    const speed = isDeleting ? 35 : 65;
+
+    if (!isDeleting && displayed === phrase) {
+      timeoutRef.current = setTimeout(() => setIsDeleting(true), 1800);
+    } else if (isDeleting && displayed === '') {
+      setIsDeleting(false);
+      setPhraseIdx((i) => (i + 1) % TYPING_PHRASES.length);
+    } else {
+      timeoutRef.current = setTimeout(() => {
+        setDisplayed(isDeleting ? phrase.slice(0, displayed.length - 1) : phrase.slice(0, displayed.length + 1));
+      }, speed);
+    }
+
+    return () => clearTimeout(timeoutRef.current);
+  }, [displayed, isDeleting, phraseIdx]);
+
+  return (
+    <span className="typing-text">
+      {displayed}
+      <span className="typing-cursor" />
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <main className="page-wrapper">
       {/* ===== HERO ===== */}
       <section className="hero">
+        {/* Background */}
         <div className="hero-bg">
-          <div className="hero-orb hero-orb-1"></div>
-          <div className="hero-orb hero-orb-2"></div>
-          <div className="hero-orb hero-orb-3"></div>
-          <div className="hero-grid"></div>
+          <div className="hero-orb hero-orb-1" />
+          <div className="hero-orb hero-orb-2" />
+          <div className="hero-orb hero-orb-3" />
+          <div className="hero-grid" />
+          <div className="hero-noise" />
         </div>
 
         <div className="container">
           <div className="hero-content">
+            {/* ===== LEFT ===== */}
             <div className="hero-left">
               <div className="hero-badge">
-                <span className="hero-badge-dot"></span>
+                <span className="hero-badge-dot" />
                 AI-Powered Education Platform
               </div>
 
               <h1 className="hero-title">
                 Learn Smarter with{' '}
-                <span className="hero-title-line2">GPT for BCA</span>
+                <span className="hero-title-gradient">GPT for BCA</span>
               </h1>
 
               <p className="hero-description">
@@ -86,17 +140,17 @@ export default function Home() {
                   <div className="hero-stat-num">6</div>
                   <div className="hero-stat-label">Semesters</div>
                 </div>
-                <div className="hero-stat-divider"></div>
+                <div className="hero-stat-divider" />
                 <div className="hero-stat">
                   <div className="hero-stat-num">30+</div>
                   <div className="hero-stat-label">Subjects</div>
                 </div>
-                <div className="hero-stat-divider"></div>
+                <div className="hero-stat-divider" />
                 <div className="hero-stat">
                   <div className="hero-stat-num">150+</div>
                   <div className="hero-stat-label">Topics</div>
                 </div>
-                <div className="hero-stat-divider"></div>
+                <div className="hero-stat-divider" />
                 <div className="hero-stat">
                   <div className="hero-stat-num">100%</div>
                   <div className="hero-stat-label">Free</div>
@@ -104,28 +158,79 @@ export default function Home() {
               </div>
             </div>
 
+            {/* ===== RIGHT — AI Chat Panel ===== */}
             <div className="hero-right">
-              <div className="hero-visual">
-                <div className="hero-visual-ring"></div>
-                <div className="hero-visual-ring hero-visual-ring-2"></div>
-                <div className="hero-visual-center">
-                  <div className="hero-visual-emoji">🤖</div>
-                  <div className="hero-visual-label">AI ASSISTANT</div>
+              <div className="ai-panel">
+                <div className="ai-panel-inner">
+                  {/* Panel header */}
+                  <div className="ai-panel-header">
+                  <div className="ai-panel-dots">
+                    <span className="dot dot-red" />
+                    <span className="dot dot-yellow" />
+                    <span className="dot dot-green" />
+                  </div>
+                  <div className="ai-panel-title">
+                    <span className="ai-panel-icon">🤖</span>
+                    GPT for BCA Assistant
+                  </div>
+                  <div className="ai-panel-status">
+                    <span className="status-dot" />
+                    Online
+                  </div>
                 </div>
 
-                {/* Floating chips */}
-                <div className="hero-chip hero-chip-1">
-                  <span className="hero-chip-icon">✅</span>
-                  Sem 1 Complete
+                {/* Chat messages */}
+                <div className="ai-chat-body">
+                  {chatMessages.map((msg, i) => (
+                    <div key={i} className={`ai-msg ai-msg-${msg.role}`}>
+                      {msg.role === 'ai' && (
+                        <div className="ai-avatar">🤖</div>
+                      )}
+                      <div className="ai-bubble">
+                        <pre className="ai-bubble-text">{msg.text}</pre>
+                      </div>
+                      {msg.role === 'user' && (
+                        <div className="ai-avatar ai-avatar-user">👨‍🎓</div>
+                      )}
+                    </div>
+                  ))}
+
+                  {/* Typing indicator */}
+                  <div className="ai-msg ai-msg-ai ai-typing-indicator">
+                    <div className="ai-avatar">🤖</div>
+                    <div className="ai-bubble">
+                      <span className="typing-dot" />
+                      <span className="typing-dot" />
+                      <span className="typing-dot" />
+                    </div>
+                  </div>
                 </div>
-                <div className="hero-chip hero-chip-2">
-                  <span className="hero-chip-icon">💡</span>
-                  AI Explanation
+
+                {/* Input bar */}
+                <div className="ai-panel-input">
+                  <div className="ai-input-field">
+                    <span className="ai-input-placeholder">
+                      <TypingText />
+                    </span>
+                  </div>
+                  <button className="ai-send-btn" aria-label="Send">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                  </button>
                 </div>
-                <div className="hero-chip hero-chip-3">
-                  <span className="hero-chip-icon">📥</span>
-                  PDF Ready
                 </div>
+
+                {/* Floating badges */}
+                <div className="ai-badge ai-badge-1">
+                  <span>✅</span> Sem 1 Complete
+                </div>
+                <div className="ai-badge ai-badge-2">
+                  <span>📥</span> PDF Ready
+                </div>
+                <div className="ai-badge-glow ai-glow-1" />
+                <div className="ai-badge-glow ai-glow-2" />
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
+import akashImg from '../assets/akash-prajapati.webp';
+import vivekImg from '../assets/vivek-yadav.webp';
 
 const visionCards = [
   {
@@ -21,37 +23,39 @@ const visionCards = [
 
 const teamMembers = [
   {
+    image: akashImg,
     initials: 'AP',
     name: 'Akash Prajapati',
     role: 'Full Stack Developer & Project Lead',
     roll: 'Roll No: 237092010005',
     bio: 'Passionate developer and tech enthusiast building AI-driven tools to make learning easier for BCA students.',
     socials: [
-      { icon: '💼', label: 'LinkedIn', href: 'https://www.linkedin.com/in/akash-prajapati1232/' },
-      { icon: '💻', label: 'GitHub', href: 'https://github.com/akashprajapati1232' },
-      { icon: '📸', label: 'Instagram', href: 'https://www.instagram.com/akash.prajapati1232/' },
-      { icon: '🌐', label: 'Portfolio', href: 'https://akashprajapati.rf.gd/?i=1' },
+      { icon: 'fa-brands fa-linkedin-in', label: 'LinkedIn', href: 'https://www.linkedin.com/in/akash-prajapati1232/' },
+      { icon: 'fa-brands fa-github', label: 'GitHub', href: 'https://github.com/akashprajapati1232' },
+      { icon: 'fa-brands fa-instagram', label: 'Instagram', href: 'https://www.instagram.com/akash.prajapati1232/' },
+      { icon: 'fa-solid fa-globe', label: 'Portfolio', href: 'https://akashprajapati.rf.gd/?i=1' },
     ],
   },
   {
+    image: vivekImg,
     initials: 'VY',
     name: 'Vivek Yadav',
     role: 'UI/UX Designer & Developer',
     roll: 'Roll No: 237092010053',
     bio: 'Creative designer and developer focused on crafting intuitive, beautiful interfaces that enhance the student experience.',
     socials: [
-      { icon: '💼', label: 'LinkedIn', href: '#' },
-      { icon: '💻', label: 'GitHub', href: '#' },
-      { icon: '📸', label: 'Instagram', href: '#' },
+      { icon: 'fa-brands fa-linkedin-in', label: 'LinkedIn', href: '#' },
+      { icon: 'fa-brands fa-github', label: 'GitHub', href: '#' },
+      { icon: 'fa-brands fa-instagram', label: 'Instagram', href: '#' },
     ],
   },
 ];
 
 const stats = [
-  { num: '6', label: 'Semesters Covered' },
-  { num: '30+', label: 'Subjects Listed' },
-  { num: '150+', label: 'Topics & Units' },
-  { num: '100%', label: 'Free to Use' },
+  { num: '6', label: 'Semesters Covered', icon: 'fa-solid fa-layer-group' },
+  { num: '30+', label: 'Subjects Listed', icon: 'fa-solid fa-book-open' },
+  { num: '150+', label: 'Topics & Units', icon: 'fa-solid fa-list-check' },
+  { num: '100%', label: 'Free to Use', icon: 'fa-solid fa-heart' },
 ];
 
 export default function About() {
@@ -88,19 +92,19 @@ export default function About() {
                 The Problem We <span className="gradient-text">Solved</span>
               </h2>
               <p>
-                As BCA students ourselves, we noticed a common frustration — the syllabus was
-                scattered, notes were hard to find, and understanding complex topics took hours of
-                searching across unreliable sources.
+                As BCA students, we faced a common problem. The syllabus was not in one place,
+                good notes were difficult to find, and understanding some topics took a lot of
+                time because we had to search on many different websites.
               </p>
               <p>
-                We decided to build <strong style={{ color: 'var(--color-primary-light)' }}>GPT for BCA</strong> — a single platform
-                that organizes the entire BCA curriculum semester-wise and gives students access
-                to AI-powered explanations for every topic.
+                So, we created <strong style={{ color: 'var(--color-primary-light)' }}>GPT for BCA</strong>. This platform brings the full BCA syllabus
+                in one place, organized semester-wise, and helps students understand topics
+                with simple AI-based explanations.
               </p>
               <p>
-                From basic C programming in Semester 1 to cloud computing and data mining in
-                Semester 6, we've structured everything so you can spend less time searching
-                and more time learning.
+                From basic C programming in Semester 1 to advanced subjects like cloud computing
+                and data mining in Semester 6, our aim is simple — to help students spend less
+                time searching and more time learning.
               </p>
               <div style={{ marginTop: '28px' }}>
                 <Link to="/syllabus" className="btn-primary">📚 Explore Syllabus</Link>
@@ -141,6 +145,9 @@ export default function About() {
           <div className="about-stats-grid">
             {stats.map((s, i) => (
               <div className="about-stat" key={i}>
+                <div className="about-stat-icon">
+                  <i className={s.icon}></i>
+                </div>
                 <div className="about-stat-num">{s.num}</div>
                 <div className="about-stat-label">{s.label}</div>
               </div>
@@ -155,7 +162,7 @@ export default function About() {
           <div className="about-team-header">
             <div className="section-tag">The Team</div>
             <h2 className="section-title">
-              Meet the <span className="gradient-text">Builders</span>
+              Meet the <span className="gradient-text">Developers</span>
             </h2>
             <p className="section-subtitle">
               Two BCA students who turned a study problem into a solution for thousands.
@@ -165,8 +172,12 @@ export default function About() {
           <div className="team-grid">
             {teamMembers.map((member, i) => (
               <div className="team-card" key={i}>
-                <div className="team-avatar">
-                  {member.initials}
+                <div className="team-avatar-wrap">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="team-avatar-img"
+                  />
                   <div className="team-avatar-ring"></div>
                 </div>
                 <h3>{member.name}</h3>
@@ -183,7 +194,7 @@ export default function About() {
                       target={s.href !== '#' ? '_blank' : undefined}
                       rel={s.href !== '#' ? 'noopener noreferrer' : undefined}
                     >
-                      {s.icon}
+                      <i className={s.icon}></i>
                     </a>
                   ))}
                 </div>
