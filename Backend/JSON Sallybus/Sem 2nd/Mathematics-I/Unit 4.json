@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 4 - Determinants and Matrices",
+  "main_topics": [
+    "Determinants",
+    "Matrices and matrix operations",
+    "Adjoint and inverse",
+    "Cramer's rule",
+    "Rank and eigen concepts"
+  ],
+  "expanded_subtopics": {
+    "Determinants": [
+      "Definition of determinants",
+      "Minors and cofactors",
+      "Properties of determinants"
+    ],
+    "Matrices and matrix operations": [
+      "Types of matrices",
+      "Addition, subtraction, and scalar multiplication",
+      "Matrix multiplication and its properties"
+    ],
+    "Adjoint and inverse": [
+      "Adjoint of a matrix",
+      "Inverse using adjoint",
+      "Conditions for invertibility"
+    ],
+    "Cramer's rule": [
+      "Solving linear systems with determinants",
+      "Conditions for unique solutions"
+    ],
+    "Rank and eigen concepts": [
+      "Rank of a matrix",
+      "Dependence and independence of vectors",
+      "Eigenvalues and eigenvectors (conceptual)",
+      "Cayley-Hamilton theorem (statement)"
+    ]
+  }
+}

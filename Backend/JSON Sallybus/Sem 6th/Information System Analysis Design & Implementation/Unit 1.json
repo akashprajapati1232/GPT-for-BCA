@@ -1,0 +1,64 @@
+{
+  "unit": "Unit 1 - Overview of Systems Analysis and Design",
+  "main_topics": [
+    "Systems Development Life Cycle (SDLC)",
+    "Requirements determination",
+    "Logical and physical design",
+    "Test planning and implementation",
+    "Communication and interviewing skills",
+    "Group dynamics and reviews",
+    "Risk and feasibility analysis",
+    "Prototyping",
+    "Database design",
+    "Software quality metrics",
+    "Package evaluation and acquisition"
+  ],
+  "expanded_subtopics": {
+    "Systems Development Life Cycle (SDLC)": [
+      "Phases of SDLC",
+      "Iterative vs linear models"
+    ],
+    "Requirements determination": [
+      "Elicitation techniques",
+      "Stakeholder analysis"
+    ],
+    "Logical and physical design": [
+      "Logical design objectives",
+      "Physical design considerations"
+    ],
+    "Test planning and implementation": [
+      "Test planning basics",
+      "Implementation planning"
+    ],
+    "Communication and interviewing skills": [
+      "Interview preparation and execution",
+      "Presentation skills for analysis results"
+    ],
+    "Group dynamics and reviews": [
+      "Group-based approaches",
+      "JAD sessions",
+      "Structured walkthroughs and design/code reviews"
+    ],
+    "Risk and feasibility analysis": [
+      "Technical, economic, and operational feasibility",
+      "Risk identification and mitigation"
+    ],
+    "Prototyping": [
+      "Types of prototypes",
+      "Benefits and limitations"
+    ],
+    "Database design": [
+      "Data modeling basics",
+      "Designing for consistency and integrity"
+    ],
+    "Software quality metrics": [
+      "Quality attributes and measurement",
+      "Defect density and reliability"
+    ],
+    "Package evaluation and acquisition": [
+      "Application categories",
+      "Vendor evaluation criteria",
+      "Selection and acquisition process"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 2 - Evolution of Management Thought and Ethics",
+  "main_topics": [
+    "Classical theories",
+    "Human relations approach",
+    "Modern management thinkers",
+    "Business ethics",
+    "Social responsibility"
+  ],
+  "expanded_subtopics": {
+    "Classical theories": [
+      "F.W. Taylor and scientific management",
+      "Henri Fayol and administrative principles"
+    ],
+    "Human relations approach": [
+      "Elton Mayo and Hawthorne studies",
+      "Chester Barnard and cooperative systems"
+    ],
+    "Modern management thinkers": [
+      "Peter Drucker and management by objectives"
+    ],
+    "Business ethics": [
+      "Ethical decision making",
+      "Shift toward ethical practices",
+      "Tools of ethics: codes and audits"
+    ],
+    "Social responsibility": [
+      "Stakeholder perspective",
+      "Corporate citizenship"
+    ]
+  }
+}

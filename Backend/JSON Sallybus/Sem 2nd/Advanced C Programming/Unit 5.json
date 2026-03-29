@@ -1,0 +1,34 @@
+{
+  "unit": "Unit 5 - Preprocessor and Bitwise Operators",
+  "main_topics": [
+    "C preprocessor",
+    "Macro substitution",
+    "File inclusion",
+    "Conditional compilation",
+    "Bitwise operators"
+  ],
+  "expanded_subtopics": {
+    "C preprocessor": [
+      "Purpose of the preprocessor",
+      "Directive syntax"
+    ],
+    "Macro substitution": [
+      "Object-like macros",
+      "Function-like macros",
+      "Macro pitfalls"
+    ],
+    "File inclusion": [
+      "#include with headers",
+      "Angle brackets vs quotes"
+    ],
+    "Conditional compilation": [
+      "#if, #ifdef, #ifndef, #elif, #endif",
+      "Debug and feature flags"
+    ],
+    "Bitwise operators": [
+      "AND, OR, XOR, NOT",
+      "Shift operators",
+      "Masks and bit fields"
+    ]
+  }
+}

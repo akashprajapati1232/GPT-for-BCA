@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 6 - System Security",
+  "main_topics": [
+    "Intruders and attack types",
+    "Viruses and related threats",
+    "Firewall design principles"
+  ],
+  "expanded_subtopics": {
+    "Intruders and attack types": [
+      "Types of intruders",
+      "Threat modeling and detection"
+    ],
+    "Viruses and related threats": [
+      "Virus types and infection methods",
+      "Malware categories: worms, trojans, ransomware"
+    ],
+    "Firewall design principles": [
+      "Firewall types: packet filtering, stateful, proxy",
+      "Rule design and policy enforcement",
+      "Placement and segmentation strategies"
+    ]
+  }
+}

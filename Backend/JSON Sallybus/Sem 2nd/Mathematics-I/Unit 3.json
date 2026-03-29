@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 3 - Partial Order Relations and Lattices",
+  "main_topics": [
+    "Posets",
+    "Hasse diagrams",
+    "Bounds and extremal elements",
+    "Lattices",
+    "Principle of duality"
+  ],
+  "expanded_subtopics": {
+    "Posets": [
+      "Definition of partial order set (poset)",
+      "Examples of posets",
+      "Chains and antichains"
+    ],
+    "Hasse diagrams": [
+      "Drawing Hasse diagrams",
+      "Interpreting comparability",
+      "Covering relations"
+    ],
+    "Bounds and extremal elements": [
+      "Maximal and minimal elements",
+      "Greatest and least elements",
+      "Upper and lower bounds",
+      "glb (greatest lower bound) and lub (least upper bound)"
+    ],
+    "Lattices": [
+      "Definition of lattice",
+      "Join and meet operations",
+      "Basic lattice properties",
+      "Algebraic systems perspective"
+    ],
+    "Principle of duality": [
+      "Dual statements in posets and lattices",
+      "Interchanging join and meet"
+    ]
+  }
+}

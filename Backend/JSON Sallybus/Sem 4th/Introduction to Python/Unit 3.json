@@ -1,0 +1,40 @@
+{
+  "unit": "Unit 3 - Recursion and Strings",
+  "main_topics": [
+    "Recursion",
+    "Stack diagrams",
+    "Multiple assignment",
+    "While loops",
+    "Tables",
+    "Strings and lists"
+  ],
+  "expanded_subtopics": {
+    "Recursion": [
+      "Definition and base case concept",
+      "Recursive function design"
+    ],
+    "Stack diagrams": [
+      "Call stack visualization",
+      "Tracing recursive calls"
+    ],
+    "Multiple assignment": [
+      "Tuple unpacking",
+      "Swapping variables"
+    ],
+    "While loops": [
+      "Loop conditions",
+      "Sentinel-controlled loops"
+    ],
+    "Tables": [
+      "One-dimensional tables",
+      "Two-dimensional tables"
+    ],
+    "Strings and lists": [
+      "String as a compound data type",
+      "Length and traversal",
+      "For loop over strings",
+      "String slices and comparison",
+      "Find function basics"
+    ]
+  }
+}

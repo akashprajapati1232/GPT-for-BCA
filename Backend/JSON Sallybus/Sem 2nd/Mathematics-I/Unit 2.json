@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 2 - Relations and Functions",
+  "main_topics": [
+    "Relations",
+    "Types and properties of relations",
+    "Functions and types of functions",
+    "Composite and inverse functions",
+    "Introductory special functions"
+  ],
+  "expanded_subtopics": {
+    "Relations": [
+      "Definition and representation of relations",
+      "Domain, codomain, and range of a relation",
+      "Matrix and digraph representation"
+    ],
+    "Types and properties of relations": [
+      "Reflexive, symmetric, and transitive properties",
+      "Equivalence relations and equivalence classes",
+      "Partial order relations and comparability"
+    ],
+    "Functions and types of functions": [
+      "Definition of a function",
+      "One-to-one, onto, into, and bijective functions",
+      "Domain and range mapping"
+    ],
+    "Composite and inverse functions": [
+      "Composition of functions",
+      "Existence and calculation of inverse functions",
+      "Properties of inverse functions"
+    ],
+    "Introductory special functions": [
+      "Trigonometric functions overview",
+      "Logarithmic functions overview",
+      "Exponential functions overview"
+    ]
+  }
+}

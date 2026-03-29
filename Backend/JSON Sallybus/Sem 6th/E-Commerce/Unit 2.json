@@ -1,0 +1,57 @@
+{
+  "unit": "Unit 2 - B2B Electronic Commerce",
+  "main_topics": [
+    "B2B characteristics",
+    "B2B models",
+    "Procurement management",
+    "Just-in-time delivery",
+    "Auctions and services",
+    "EDI in B2B",
+    "Back-end integration",
+    "Software agents",
+    "B2B electronic marketing",
+    "Managerial issues"
+  ],
+  "expanded_subtopics": {
+    "B2B characteristics": [
+      "Large transaction volumes",
+      "Long-term buyer-seller relationships"
+    ],
+    "B2B models": [
+      "Sell-side, buy-side, and exchanges",
+      "Industry consortia"
+    ],
+    "Procurement management": [
+      "Buyer\u2019s internal marketplace",
+      "Automation of procurement"
+    ],
+    "Just-in-time delivery": [
+      "JIT principles",
+      "Inventory reduction through B2B"
+    ],
+    "Auctions and services": [
+      "Online auctions for procurement",
+      "Service marketplaces"
+    ],
+    "EDI in B2B": [
+      "EDI components and standards",
+      "EDI benefits and limitations"
+    ],
+    "Back-end integration": [
+      "Integration with ERP and legacy systems",
+      "Data synchronization challenges"
+    ],
+    "Software agents": [
+      "Role of agents in B2B",
+      "Automation of negotiation and discovery"
+    ],
+    "B2B electronic marketing": [
+      "Digital marketing channels",
+      "Lead generation for B2B"
+    ],
+    "Managerial issues": [
+      "Change management",
+      "Security and compliance concerns"
+    ]
+  }
+}

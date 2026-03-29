@@ -1,0 +1,34 @@
+{
+  "unit": "Unit 5 - Cloud Providers and Security",
+  "main_topics": [
+    "Major cloud service providers",
+    "Provider services and tools",
+    "Cloud security",
+    "General cloud challenges"
+  ],
+  "expanded_subtopics": {
+    "Major cloud service providers": [
+      "EMC and EMC IT",
+      "Google Cloud Platform",
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "IBM Smart Cloud"
+    ],
+    "Provider services and tools": [
+      "Google Cloud Storage and App Engine",
+      "AWS EC2, S3, and SQS",
+      "Azure services and MAP toolkit",
+      "IBM cloud APIs"
+    ],
+    "Cloud security": [
+      "Identity and access management",
+      "Data protection and encryption",
+      "Compliance considerations"
+    ],
+    "General cloud challenges": [
+      "Vendor lock-in",
+      "Performance and latency",
+      "Cost management"
+    ]
+  }
+}

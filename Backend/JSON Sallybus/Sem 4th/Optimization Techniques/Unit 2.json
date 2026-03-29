@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 2 - Queuing Theory",
+  "main_topics": [
+    "Queuing system characteristics",
+    "Queue model classification",
+    "Single channel queuing",
+    "M/M/1 models"
+  ],
+  "expanded_subtopics": {
+    "Queuing system characteristics": [
+      "Arrival rate and service rate",
+      "Queue discipline"
+    ],
+    "Queue model classification": [
+      "Single vs multi-channel models",
+      "Steady-state conditions"
+    ],
+    "Single channel queuing": [
+      "M/M/1 basic assumptions",
+      "Performance measures"
+    ],
+    "M/M/1 models": [
+      "Model I and Model II overview",
+      "Average waiting time and queue length"
+    ]
+  }
+}

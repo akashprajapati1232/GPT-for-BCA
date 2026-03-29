@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 2 - Requirements Analysis",
+  "main_topics": [
+    "System scope definition",
+    "Top-level processes and entities",
+    "Refinement and review",
+    "Problem analysis",
+    "Software specification document"
+  ],
+  "expanded_subtopics": {
+    "System scope definition": [
+      "Understanding system boundaries",
+      "Stakeholder expectations"
+    ],
+    "Top-level processes and entities": [
+      "Identifying core processes",
+      "Allocating processes to physical elements"
+    ],
+    "Refinement and review": [
+      "Iterative refinement of requirements",
+      "Requirements review techniques"
+    ],
+    "Problem analysis": [
+      "Analyzing user needs",
+      "Feasibility considerations"
+    ],
+    "Software specification document": [
+      "Structure of SRS",
+      "Correctness, consistency, completeness"
+    ]
+  }
+}

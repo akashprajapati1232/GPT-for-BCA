@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 5 - Job Sequencing",
+  "main_topics": [
+    "Sequencing problem basics",
+    "Johnson's algorithm",
+    "n jobs through 2 machines"
+  ],
+  "expanded_subtopics": {
+    "Sequencing problem basics": [
+      "Objectives of sequencing",
+      "Common performance measures"
+    ],
+    "Johnson's algorithm": [
+      "Algorithm steps",
+      "Conditions for application"
+    ],
+    "n jobs through 2 machines": [
+      "Problem setup",
+      "Constructing the optimal sequence"
+    ]
+  }
+}

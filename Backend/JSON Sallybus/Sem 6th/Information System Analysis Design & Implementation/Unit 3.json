@@ -1,0 +1,58 @@
+{
+  "unit": "Unit 3 - Proposal Development and System Design",
+  "main_topics": [
+    "Feasibility study",
+    "Cost estimation",
+    "Input and control design",
+    "Output design",
+    "File and database design",
+    "Process design",
+    "User interface design",
+    "Prototyping",
+    "Software construction",
+    "Documentation"
+  ],
+  "expanded_subtopics": {
+    "Feasibility study": [
+      "Technical feasibility",
+      "Economic feasibility",
+      "Operational feasibility"
+    ],
+    "Cost estimation": [
+      "Estimation techniques",
+      "Budget planning"
+    ],
+    "Input and control design": [
+      "Input validation and control",
+      "Designing input forms"
+    ],
+    "Output design": [
+      "Report layout and readability",
+      "Output control mechanisms"
+    ],
+    "File and database design": [
+      "File structure considerations",
+      "Database schema design"
+    ],
+    "Process design": [
+      "Process logic specification",
+      "Structured design approach"
+    ],
+    "User interface design": [
+      "Usability principles",
+      "UI consistency and feedback"
+    ],
+    "Prototyping": [
+      "Iterative refinement using prototypes",
+      "User feedback incorporation"
+    ],
+    "Software construction": [
+      "Code organization and modularity",
+      "Reusability considerations"
+    ],
+    "Documentation": [
+      "Technical documentation",
+      "User manuals and help materials"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "unit": "Unit 1 - E-Commerce and Business Strategy",
+  "main_topics": [
+    "Scope and definition of e-commerce",
+    "Electronic markets and trade cycle",
+    "EDI and Internet commerce",
+    "Business strategy in an electronic age",
+    "Supply chains and value chain models",
+    "Competitive strategy and advantage",
+    "Strategy formulation and implementation",
+    "E-commerce implementation and evaluation"
+  ],
+  "expanded_subtopics": {
+    "Scope and definition of e-commerce": [
+      "Meaning and scope of electronic commerce",
+      "Types of e-commerce interactions"
+    ],
+    "Electronic markets and trade cycle": [
+      "Electronic markets concept",
+      "Trade cycle stages in e-commerce"
+    ],
+    "EDI and Internet commerce": [
+      "Electronic Data Interchange (EDI) basics",
+      "Internet-based commerce models"
+    ],
+    "Business strategy in an electronic age": [
+      "Strategic role of IT",
+      "Business environment and capability"
+    ],
+    "Supply chains and value chain models": [
+      "Supply chain integration",
+      "Porter\u2019s value chain model"
+    ],
+    "Competitive strategy and advantage": [
+      "Porter\u2019s competitive strategies",
+      "First mover advantage and sustainability"
+    ],
+    "Strategy formulation and implementation": [
+      "Strategy formulation steps",
+      "Implementation planning"
+    ],
+    "E-commerce implementation and evaluation": [
+      "Implementation factors",
+      "Evaluation metrics and ROI"
+    ]
+  }
+}

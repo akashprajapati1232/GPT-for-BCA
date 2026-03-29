@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 6 - Differentiation and Integration",
+  "main_topics": [
+    "Differentiation",
+    "Rules of derivatives",
+    "Logarithmic differentiation",
+    "Integration basics",
+    "Methods of integration"
+  ],
+  "expanded_subtopics": {
+    "Differentiation": [
+      "Derivative as a rate of change",
+      "Basic derivative formulas"
+    ],
+    "Rules of derivatives": [
+      "Sum, difference, product, and quotient rules",
+      "Chain rule for composite functions"
+    ],
+    "Logarithmic differentiation": [
+      "Technique and use cases",
+      "Applications to products and powers"
+    ],
+    "Integration basics": [
+      "Integral as limit of a sum",
+      "Fundamental theorem of calculus (statement)",
+      "Indefinite integrals"
+    ],
+    "Methods of integration": [
+      "Substitution method",
+      "Integration by parts"
+    ]
+  }
+}

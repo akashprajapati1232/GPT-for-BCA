@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 2 - Cloud Management and Service Models",
+  "main_topics": [
+    "Cloud applications",
+    "Benefits and drawbacks",
+    "Managing cloud infrastructure",
+    "Application migration",
+    "Deployment models",
+    "Service models",
+    "Open-source tools"
+  ],
+  "expanded_subtopics": {
+    "Cloud applications": [
+      "Types of applications suitable for cloud",
+      "Cloud-native vs legacy apps"
+    ],
+    "Benefits and drawbacks": [
+      "Scalability and cost advantages",
+      "Security and compliance challenges"
+    ],
+    "Managing cloud infrastructure": [
+      "Resource provisioning and monitoring",
+      "Performance management"
+    ],
+    "Application migration": [
+      "Migration strategies",
+      "Risk and dependency analysis"
+    ],
+    "Deployment models": [
+      "Private, outsourced private, community, on-premise community",
+      "Hybrid cloud design"
+    ],
+    "Service models": [
+      "IaaS, PaaS, SaaS roles and examples",
+      "Shared responsibility model"
+    ],
+    "Open-source tools": [
+      "Open-source platforms for IaaS, PaaS, SaaS",
+      "Apache as a cloud-related tool"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 5 - Data Structures and Searching/Sorting",
+  "main_topics": [
+    "Data structures overview",
+    "Arrays, lists, sets",
+    "Stacks and queues",
+    "Searching algorithms",
+    "Sorting algorithms"
+  ],
+  "expanded_subtopics": {
+    "Data structures overview": [
+      "Why data structures matter",
+      "Choosing appropriate structures"
+    ],
+    "Arrays, lists, sets": [
+      "Basic operations and use cases",
+      "Differences between list and set"
+    ],
+    "Stacks and queues": [
+      "Stack operations: push and pop",
+      "Queue operations: enqueue and dequeue"
+    ],
+    "Searching algorithms": [
+      "Linear search",
+      "Binary search and prerequisites"
+    ],
+    "Sorting algorithms": [
+      "Bubble sort",
+      "Selection sort",
+      "Insertion sort"
+    ]
+  }
+}

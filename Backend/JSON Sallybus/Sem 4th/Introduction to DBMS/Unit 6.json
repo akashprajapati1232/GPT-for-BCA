@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 6 - Normalization and Transaction Management",
+  "main_topics": [
+    "Functional dependencies",
+    "Normalization up to 3NF",
+    "Concurrency control",
+    "Transaction processing",
+    "Database recovery",
+    "Security and authorization"
+  ],
+  "expanded_subtopics": {
+    "Functional dependencies": [
+      "Definition and types",
+      "Role in normalization"
+    ],
+    "Normalization up to 3NF": [
+      "1NF, 2NF, and 3NF criteria",
+      "Removing anomalies"
+    ],
+    "Concurrency control": [
+      "Locking techniques",
+      "Deadlock basics"
+    ],
+    "Transaction processing": [
+      "ACID properties",
+      "Commit and rollback"
+    ],
+    "Database recovery": [
+      "Recovery techniques",
+      "Logging and checkpoints"
+    ],
+    "Security and authorization": [
+      "Access control mechanisms",
+      "Authorization and roles"
+    ]
+  }
+}

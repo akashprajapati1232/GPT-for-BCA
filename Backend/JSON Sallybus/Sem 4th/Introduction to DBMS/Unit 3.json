@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 3 - File Organization and Indexing",
+  "main_topics": [
+    "Indexed sequential access files",
+    "B-tree and B+ tree indexing",
+    "Hashing",
+    "Collision resolution",
+    "Extendible and dynamic hashing"
+  ],
+  "expanded_subtopics": {
+    "Indexed sequential access files": [
+      "Index structure and access methods",
+      "Use cases in file systems"
+    ],
+    "B-tree and B+ tree indexing": [
+      "Balanced tree properties",
+      "Search and insertion basics"
+    ],
+    "Hashing": [
+      "Hash functions and bucket concept",
+      "Performance considerations"
+    ],
+    "Collision resolution": [
+      "Chaining",
+      "Open addressing"
+    ],
+    "Extendible and dynamic hashing": [
+      "Directory-based hashing",
+      "Dynamic hashing approach and performance"
+    ]
+  }
+}

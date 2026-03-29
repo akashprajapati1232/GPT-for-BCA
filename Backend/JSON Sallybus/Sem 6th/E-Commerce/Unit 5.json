@@ -1,0 +1,47 @@
+{
+  "unit": "Unit 5 - Infrastructure for E-Commerce",
+  "main_topics": [
+    "Network of networks",
+    "Internet protocols",
+    "Web-based client/server",
+    "Internet security",
+    "Selling and marketing on the web",
+    "Web communication tools",
+    "Multimedia delivery",
+    "Web analytics"
+  ],
+  "expanded_subtopics": {
+    "Network of networks": [
+      "Internet as global infrastructure",
+      "Backbone and ISP roles"
+    ],
+    "Internet protocols": [
+      "TCP/IP basics",
+      "HTTP/HTTPS overview"
+    ],
+    "Web-based client/server": [
+      "Client-server interaction",
+      "Browser and web server roles"
+    ],
+    "Internet security": [
+      "Security layers for online commerce",
+      "Secure communication practices"
+    ],
+    "Selling and marketing on the web": [
+      "Online storefronts",
+      "Digital marketing channels"
+    ],
+    "Web communication tools": [
+      "Chat and messaging systems",
+      "Customer support tools"
+    ],
+    "Multimedia delivery": [
+      "Streaming and content delivery",
+      "Performance considerations"
+    ],
+    "Web analytics": [
+      "Tracking and analyzing visits",
+      "Key performance indicators"
+    ]
+  }
+}

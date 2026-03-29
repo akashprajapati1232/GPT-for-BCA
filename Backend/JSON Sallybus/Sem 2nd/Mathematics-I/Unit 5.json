@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 5 - Limits and Continuity",
+  "main_topics": [
+    "Limits",
+    "Continuity",
+    "Intermediate value theorem",
+    "Types of discontinuities"
+  ],
+  "expanded_subtopics": {
+    "Limits": [
+      "Limit at a point",
+      "Left-hand and right-hand limits",
+      "Properties of limits",
+      "Computation of limits for common functions"
+    ],
+    "Continuity": [
+      "Continuity at a point",
+      "Continuity over an interval",
+      "Continuity of composite functions"
+    ],
+    "Intermediate value theorem": [
+      "Statement and interpretation",
+      "Simple applications"
+    ],
+    "Types of discontinuities": [
+      "Removable discontinuity",
+      "Jump discontinuity",
+      "Infinite discontinuity"
+    ]
+  }
+}

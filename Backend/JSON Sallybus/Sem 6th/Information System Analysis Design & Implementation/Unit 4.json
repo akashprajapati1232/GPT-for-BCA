@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 4 - Methodologies and CASE Tools",
+  "main_topics": [
+    "Information engineering",
+    "Structured analysis and design",
+    "Object-oriented methodologies",
+    "Data modeling and process modeling",
+    "User interface design",
+    "Prototyping",
+    "CASE tools"
+  ],
+  "expanded_subtopics": {
+    "Information engineering": [
+      "Enterprise-wide data planning",
+      "Strategic alignment"
+    ],
+    "Structured analysis and design": [
+      "Structured techniques and notations",
+      "Process decomposition"
+    ],
+    "Object-oriented methodologies": [
+      "OO analysis and design workflow",
+      "Class and interaction modeling"
+    ],
+    "Data modeling and process modeling": [
+      "Integrating data and process views",
+      "Ensuring model consistency"
+    ],
+    "User interface design": [
+      "User-centered design principles",
+      "Prototyping for UI"
+    ],
+    "Prototyping": [
+      "Rapid prototyping tools",
+      "Validation of requirements"
+    ],
+    "CASE tools": [
+      "Roles in analysis and design",
+      "Automating documentation and code generation"
+    ]
+  }
+}

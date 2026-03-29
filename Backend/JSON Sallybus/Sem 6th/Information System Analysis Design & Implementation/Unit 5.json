@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 5 - OO Design and Implementation",
+  "main_topics": [
+    "Object-oriented analysis and design",
+    "Object modeling techniques",
+    "Dynamic modeling",
+    "Functional modeling",
+    "OO programming systems",
+    "Object-oriented databases"
+  ],
+  "expanded_subtopics": {
+    "Object-oriented analysis and design": [
+      "Identifying classes and relationships",
+      "Use case driven design"
+    ],
+    "Object modeling techniques": [
+      "Class diagrams and object diagrams",
+      "Association, aggregation, and inheritance"
+    ],
+    "Dynamic modeling": [
+      "State diagrams",
+      "Sequence and collaboration diagrams"
+    ],
+    "Functional modeling": [
+      "Functional requirements mapping",
+      "Activity and data flow models"
+    ],
+    "OO programming systems": [
+      "Implementation using OO languages",
+      "Design patterns basics"
+    ],
+    "Object-oriented databases": [
+      "OODBMS concepts",
+      "Object persistence and queries"
+    ]
+  }
+}

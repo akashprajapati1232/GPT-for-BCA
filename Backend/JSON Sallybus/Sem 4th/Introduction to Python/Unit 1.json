@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 1 - Program Planning and Problem Solving",
+  "main_topics": [
+    "Problem solving concepts",
+    "Program design",
+    "Debugging and error types",
+    "Documentation",
+    "Problem-solving techniques",
+    "Programming methodologies",
+    "Python program overview"
+  ],
+  "expanded_subtopics": {
+    "Problem solving concepts": [
+      "Problem definition and analysis",
+      "Breaking problems into manageable parts"
+    ],
+    "Program design": [
+      "Designing steps for a solution",
+      "Planning input, process, and output"
+    ],
+    "Debugging and error types": [
+      "Syntax, runtime, and logical errors",
+      "Debugging strategies"
+    ],
+    "Documentation": [
+      "Code comments and user documentation",
+      "Importance of readable code"
+    ],
+    "Problem-solving techniques": [
+      "Flowcharts and decision tables",
+      "Algorithms and structured programming"
+    ],
+    "Programming methodologies": [
+      "Top-down programming",
+      "Bottom-up programming"
+    ],
+    "Python program overview": [
+      "Structure of a Python program",
+      "Elements of Python memory model"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "unit": "Unit 2 - Control Structures and Functions",
+  "main_topics": [
+    "Conditional statements",
+    "Switch case",
+    "Looping statements",
+    "Loop control statements",
+    "PHP functions",
+    "Function arguments",
+    "Common built-in functions"
+  ],
+  "expanded_subtopics": {
+    "Conditional statements": [
+      "if, else, and else-if structures",
+      "Nested conditional logic"
+    ],
+    "Switch case": [
+      "Switch syntax and flow",
+      "Default case and fall-through behavior"
+    ],
+    "Looping statements": [
+      "while, for, and do-while loops",
+      "Choosing the right loop"
+    ],
+    "Loop control statements": [
+      "break and continue",
+      "exit and script termination"
+    ],
+    "PHP functions": [
+      "Built-in vs user-defined functions",
+      "Function declaration and calling"
+    ],
+    "Function arguments": [
+      "Call by value and call by reference",
+      "Default argument values"
+    ],
+    "Common built-in functions": [
+      "String manipulation functions",
+      "Mathematical functions",
+      "Date and time functions"
+    ]
+  }
+}

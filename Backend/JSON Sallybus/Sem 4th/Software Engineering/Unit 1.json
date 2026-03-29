@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 1 - Software Engineering Fundamentals",
+  "main_topics": [
+    "Definition of software engineering",
+    "Software engineering paradigms",
+    "Generic view of software engineering"
+  ],
+  "expanded_subtopics": {
+    "Definition of software engineering": [
+      "Scope and objectives",
+      "Importance in software development"
+    ],
+    "Software engineering paradigms": [
+      "Process models overview",
+      "Structured and object-oriented approaches"
+    ],
+    "Generic view of software engineering": [
+      "Core activities and workflow",
+      "Relationship between processes and products"
+    ]
+  }
+}

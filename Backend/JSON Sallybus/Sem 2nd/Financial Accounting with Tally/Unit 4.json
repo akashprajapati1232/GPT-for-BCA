@@ -1,0 +1,46 @@
+{
+  "unit": "Unit 4 - Inventory and Stock Management",
+  "main_topics": [
+    "Stock groups and items",
+    "Stock valuation and behavior",
+    "Units and pricing",
+    "Godowns",
+    "Inventory vouchers and tracking",
+    "Inventory reports"
+  ],
+  "expanded_subtopics": {
+    "Stock groups and items": [
+      "Create, alter, and display stock groups",
+      "Create, alter, and display stock items"
+    ],
+    "Stock valuation and behavior": [
+      "Costing and market valuation methods",
+      "Treatment of manufacturing and consumption",
+      "Handling negative balances and physical counting differences"
+    ],
+    "Units and pricing": [
+      "Simple and compound units of measure",
+      "Alternate units for items",
+      "Standard cost, selling price, duty, and MRP"
+    ],
+    "Godowns": [
+      "Create and manage godowns",
+      "Allocate stock to godowns"
+    ],
+    "Inventory vouchers and tracking": [
+      "All inventory voucher types",
+      "Tracking numbers and batch-wise details",
+      "Additional cost details",
+      "Bill of materials and cost estimation",
+      "Price list and price levels",
+      "Handling different actual and billed quantities"
+    ],
+    "Inventory reports": [
+      "Stock summary and movement analysis",
+      "Stock group, item, and category analysis",
+      "Ageing analysis",
+      "Sales and purchase order books",
+      "Reorder status and exception reports"
+    ]
+  }
+}

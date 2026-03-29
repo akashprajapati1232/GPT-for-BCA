@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 1 - Nature of Management",
+  "main_topics": [
+    "Meaning and definition",
+    "Purpose and importance",
+    "Functions of management",
+    "Management as art, science, profession",
+    "Management skills and levels"
+  ],
+  "expanded_subtopics": {
+    "Meaning and definition": [
+      "Concept of management",
+      "Scope of management"
+    ],
+    "Purpose and importance": [
+      "Why management is needed",
+      "Benefits to organizations"
+    ],
+    "Functions of management": [
+      "Planning, organizing, staffing",
+      "Directing and controlling"
+    ],
+    "Management as art, science, profession": [
+      "Art and science dimensions",
+      "Professional characteristics"
+    ],
+    "Management skills and levels": [
+      "Technical, human, and conceptual skills",
+      "Top, middle, and lower management"
+    ]
+  }
+}

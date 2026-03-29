@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 1 - Linear Programming",
+  "main_topics": [
+    "Linear programming concepts",
+    "Basic theorems and properties",
+    "Simplex method",
+    "Primal and dual simplex",
+    "Transportation and assignment problems",
+    "Graphical method"
+  ],
+  "expanded_subtopics": {
+    "Linear programming concepts": [
+      "Formulating a linear programming problem",
+      "Objective function and constraints"
+    ],
+    "Basic theorems and properties": [
+      "Feasible region and optimal solutions",
+      "Corner point property"
+    ],
+    "Simplex method": [
+      "Standard form conversion",
+      "Simplex table and iterations"
+    ],
+    "Primal and dual simplex": [
+      "Duality concept",
+      "Dual simplex method overview"
+    ],
+    "Transportation and assignment problems": [
+      "Transportation problem formulation",
+      "Assignment problem formulation",
+      "Tic-tac problem basics"
+    ],
+    "Graphical method": [
+      "Two-variable LPP graphical solution",
+      "Identifying optimal points"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "unit": "Unit 2 - Python Basics and Control Flow",
+  "main_topics": [
+    "Python interpreter and shell",
+    "Python syntax and indentation",
+    "Identifiers and keywords",
+    "Literals and strings",
+    "Operators",
+    "Input and output",
+    "Control statements",
+    "Functions",
+    "Errors and exceptions",
+    "Iteration and recursion basics"
+  ],
+  "expanded_subtopics": {
+    "Python interpreter and shell": [
+      "Running Python interactively",
+      "Using Python as a calculator"
+    ],
+    "Python syntax and indentation": [
+      "Block structure with indentation",
+      "Common syntax rules"
+    ],
+    "Identifiers and keywords": [
+      "Naming rules",
+      "Reserved keywords"
+    ],
+    "Literals and strings": [
+      "Numeric and string literals",
+      "String formatting overview"
+    ],
+    "Operators": [
+      "Arithmetic, relational, logical, assignment",
+      "Ternary operator",
+      "Bitwise operators"
+    ],
+    "Input and output": [
+      "Using input()",
+      "Formatted output with print()"
+    ],
+    "Control statements": [
+      "Branching and looping",
+      "break, continue, pass, and exit"
+    ],
+    "Functions": [
+      "Defining and calling functions",
+      "Default arguments"
+    ],
+    "Errors and exceptions": [
+      "Common error types",
+      "Basic exception handling"
+    ],
+    "Iteration and recursion basics": [
+      "Conditional execution",
+      "Return statement usage"
+    ]
+  }
+}

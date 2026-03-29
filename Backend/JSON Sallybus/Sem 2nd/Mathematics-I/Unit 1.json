@@ -1,0 +1,40 @@
+{
+  "unit": "Unit 1 - Sets",
+  "main_topics": [
+    "Sets and subsets",
+    "Set operations",
+    "Cartesian product",
+    "Cardinality",
+    "Applications of sets"
+  ],
+  "expanded_subtopics": {
+    "Sets and subsets": [
+      "Definition and notation of sets",
+      "Roster and set-builder forms",
+      "Subsets, proper subsets, and power set",
+      "Equal sets and universal set",
+      "Finite and infinite sets"
+    ],
+    "Set operations": [
+      "Union, intersection, and difference",
+      "Complement of a set",
+      "Venn diagrams",
+      "Basic set identities and De Morgan's laws"
+    ],
+    "Cartesian product": [
+      "Ordered pairs",
+      "Product of two sets",
+      "Size of a Cartesian product",
+      "Simple applications to relations"
+    ],
+    "Cardinality": [
+      "Cardinality of finite sets",
+      "Cardinality of power sets",
+      "Basic counting with sets"
+    ],
+    "Applications of sets": [
+      "Use of sets in classification",
+      "Simple real-life examples"
+    ]
+  }
+}

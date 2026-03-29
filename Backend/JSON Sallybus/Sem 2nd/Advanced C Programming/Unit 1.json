@@ -1,0 +1,35 @@
+{
+  "unit": "Unit 1 - Arrays",
+  "main_topics": [
+    "One-dimensional arrays",
+    "Array operations",
+    "Arrays and functions",
+    "Two-dimensional arrays",
+    "Multidimensional arrays"
+  ],
+  "expanded_subtopics": {
+    "One-dimensional arrays": [
+      "Declaration and initialization",
+      "Accessing elements",
+      "Input and output of arrays"
+    ],
+    "Array operations": [
+      "Traversal",
+      "Searching",
+      "Sorting basics"
+    ],
+    "Arrays and functions": [
+      "Passing arrays to functions",
+      "Returning results from array processing"
+    ],
+    "Two-dimensional arrays": [
+      "Declaration and initialization",
+      "Accessing and displaying elements",
+      "Row-major and column-major memory mapping"
+    ],
+    "Multidimensional arrays": [
+      "Generalization to 3D and beyond",
+      "Common use cases"
+    ]
+  }
+}

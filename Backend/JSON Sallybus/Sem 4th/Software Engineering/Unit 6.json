@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 6 - Case Tools and Configuration Management",
+  "main_topics": [
+    "Comprehensive examples with software platforms",
+    "CASE tools",
+    "Configuration management"
+  ],
+  "expanded_subtopics": {
+    "Comprehensive examples with software platforms": [
+      "Applying concepts to real systems",
+      "Tool-supported workflows"
+    ],
+    "CASE tools": [
+      "Purpose of CASE tools",
+      "Examples of analysis and design tools"
+    ],
+    "Configuration management": [
+      "Version control and baselines",
+      "Change control and release management"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "unit": "Unit 1 - Basic Computer Organization",
+  "main_topics": [
+    "Computer organization",
+    "Instruction cycle",
+    "Registers",
+    "Micro-operations",
+    "Memory and bus",
+    "I/O and interrupts"
+  ],
+  "expanded_subtopics": {
+    "Computer organization": [
+      "Basic organization and design",
+      "Instruction codes overview"
+    ],
+    "Instruction cycle": [
+      "Timing and control",
+      "Fetch, decode, execute phases"
+    ],
+    "Registers": [
+      "General purpose and special purpose registers",
+      "Index registers"
+    ],
+    "Micro-operations": [
+      "Register transfer operations",
+      "Arithmetic and logic micro-operations",
+      "Shift micro-operations"
+    ],
+    "Memory and bus": [
+      "Memory functions",
+      "Bus and data transfer instructions",
+      "Cache memory basics"
+    ],
+    "I/O and interrupts": [
+      "Input/output organization overview",
+      "Interrupt types and handling",
+      "Memory reference instructions"
+    ]
+  }
+}

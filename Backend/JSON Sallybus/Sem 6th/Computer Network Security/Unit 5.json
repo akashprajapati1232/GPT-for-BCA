@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 5 - Network Management Security",
+  "main_topics": [
+    "SNMP architecture overview",
+    "SNMPv1 communication",
+    "SNMPv3 security"
+  ],
+  "expanded_subtopics": {
+    "SNMP architecture overview": [
+      "Manager, agent, and MIB",
+      "SNMP operations and messages"
+    ],
+    "SNMPv1 communication": [
+      "Community strings and access control",
+      "Limitations of SNMPv1 security"
+    ],
+    "SNMPv3 security": [
+      "Authentication and privacy features",
+      "User-based security model (USM)",
+      "View-based access control (VACM)"
+    ]
+  }
+}

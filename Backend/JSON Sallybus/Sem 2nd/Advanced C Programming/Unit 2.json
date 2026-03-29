@@ -1,0 +1,34 @@
+{
+  "unit": "Unit 2 - Pointers",
+  "main_topics": [
+    "Pointer fundamentals",
+    "Pointer arithmetic",
+    "Dynamic memory allocation",
+    "Arrays and pointers",
+    "Pointers and functions"
+  ],
+  "expanded_subtopics": {
+    "Pointer fundamentals": [
+      "Declaration and initialization",
+      "Address-of and dereference operators",
+      "Null pointer concept"
+    ],
+    "Pointer arithmetic": [
+      "Increment and decrement",
+      "Pointer difference",
+      "Pointer comparison"
+    ],
+    "Dynamic memory allocation": [
+      "malloc, calloc, realloc, free",
+      "Memory leaks and safe deallocation"
+    ],
+    "Arrays and pointers": [
+      "Array name as pointer",
+      "Pointer indexing and traversal"
+    ],
+    "Pointers and functions": [
+      "Passing pointers to functions",
+      "Pointer to pointer basics"
+    ]
+  }
+}

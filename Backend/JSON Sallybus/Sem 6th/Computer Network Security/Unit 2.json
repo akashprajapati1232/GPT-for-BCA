@@ -1,0 +1,36 @@
+{
+  "unit": "Unit 2 - Network Authentication Applications",
+  "main_topics": [
+    "Kerberos",
+    "X.509 certificates",
+    "Directory authentication service",
+    "Pretty Good Privacy (PGP)",
+    "S/MIME"
+  ],
+  "expanded_subtopics": {
+    "Kerberos": [
+      "Key distribution center (KDC)",
+      "Ticket-based authentication",
+      "Session keys and timestamps"
+    ],
+    "X.509 certificates": [
+      "Certificate structure and fields",
+      "Public key infrastructure (PKI)",
+      "Certificate authorities"
+    ],
+    "Directory authentication service": [
+      "Centralized authentication directory",
+      "Authentication and authorization roles"
+    ],
+    "Pretty Good Privacy (PGP)": [
+      "PGP services: encryption and signing",
+      "Web of trust model",
+      "Key management in PGP"
+    ],
+    "S/MIME": [
+      "Secure email standards",
+      "S/MIME certificates",
+      "Email encryption and signing"
+    ]
+  }
+}

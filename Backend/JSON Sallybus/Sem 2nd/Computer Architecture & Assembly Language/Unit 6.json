@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 6 - Assembly Language",
+  "main_topics": [
+    "Assembly language basics",
+    "Assembler and macros",
+    "Assembly-level programming"
+  ],
+  "expanded_subtopics": {
+    "Assembly language basics": [
+      "Assembly language structure",
+      "Common instruction types"
+    ],
+    "Assembler and macros": [
+      "Role of the assembler",
+      "Macro definitions and use"
+    ],
+    "Assembly-level programming": [
+      "Program loops",
+      "Arithmetic and logic subroutines",
+      "Input/output programming"
+    ]
+  }
+}

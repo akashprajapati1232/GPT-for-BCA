@@ -1,0 +1,65 @@
+{
+  "unit": "Unit 1 - PHP Fundamentals and Environment Setup",
+  "main_topics": [
+    "Introduction to PHP",
+    "PHP history and versions",
+    "PHP features and advantages",
+    "Software requirements and installation",
+    "Basic HTML and embedding PHP",
+    "PHP syntax and data types",
+    "Variables, constants, and scope",
+    "Arrays and strings",
+    "Operators and expressions",
+    "Running a PHP script"
+  ],
+  "expanded_subtopics": {
+    "Introduction to PHP": [
+      "Definition and role of PHP in web development",
+      "Server-side scripting overview"
+    ],
+    "PHP history and versions": [
+      "Origin and evolution of PHP",
+      "Major version changes and compatibility"
+    ],
+    "PHP features and advantages": [
+      "Open source and cross-platform support",
+      "Integration with web servers and databases",
+      "Ease of learning and community support"
+    ],
+    "Software requirements and installation": [
+      "Required web server and PHP runtime",
+      "Installation and configuration steps",
+      "Apache configuration for PHP on Windows"
+    ],
+    "Basic HTML and embedding PHP": [
+      "HTML structure and common tags",
+      "Embedding PHP code within HTML",
+      "PHP code blocks and output"
+    ],
+    "PHP syntax and data types": [
+      "Basic PHP syntax rules",
+      "Primitive data types: int, float, string, boolean",
+      "Type conversion basics"
+    ],
+    "Variables, constants, and scope": [
+      "Variable declaration and naming rules",
+      "Constants and define()",
+      "Scope types: local, global, and static"
+    ],
+    "Arrays and strings": [
+      "Creating and accessing arrays",
+      "Indexed and associative arrays",
+      "String creation and common operations"
+    ],
+    "Operators and expressions": [
+      "Arithmetic, relational, logical, and assignment operators",
+      "Operator precedence",
+      "Expression evaluation"
+    ],
+    "Running a PHP script": [
+      "Creating a PHP script file",
+      "Executing scripts through the web server",
+      "Basic debugging output"
+    ]
+  }
+}

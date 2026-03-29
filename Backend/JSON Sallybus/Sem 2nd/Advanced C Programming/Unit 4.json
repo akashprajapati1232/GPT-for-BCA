@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 4 - Structures and Unions",
+  "main_topics": [
+    "Structures",
+    "Structure operations",
+    "Nested structures",
+    "Unions",
+    "Structure vs union"
+  ],
+  "expanded_subtopics": {
+    "Structures": [
+      "Definition and declaration",
+      "Initialization and field access",
+      "Arrays of structures"
+    ],
+    "Structure operations": [
+      "Assignment and copying",
+      "Passing structures to functions"
+    ],
+    "Nested structures": [
+      "Structure within structure",
+      "Accessing nested members"
+    ],
+    "Unions": [
+      "Definition and declaration",
+      "Memory sharing concept"
+    ],
+    "Structure vs union": [
+      "Memory layout differences",
+      "Typical use cases"
+    ]
+  }
+}

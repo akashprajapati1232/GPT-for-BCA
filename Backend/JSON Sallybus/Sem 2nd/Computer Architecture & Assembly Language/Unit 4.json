@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 4 - Input/Output Organization",
+  "main_topics": [
+    "I/O devices",
+    "I/O interface",
+    "Data transfer modes",
+    "Interrupts",
+    "DMA",
+    "Serial communication"
+  ],
+  "expanded_subtopics": {
+    "I/O devices": [
+      "Peripheral device overview",
+      "Device characteristics"
+    ],
+    "I/O interface": [
+      "Interface modules",
+      "ALU and I/O coordination"
+    ],
+    "Data transfer modes": [
+      "Programmed I/O",
+      "Interrupt-driven I/O",
+      "Asynchronous transfer"
+    ],
+    "Interrupts": [
+      "Priority interrupts",
+      "Interrupt handling flow"
+    ],
+    "DMA": [
+      "Direct Memory Access concept",
+      "DMA controller role"
+    ],
+    "Serial communication": [
+      "Basic serial transmission concepts"
+    ]
+  }
+}

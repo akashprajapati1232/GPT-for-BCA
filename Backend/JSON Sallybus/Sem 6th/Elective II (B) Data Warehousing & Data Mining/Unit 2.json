@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 2 - Data Warehouse Implementation",
+  "main_topics": [
+    "Building a data warehousing team",
+    "Defining the project",
+    "Project management",
+    "Project estimation",
+    "Implementation planning"
+  ],
+  "expanded_subtopics": {
+    "Building a data warehousing team": [
+      "Roles and responsibilities",
+      "Cross-functional collaboration"
+    ],
+    "Defining the project": [
+      "Scope and objectives",
+      "Business requirements"
+    ],
+    "Project management": [
+      "Milestones and deliverables",
+      "Risk management"
+    ],
+    "Project estimation": [
+      "Effort and cost estimation",
+      "Resource planning"
+    ],
+    "Implementation planning": [
+      "Phased implementation",
+      "Testing and deployment"
+    ]
+  }
+}

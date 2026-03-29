@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 4 - Virtualization",
+  "main_topics": [
+    "Virtualization concepts",
+    "Hypervisors and types",
+    "Server, storage, and network virtualization",
+    "OS and application virtualization",
+    "Security issues",
+    "VMware and Hyper-V"
+  ],
+  "expanded_subtopics": {
+    "Virtualization concepts": [
+      "Full, para, and hardware-assisted virtualization",
+      "Benefits of virtualization"
+    ],
+    "Hypervisors and types": [
+      "Type 1 and Type 2 hypervisors",
+      "Hypervisor roles and features"
+    ],
+    "Server, storage, and network virtualization": [
+      "Server consolidation",
+      "Storage abstraction",
+      "Network virtualization basics"
+    ],
+    "OS and application virtualization": [
+      "OS-level virtualization",
+      "Application virtualization use cases"
+    ],
+    "Security issues": [
+      "VM escape risks",
+      "Isolation and hardening techniques"
+    ],
+    "VMware and Hyper-V": [
+      "VMware overview",
+      "Microsoft Hyper-V overview"
+    ]
+  }
+}

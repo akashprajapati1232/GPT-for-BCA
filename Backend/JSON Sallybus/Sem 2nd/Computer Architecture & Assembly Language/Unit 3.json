@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 3 - Computer Arithmetic",
+  "main_topics": [
+    "Binary arithmetic algorithms",
+    "Floating-point arithmetic",
+    "Decimal arithmetic"
+  ],
+  "expanded_subtopics": {
+    "Binary arithmetic algorithms": [
+      "Addition and subtraction",
+      "Multiplication",
+      "Division algorithms"
+    ],
+    "Floating-point arithmetic": [
+      "Representation format",
+      "Arithmetic operations and rounding"
+    ],
+    "Decimal arithmetic": [
+      "BCD representation",
+      "Decimal arithmetic operations"
+    ]
+  }
+}

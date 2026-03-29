@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 4 - Functions of Management (Part II)",
+  "main_topics": [
+    "Motivation",
+    "Leadership",
+    "Controlling",
+    "Total Quality Management",
+    "Coordination"
+  ],
+  "expanded_subtopics": {
+    "Motivation": [
+      "Importance of motivation",
+      "Motivation theories overview"
+    ],
+    "Leadership": [
+      "Leadership styles",
+      "Qualities and functions of leaders"
+    ],
+    "Controlling": [
+      "Need and nature of control",
+      "Control process and techniques"
+    ],
+    "Total Quality Management": [
+      "Continuous improvement concept",
+      "Customer-focused quality"
+    ],
+    "Coordination": [
+      "Need for coordination",
+      "Methods to achieve coordination"
+    ]
+  }
+}

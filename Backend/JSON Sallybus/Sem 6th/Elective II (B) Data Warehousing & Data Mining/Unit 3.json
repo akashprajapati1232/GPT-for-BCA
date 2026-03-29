@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 3 - Data Warehouse Techniques",
+  "main_topics": [
+    "Bitmapped indexes",
+    "Star queries",
+    "Read-only tablespaces",
+    "Parallel processing",
+    "Partition views",
+    "Optimizing extraction"
+  ],
+  "expanded_subtopics": {
+    "Bitmapped indexes": [
+      "Bitmap index structure",
+      "Use cases in data warehousing"
+    ],
+    "Star queries": [
+      "Star schema overview",
+      "Query optimization for star schemas"
+    ],
+    "Read-only tablespaces": [
+      "Benefits for performance",
+      "Maintenance considerations"
+    ],
+    "Parallel processing": [
+      "Parallel query execution",
+      "Hardware and software support"
+    ],
+    "Partition views": [
+      "Horizontal partitioning",
+      "Query pruning"
+    ],
+    "Optimizing extraction": [
+      "ETL performance tuning",
+      "Incremental extraction"
+    ]
+  }
+}

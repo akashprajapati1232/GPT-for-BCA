@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 1 - Data Warehousing Basics",
+  "main_topics": [
+    "Introduction to data warehouse",
+    "Competitive advantage",
+    "Data warehouse vs operational data",
+    "Considerations for building a data warehouse"
+  ],
+  "expanded_subtopics": {
+    "Introduction to data warehouse": [
+      "Definition and purpose",
+      "Characteristics of a data warehouse"
+    ],
+    "Competitive advantage": [
+      "Decision support and analytics",
+      "Business intelligence benefits"
+    ],
+    "Data warehouse vs operational data": [
+      "OLTP vs OLAP",
+      "Historical vs transactional data"
+    ],
+    "Considerations for building a data warehouse": [
+      "Data quality and integration",
+      "Scalability and performance"
+    ]
+  }
+}

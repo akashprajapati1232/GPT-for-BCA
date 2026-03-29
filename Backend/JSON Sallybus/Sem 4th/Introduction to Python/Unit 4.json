@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 4 - Lists and Object-Oriented Programming",
+  "main_topics": [
+    "Looping and counting",
+    "List operations",
+    "List deletion",
+    "Cloning and nested lists",
+    "Object-oriented programming",
+    "Standard libraries"
+  ],
+  "expanded_subtopics": {
+    "Looping and counting": [
+      "Counting patterns in loops",
+      "Accumulator variables"
+    ],
+    "List operations": [
+      "Accessing elements and list length",
+      "Membership tests",
+      "List operations with for loops"
+    ],
+    "List deletion": [
+      "del statement and remove()",
+      "Pop and clear operations"
+    ],
+    "Cloning and nested lists": [
+      "Shallow copy vs deep copy",
+      "Nested list traversal"
+    ],
+    "Object-oriented programming": [
+      "Classes, objects, and methods",
+      "Defining simple classes"
+    ],
+    "Standard libraries": [
+      "Using built-in modules",
+      "Import statements"
+    ]
+  }
+}

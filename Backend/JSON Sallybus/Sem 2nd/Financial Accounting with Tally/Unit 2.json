@@ -1,0 +1,41 @@
+{
+  "unit": "Unit 2 - Groups, Ledgers, Vouchers, and Costing",
+  "main_topics": [
+    "Groups and ledgers",
+    "Accounting vouchers",
+    "Invoice transactions",
+    "Cost centres and categories",
+    "Foreign currency and bank reconciliation",
+    "Interest calculations"
+  ],
+  "expanded_subtopics": {
+    "Groups and ledgers": [
+      "Create, alter, and display groups",
+      "Create, alter, and display ledgers"
+    ],
+    "Accounting vouchers": [
+      "Voucher types and transactions",
+      "Custom voucher types and classes"
+    ],
+    "Invoice transactions": [
+      "Item and account invoices",
+      "Excise and export invoices",
+      "Bill-wise details"
+    ],
+    "Cost centres and categories": [
+      "Cost centre and cost category creation",
+      "Allocation in vouchers",
+      "Cost centre class and class-based invoices"
+    ],
+    "Foreign currency and bank reconciliation": [
+      "Foreign currency setup",
+      "Voucher entry in foreign currency",
+      "Bank reconciliation process"
+    ],
+    "Interest calculations": [
+      "Simple and advanced parameters",
+      "Interest on outstanding balances and invoices",
+      "Adjustment using voucher class"
+    ]
+  }
+}

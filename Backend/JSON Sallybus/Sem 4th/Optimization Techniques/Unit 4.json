@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 4 - Inventory Theory",
+  "main_topics": [
+    "Inventory costs",
+    "Single-item deterministic models",
+    "Economic order quantity",
+    "Models with and without shortages",
+    "Finite and infinite production rate"
+  ],
+  "expanded_subtopics": {
+    "Inventory costs": [
+      "Ordering cost",
+      "Holding cost",
+      "Shortage cost"
+    ],
+    "Single-item deterministic models": [
+      "Basic EOQ model",
+      "Assumptions and limitations"
+    ],
+    "Economic order quantity": [
+      "EOQ formula and interpretation",
+      "Sensitivity to demand changes"
+    ],
+    "Models with and without shortages": [
+      "Backordering concept",
+      "Cost trade-offs with shortages"
+    ],
+    "Finite and infinite production rate": [
+      "Production rate impact on inventory",
+      "Economic production quantity model"
+    ]
+  }
+}

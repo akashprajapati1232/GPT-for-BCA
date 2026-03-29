@@ -1,0 +1,40 @@
+{
+  "unit": "Unit 5 - Code Reuse, Files, Directories, and OOP",
+  "main_topics": [
+    "Code reuse with include and require",
+    "File permissions",
+    "File handling",
+    "Directory handling",
+    "File uploads",
+    "Introduction to PHP OOP"
+  ],
+  "expanded_subtopics": {
+    "Code reuse with include and require": [
+      "include(), require(), and include_path",
+      "Error handling differences"
+    ],
+    "File permissions": [
+      "Understanding file permissions",
+      "Security considerations"
+    ],
+    "File handling": [
+      "Opening, reading, writing, and closing files",
+      "File system functions",
+      "File input and output workflow"
+    ],
+    "Directory handling": [
+      "Creating and deleting directories",
+      "Changing directories",
+      "Directory listing basics"
+    ],
+    "File uploads": [
+      "Handling uploaded files",
+      "Validating file types and sizes"
+    ],
+    "Introduction to PHP OOP": [
+      "Classes and objects",
+      "Methods and properties",
+      "Basic OOP use cases"
+    ]
+  }
+}

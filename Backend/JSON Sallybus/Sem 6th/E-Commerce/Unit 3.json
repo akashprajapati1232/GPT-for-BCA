@@ -1,0 +1,44 @@
+{
+  "unit": "Unit 3 - Intranets, Extranets, and Electronic Payments",
+  "main_topics": [
+    "Internet architecture",
+    "Intranets and extranets",
+    "Extranet products and services",
+    "Business models for extranets",
+    "Electronic payment systems",
+    "Payment security schemes",
+    "Cards, EFT, e-cash, and e-checks"
+  ],
+  "expanded_subtopics": {
+    "Internet architecture": [
+      "Basic Internet structure",
+      "Client-server model"
+    ],
+    "Intranets and extranets": [
+      "Intranet applications and deployment",
+      "Extranet structure and use cases"
+    ],
+    "Extranet products and services": [
+      "Extranet platforms",
+      "Service integration"
+    ],
+    "Business models for extranets": [
+      "Supplier and partner access models",
+      "Value creation through extranets"
+    ],
+    "Electronic payment systems": [
+      "Payment protocols overview",
+      "SET context and limitations"
+    ],
+    "Payment security schemes": [
+      "Encryption and authentication",
+      "Fraud prevention controls"
+    ],
+    "Cards, EFT, e-cash, and e-checks": [
+      "Credit and debit card systems",
+      "Electronic fund transfer",
+      "Stored value cards and e-cash",
+      "Electronic check systems"
+    ]
+  }
+}

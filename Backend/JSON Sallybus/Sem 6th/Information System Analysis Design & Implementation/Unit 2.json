@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 2 - Information Requirement Analysis",
+  "main_topics": [
+    "Process modeling",
+    "Physical and logical DFDs",
+    "Data modeling",
+    "Logical ER diagrams"
+  ],
+  "expanded_subtopics": {
+    "Process modeling": [
+      "Modeling business processes",
+      "Context and levelled DFDs"
+    ],
+    "Physical and logical DFDs": [
+      "Differences between physical and logical views",
+      "Data flow balancing"
+    ],
+    "Data modeling": [
+      "Identifying entities and relationships",
+      "Attribute selection"
+    ],
+    "Logical ER diagrams": [
+      "Entity-relationship notation",
+      "Cardinality and participation"
+    ]
+  }
+}

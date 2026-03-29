@@ -1,0 +1,34 @@
+{
+  "unit": "Unit 5 - Software Maintenance",
+  "main_topics": [
+    "Maintenance in software evaluation",
+    "Reasons for maintenance",
+    "Types of maintenance",
+    "Maintainability design",
+    "Maintenance techniques"
+  ],
+  "expanded_subtopics": {
+    "Maintenance in software evaluation": [
+      "Role after deployment",
+      "Cost of maintenance"
+    ],
+    "Reasons for maintenance": [
+      "Bug fixes",
+      "Environment changes",
+      "User requirement changes"
+    ],
+    "Types of maintenance": [
+      "Preventive maintenance",
+      "Adaptive maintenance",
+      "Corrective maintenance"
+    ],
+    "Maintainability design": [
+      "Designing for easy updates",
+      "Documentation and modularity"
+    ],
+    "Maintenance techniques": [
+      "Regression testing",
+      "Refactoring and reengineering"
+    ]
+  }
+}

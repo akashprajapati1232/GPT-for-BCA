@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 6 - Managerial Issues in Software Projects",
+  "main_topics": [
+    "Software markets overview",
+    "Project planning",
+    "Size and cost estimation",
+    "Project scheduling",
+    "Quality and productivity measurement",
+    "ISO standards",
+    "Capability Maturity Model (CMM)"
+  ],
+  "expanded_subtopics": {
+    "Software markets overview": [
+      "Market segments and trends",
+      "Product vs service orientation"
+    ],
+    "Project planning": [
+      "Scope definition",
+      "Resource allocation"
+    ],
+    "Size and cost estimation": [
+      "Estimation models and metrics",
+      "Effort and cost drivers"
+    ],
+    "Project scheduling": [
+      "Gantt and PERT charts",
+      "Critical path method"
+    ],
+    "Quality and productivity measurement": [
+      "Quality metrics",
+      "Productivity metrics"
+    ],
+    "ISO standards": [
+      "ISO quality frameworks",
+      "Compliance requirements"
+    ],
+    "Capability Maturity Model (CMM)": [
+      "Maturity levels",
+      "Process improvement focus"
+    ]
+  }
+}

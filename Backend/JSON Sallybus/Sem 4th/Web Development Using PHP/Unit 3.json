@@ -1,0 +1,43 @@
+{
+  "unit": "Unit 3 - Forms, Validation, and Sessions",
+  "main_topics": [
+    "Web forms",
+    "Form processing",
+    "Passing data between pages",
+    "GET and POST methods",
+    "Form validation",
+    "Error and exception handling",
+    "Cookies and sessions"
+  ],
+  "expanded_subtopics": {
+    "Web forms": [
+      "Form elements and attributes",
+      "Form submission workflow"
+    ],
+    "Form processing": [
+      "Capturing form data",
+      "Handling multi-value fields"
+    ],
+    "Passing data between pages": [
+      "Query strings and hidden fields",
+      "Session-based transfer"
+    ],
+    "GET and POST methods": [
+      "PHP $_GET and $_POST arrays",
+      "Differences between GET and POST"
+    ],
+    "Form validation": [
+      "Client-side vs server-side validation",
+      "Validating required fields and formats"
+    ],
+    "Error and exception handling": [
+      "Common PHP errors",
+      "Basic exception handling flow"
+    ],
+    "Cookies and sessions": [
+      "Creating and reading cookies",
+      "Session creation and management",
+      "Session lifetime and security basics"
+    ]
+  }
+}

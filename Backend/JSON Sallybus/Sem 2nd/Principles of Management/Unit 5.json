@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 5 - Management of Change",
+  "main_topics": [
+    "Need for change",
+    "Forces for change",
+    "Models of change",
+    "Change techniques",
+    "Stress management"
+  ],
+  "expanded_subtopics": {
+    "Need for change": [
+      "Organizational growth and competition",
+      "Technological and market changes"
+    ],
+    "Forces for change": [
+      "Internal forces",
+      "External forces"
+    ],
+    "Models of change": [
+      "Lewin's three-step model",
+      "Kotter's change model (overview)"
+    ],
+    "Change techniques": [
+      "Structural change",
+      "Technological change",
+      "People-centered change"
+    ],
+    "Stress management": [
+      "Sources of stress",
+      "Coping strategies"
+    ]
+  }
+}

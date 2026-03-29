@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 2 - E-R Modeling",
+  "main_topics": [
+    "Entity and entity set",
+    "Attributes and keys",
+    "Relationships",
+    "Structural constraints",
+    "Weak entities",
+    "Enhanced E-R modeling"
+  ],
+  "expanded_subtopics": {
+    "Entity and entity set": [
+      "Entity types and instances",
+      "Entity set definition"
+    ],
+    "Attributes and keys": [
+      "Simple and composite attributes",
+      "Primary and candidate keys"
+    ],
+    "Relationships": [
+      "Relationship types and roles",
+      "Cardinality and participation constraints"
+    ],
+    "Structural constraints": [
+      "Degree of relationship",
+      "Constraints in E-R diagrams"
+    ],
+    "Weak entities": [
+      "Identification dependency",
+      "Partial keys"
+    ],
+    "Enhanced E-R modeling": [
+      "Subclasses and superclasses",
+      "Inheritance, specialization, and generalization",
+      "Object modeling overview"
+    ]
+  }
+}

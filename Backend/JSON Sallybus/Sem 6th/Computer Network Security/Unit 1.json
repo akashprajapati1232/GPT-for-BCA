@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 1 - Security Fundamentals and Cryptography",
+  "main_topics": [
+    "Security attacks, services, and mechanisms",
+    "Internetwork security model",
+    "Cryptography fundamentals",
+    "Public key encryption",
+    "Digital signatures and authentication",
+    "Cryptanalysis basics"
+  ],
+  "expanded_subtopics": {
+    "Security attacks, services, and mechanisms": [
+      "Types of attacks: passive and active",
+      "Security services: confidentiality, integrity, authentication, non-repudiation",
+      "Security mechanisms: encryption, access control, authentication"
+    ],
+    "Internetwork security model": [
+      "Security at different network layers",
+      "Threats in internetworked systems",
+      "Defense-in-depth approach"
+    ],
+    "Cryptography fundamentals": [
+      "Plaintext and ciphertext concepts",
+      "Encryption and decryption process",
+      "Keys and key management basics"
+    ],
+    "Public key encryption": [
+      "Asymmetric key concept",
+      "Public and private key usage",
+      "Key distribution challenges"
+    ],
+    "Digital signatures and authentication": [
+      "Digital signature creation and verification",
+      "Message authentication and integrity",
+      "Authentication protocols overview"
+    ],
+    "Cryptanalysis basics": [
+      "Types of cryptanalytic attacks",
+      "Brute-force and statistical analysis"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 3 - Strings",
+  "main_topics": [
+    "String declaration and initialization",
+    "Standard string functions",
+    "Manual string operations"
+  ],
+  "expanded_subtopics": {
+    "String declaration and initialization": [
+      "Character arrays and string literals",
+      "Reading and writing strings",
+      "Null terminator concept"
+    ],
+    "Standard string functions": [
+      "strlen, strcpy, strcat, strcmp",
+      "Common pitfalls with buffer sizes"
+    ],
+    "Manual string operations": [
+      "Implementing length, copy, and compare",
+      "Concatenation without library functions"
+    ]
+  }
+}

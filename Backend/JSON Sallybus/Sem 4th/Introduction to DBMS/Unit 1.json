@@ -1,0 +1,28 @@
+{
+  "unit": "Unit 1 - Introduction to DBMS",
+  "main_topics": [
+    "Database approach characteristics",
+    "Data models",
+    "DBMS architecture",
+    "Data independence"
+  ],
+  "expanded_subtopics": {
+    "Database approach characteristics": [
+      "Centralized data management",
+      "Reduced data redundancy",
+      "Data integrity and security"
+    ],
+    "Data models": [
+      "Hierarchical, network, and relational models",
+      "Conceptual, logical, and physical models"
+    ],
+    "DBMS architecture": [
+      "Three-level architecture",
+      "Components of a DBMS"
+    ],
+    "Data independence": [
+      "Logical data independence",
+      "Physical data independence"
+    ]
+  }
+}

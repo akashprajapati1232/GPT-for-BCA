@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 5 - EER to Relational Mapping",
+  "main_topics": [
+    "EER concepts",
+    "ER to relational mapping",
+    "Database design using EER"
+  ],
+  "expanded_subtopics": {
+    "EER concepts": [
+      "Enhanced entity and relationship concepts",
+      "Specialization and generalization"
+    ],
+    "ER to relational mapping": [
+      "Mapping strong entities",
+      "Mapping weak entities",
+      "Mapping relationships and attributes"
+    ],
+    "Database design using EER": [
+      "Design steps",
+      "Relational schema creation"
+    ]
+  }
+}

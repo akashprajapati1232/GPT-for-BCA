@@ -1,0 +1,42 @@
+{
+  "unit": "Unit 4 - Public Policy and Legal Issues",
+  "main_topics": [
+    "Legal incidents in e-commerce",
+    "Ethical and public policy issues",
+    "Privacy protection",
+    "Intellectual property protection",
+    "Free speech and censorship",
+    "Taxation and encryption policies",
+    "Consumer and seller protection"
+  ],
+  "expanded_subtopics": {
+    "Legal incidents in e-commerce": [
+      "Common legal challenges",
+      "Liability in online transactions"
+    ],
+    "Ethical and public policy issues": [
+      "Ethical concerns in digital commerce",
+      "Policy implications"
+    ],
+    "Privacy protection": [
+      "Data collection and consent",
+      "Privacy laws and compliance"
+    ],
+    "Intellectual property protection": [
+      "Copyrights, patents, and trademarks",
+      "Digital rights management"
+    ],
+    "Free speech and censorship": [
+      "Content regulation issues",
+      "Balancing rights and safety"
+    ],
+    "Taxation and encryption policies": [
+      "E-commerce taxation issues",
+      "Regulation of encryption"
+    ],
+    "Consumer and seller protection": [
+      "Dispute resolution mechanisms",
+      "Trust and reputation systems"
+    ]
+  }
+}

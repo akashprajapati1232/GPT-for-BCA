@@ -1,0 +1,39 @@
+{
+  "unit": "Unit 4 - Data Mining and OLAP",
+  "main_topics": [
+    "Introduction to data mining",
+    "Benefits and decision support",
+    "Data mining techniques",
+    "Data marts",
+    "OLAP concepts",
+    "MOLAP and ROLAP"
+  ],
+  "expanded_subtopics": {
+    "Introduction to data mining": [
+      "Definition and objectives",
+      "Data mining process"
+    ],
+    "Benefits and decision support": [
+      "Pattern discovery for decisions",
+      "Predictive analytics overview"
+    ],
+    "Data mining techniques": [
+      "Classification and clustering",
+      "Association rules",
+      "Regression and prediction"
+    ],
+    "Data marts": [
+      "Definition and scope",
+      "Data mart tools"
+    ],
+    "OLAP concepts": [
+      "Multidimensional analysis",
+      "OLAP operations: roll-up, drill-down, slice, dice"
+    ],
+    "MOLAP and ROLAP": [
+      "MOLAP architecture",
+      "ROLAP architecture",
+      "Comparison of MOLAP vs ROLAP"
+    ]
+  }
+}

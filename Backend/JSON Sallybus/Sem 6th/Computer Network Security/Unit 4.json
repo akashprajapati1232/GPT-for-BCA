@@ -1,0 +1,28 @@
+{
+  "unit": "Unit 4 - Web Security",
+  "main_topics": [
+    "Web security requirements",
+    "Secure Socket Layer (SSL)",
+    "Transport Layer Security (TLS)",
+    "Secure Electronic Transactions (SET)"
+  ],
+  "expanded_subtopics": {
+    "Web security requirements": [
+      "Confidentiality, integrity, and authentication",
+      "Protection against common web threats"
+    ],
+    "Secure Socket Layer (SSL)": [
+      "SSL handshake and session setup",
+      "Certificate-based authentication"
+    ],
+    "Transport Layer Security (TLS)": [
+      "TLS improvements over SSL",
+      "Cipher suites and negotiation"
+    ],
+    "Secure Electronic Transactions (SET)": [
+      "SET goals and architecture",
+      "Roles: cardholder, merchant, issuer",
+      "Transaction flow overview"
+    ]
+  }
+}

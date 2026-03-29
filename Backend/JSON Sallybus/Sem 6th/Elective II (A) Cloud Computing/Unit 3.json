@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 3 - Technology Drivers and Cloud Platforms",
+  "main_topics": [
+    "SOA and cloud",
+    "Multi-core and virtualization scalability",
+    "Storage and networking technologies",
+    "Web 2.0 and Web 3.0",
+    "Agile models for cloud",
+    "Cloud development platforms"
+  ],
+  "expanded_subtopics": {
+    "SOA and cloud": [
+      "Service-oriented architecture basics",
+      "SOA benefits and service composition"
+    ],
+    "Multi-core and virtualization scalability": [
+      "Multi-core processors",
+      "VM scalability considerations"
+    ],
+    "Storage and networking technologies": [
+      "Cloud storage requirements",
+      "Networking technologies for cloud"
+    ],
+    "Web 2.0 and Web 3.0": [
+      "Web 2.0 characteristics and applications",
+      "Web 3.0 components and semantic web",
+      "Convergence of cloud and Web 4.0 concepts"
+    ],
+    "Agile models for cloud": [
+      "Agile SDLC for cloud computing",
+      "Advantages of agile methods"
+    ],
+    "Cloud development platforms": [
+      "Windows Azure, Google App Engine, Force.com",
+      "IBM cloud APIs overview"
+    ]
+  }
+}

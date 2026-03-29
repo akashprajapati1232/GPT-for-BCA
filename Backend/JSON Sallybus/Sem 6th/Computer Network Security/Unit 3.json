@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 3 - IP Security Architecture",
+  "main_topics": [
+    "IPsec overview",
+    "Authentication Header (AH)",
+    "Encapsulating Security Payload (ESP)",
+    "Security associations",
+    "Key management"
+  ],
+  "expanded_subtopics": {
+    "IPsec overview": [
+      "IPsec goals and services",
+      "Transport mode and tunnel mode",
+      "IPsec policy and implementation context"
+    ],
+    "Authentication Header (AH)": [
+      "Integrity and authentication services",
+      "AH packet format and fields"
+    ],
+    "Encapsulating Security Payload (ESP)": [
+      "Confidentiality and integrity services",
+      "ESP packet format and encryption payload"
+    ],
+    "Security associations": [
+      "SA definition and parameters",
+      "Security policy database and SAD"
+    ],
+    "Key management": [
+      "Manual vs automated keying",
+      "IKE basics and key exchange"
+    ]
+  }
+}

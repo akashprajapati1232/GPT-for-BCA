@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 6 - File Handling",
+  "main_topics": [
+    "File concepts",
+    "File modes",
+    "Text file functions",
+    "File positioning",
+    "Command-line arguments"
+  ],
+  "expanded_subtopics": {
+    "File concepts": [
+      "File pointer and file stream",
+      "Opening and closing files"
+    ],
+    "File modes": [
+      "Read, write, append modes",
+      "Binary vs text mode overview"
+    ],
+    "Text file functions": [
+      "fopen, fclose, feof",
+      "fgetc, fputc, fscanf, fprintf"
+    ],
+    "File positioning": [
+      "fseek and rewind",
+      "Random access basics"
+    ],
+    "Command-line arguments": [
+      "argc and argv usage",
+      "Using arguments for file names"
+    ]
+  }
+}

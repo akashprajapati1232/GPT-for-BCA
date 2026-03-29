@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 4 - Software Implementation",
+  "main_topics": [
+    "Design-to-implementation relationship",
+    "Implementation issues",
+    "Programming support environment",
+    "Coding procedural design",
+    "Coding style and review"
+  ],
+  "expanded_subtopics": {
+    "Design-to-implementation relationship": [
+      "Mapping design to code",
+      "Handling design changes"
+    ],
+    "Implementation issues": [
+      "Complexity and integration issues",
+      "Testing during implementation"
+    ],
+    "Programming support environment": [
+      "Tools for coding and build",
+      "Version control basics"
+    ],
+    "Coding procedural design": [
+      "Implementation of modules",
+      "Procedure interfaces"
+    ],
+    "Coding style and review": [
+      "Readable and maintainable code",
+      "Code review for correctness"
+    ]
+  }
+}

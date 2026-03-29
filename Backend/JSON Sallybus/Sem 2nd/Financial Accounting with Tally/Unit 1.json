@@ -1,0 +1,35 @@
+{
+  "unit": "Unit 1 - Accounting Basics and Tally Setup",
+  "main_topics": [
+    "Basic accounting concepts",
+    "Financial statements",
+    "Inventory basics",
+    "Tally configuration",
+    "Company data setup"
+  ],
+  "expanded_subtopics": {
+    "Basic accounting concepts": [
+      "Accounting principles and conventions",
+      "Cost centre concept",
+      "Double-entry system overview"
+    ],
+    "Financial statements": [
+      "Balance Sheet and Profit & Loss",
+      "Basic financial statement analysis"
+    ],
+    "Inventory basics": [
+      "Inventory definition",
+      "Valuation overview"
+    ],
+    "Tally configuration": [
+      "INI setup and data directories",
+      "Single and multiple user configuration",
+      "Screen components and navigation"
+    ],
+    "Company data setup": [
+      "Create, alter, select, load, and close company",
+      "Chart of accounts",
+      "Company features and configuration"
+    ]
+  }
+}

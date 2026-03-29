@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 3 - Software Design",
+  "main_topics": [
+    "Refining software specifications",
+    "Design concepts",
+    "Data, architectural, and procedural design",
+    "Blueprint methodology",
+    "Object-oriented design",
+    "Design documentation"
+  ],
+  "expanded_subtopics": {
+    "Refining software specifications": [
+      "Translating requirements into design",
+      "Traceability"
+    ],
+    "Design concepts": [
+      "Modularity and abstraction",
+      "Cohesion and coupling"
+    ],
+    "Data, architectural, and procedural design": [
+      "Data design fundamentals",
+      "Architectural patterns overview",
+      "Procedural design steps"
+    ],
+    "Blueprint methodology": [
+      "Using design blueprints",
+      "Consistency with requirements"
+    ],
+    "Object-oriented design": [
+      "Classes, objects, and relationships",
+      "Encapsulation and inheritance"
+    ],
+    "Design documentation": [
+      "Design document structure",
+      "Quality and conformance review"
+    ]
+  }
+}

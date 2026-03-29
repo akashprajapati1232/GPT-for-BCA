@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 4 - Relational Model and SQL",
+  "main_topics": [
+    "Relational model concepts",
+    "Relational constraints",
+    "Relational algebra",
+    "SQL queries",
+    "SQL programming"
+  ],
+  "expanded_subtopics": {
+    "Relational model concepts": [
+      "Relations, tuples, and attributes",
+      "Schema and instance"
+    ],
+    "Relational constraints": [
+      "Domain, key, and referential integrity",
+      "Entity integrity"
+    ],
+    "Relational algebra": [
+      "Selection, projection, join",
+      "Set operations in relational algebra"
+    ],
+    "SQL queries": [
+      "SELECT-FROM-WHERE basics",
+      "Joins and aggregation"
+    ],
+    "SQL programming": [
+      "DDL and DML commands",
+      "Basic query optimization ideas"
+    ]
+  }
+}

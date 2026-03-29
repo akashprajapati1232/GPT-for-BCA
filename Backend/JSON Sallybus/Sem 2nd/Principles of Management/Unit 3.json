@@ -1,0 +1,44 @@
+{
+  "unit": "Unit 3 - Functions of Management (Part I)",
+  "main_topics": [
+    "Planning",
+    "Forecasting",
+    "Decision making",
+    "Organizing",
+    "Delegation and decentralization",
+    "Staffing and direction",
+    "Communication"
+  ],
+  "expanded_subtopics": {
+    "Planning": [
+      "Need and importance",
+      "Types of planning",
+      "Planning process and barriers"
+    ],
+    "Forecasting": [
+      "Need for forecasting",
+      "Qualitative and quantitative techniques"
+    ],
+    "Decision making": [
+      "Types of decisions",
+      "Rational decision-making process"
+    ],
+    "Organizing": [
+      "Elements of organizing",
+      "Types of organizational structures"
+    ],
+    "Delegation and decentralization": [
+      "Need for delegation",
+      "Difficulties in delegation",
+      "Centralization vs decentralization"
+    ],
+    "Staffing and direction": [
+      "Recruitment and selection overview",
+      "Principles of direction"
+    ],
+    "Communication": [
+      "Types of communication",
+      "Importance of communication in management"
+    ]
+  }
+}

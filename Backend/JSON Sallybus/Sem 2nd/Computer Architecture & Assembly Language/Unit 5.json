@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 5 - Microprocessor Evaluation",
+  "main_topics": [
+    "Microprocessor evolution",
+    "Architecture overview",
+    "Memory and I/O interface"
+  ],
+  "expanded_subtopics": {
+    "Microprocessor evolution": [
+      "Intel 8085 overview",
+      "Progression to Pentium series"
+    ],
+    "Architecture overview": [
+      "Internal architecture components",
+      "External architecture components"
+    ],
+    "Memory and I/O interface": [
+      "Memory interface signals",
+      "I/O interface basics"
+    ]
+  }
+}

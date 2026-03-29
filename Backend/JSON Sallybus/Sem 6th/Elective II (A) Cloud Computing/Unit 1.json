@@ -1,0 +1,47 @@
+{
+  "unit": "Unit 1 - Computing Paradigms and Cloud Fundamentals",
+  "main_topics": [
+    "Computing paradigms",
+    "Cloud computing motivation and definition",
+    "Cloud principles and characteristics",
+    "Deployment models",
+    "Service models",
+    "Cloud ecosystem",
+    "Cloud architecture and layers",
+    "Cloud networking"
+  ],
+  "expanded_subtopics": {
+    "Computing paradigms": [
+      "High-performance, parallel, distributed, cluster, and grid computing",
+      "Cloud, mobile, quantum, optical, nano, and network computing"
+    ],
+    "Cloud computing motivation and definition": [
+      "Need for cloud computing",
+      "Definition and key benefits"
+    ],
+    "Cloud principles and characteristics": [
+      "Five essential characteristics",
+      "Resource pooling and elasticity"
+    ],
+    "Deployment models": [
+      "Public, private, community, and hybrid clouds",
+      "Use cases for each model"
+    ],
+    "Service models": [
+      "IaaS, PaaS, and SaaS overview",
+      "Responsibilities of providers vs consumers"
+    ],
+    "Cloud ecosystem": [
+      "Stakeholders and roles",
+      "Service requirements and SLAs"
+    ],
+    "Cloud architecture and layers": [
+      "User/client, network, management, and hardware layers",
+      "Virtualization role in architecture"
+    ],
+    "Cloud networking": [
+      "Public and private cloud access networking",
+      "Connectivity considerations"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unit": "Unit 3 - Budgets, Job Costing, and Reports",
+  "main_topics": [
+    "Budgets and scenarios",
+    "Job costing",
+    "Stock transfer and consumption journals",
+    "Accounting and inventory reports"
+  ],
+  "expanded_subtopics": {
+    "Budgets and scenarios": [
+      "Create, alter, and delete budgets",
+      "Credit limits and periods",
+      "Budget variance analysis",
+      "Scenario management"
+    ],
+    "Job costing": [
+      "Enable job costing",
+      "Master creation and configuration",
+      "Job work analysis and material consumption"
+    ],
+    "Stock transfer and consumption journals": [
+      "Transfer journal for stock between godowns",
+      "Consumption journal transactions",
+      "Payment voucher linkage"
+    ],
+    "Accounting and inventory reports": [
+      "Balance Sheet, Profit & Loss, Trial Balance",
+      "Ratio analysis",
+      "Cash/Bank book and ledgers",
+      "Sales, purchase, and journal registers",
+      "Outstanding receivables and payables",
+      "Optional, post-dated, and reversing journals"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unit": "Unit 2 - CPU Organization and Arithmetic Algorithms",
+  "main_topics": [
+    "CPU organization",
+    "Instruction formats and addressing modes",
+    "Pipeline concepts",
+    "RISC and CISC",
+    "Arithmetic algorithms"
+  ],
+  "expanded_subtopics": {
+    "CPU organization": [
+      "General register organization",
+      "Stack organization",
+      "Program control basics"
+    ],
+    "Instruction formats and addressing modes": [
+      "Common instruction formats",
+      "Addressing mode types"
+    ],
+    "Pipeline concepts": [
+      "Instruction pipeline overview",
+      "Vector and array processing basics"
+    ],
+    "RISC and CISC": [
+      "Key differences",
+      "Typical use cases"
+    ],
+    "Arithmetic algorithms": [
+      "Shift-and-add multiplication",
+      "Booth's algorithm",
+      "Integer division algorithm",
+      "Floating-point representation overview"
+    ]
+  }
+}

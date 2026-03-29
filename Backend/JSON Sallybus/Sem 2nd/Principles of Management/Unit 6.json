@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 6 - Strategic Management",
+  "main_topics": [
+    "Strategic management concept",
+    "Decision levels",
+    "Strategy formulation",
+    "Role of strategists",
+    "Strategic management in India"
+  ],
+  "expanded_subtopics": {
+    "Strategic management concept": [
+      "Definition and scope",
+      "Benefits of strategic management"
+    ],
+    "Decision levels": [
+      "Corporate, business, and functional levels",
+      "Classes of decisions"
+    ],
+    "Strategy formulation": [
+      "Environmental analysis",
+      "Setting objectives",
+      "Strategy selection"
+    ],
+    "Role of strategists": [
+      "Top management role",
+      "Middle management role"
+    ],
+    "Strategic management in India": [
+      "Contextual factors and challenges",
+      "Examples of strategic initiatives"
+    ]
+  }
+}

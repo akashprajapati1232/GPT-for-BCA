@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 3 - Replacement Theory",
+  "main_topics": [
+    "Replacement of deteriorating items",
+    "Replacement of failing items",
+    "Group replacement",
+    "Individual replacement"
+  ],
+  "expanded_subtopics": {
+    "Replacement of deteriorating items": [
+      "Economic life and replacement timing",
+      "Cost trade-offs"
+    ],
+    "Replacement of failing items": [
+      "Failure-based replacement strategy",
+      "Expected cost calculation"
+    ],
+    "Group replacement": [
+      "Bulk replacement policies",
+      "Cost comparison with individual replacement"
+    ],
+    "Individual replacement": [
+      "Replace-on-failure policy",
+      "Suitable conditions and limitations"
+    ]
+  }
+}

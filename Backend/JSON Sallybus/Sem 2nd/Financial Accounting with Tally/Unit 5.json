@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 5 - Printing, Security, and Data Management",
+  "main_topics": [
+    "Cheque and report printing",
+    "Group company and security",
+    "Tally audit",
+    "Backup and restore",
+    "Data import/export and connectivity"
+  ],
+  "expanded_subtopics": {
+    "Cheque and report printing": [
+      "Common printing options",
+      "Report-specific printing formats",
+      "Multi-account printing"
+    ],
+    "Group company and security": [
+      "Creating a group company",
+      "Tally Vault usage",
+      "Security control and access levels"
+    ],
+    "Tally audit": [
+      "Purpose of audit",
+      "Audit features in Tally"
+    ],
+    "Backup and restore": [
+      "Backup procedures",
+      "Restore procedures",
+      "Splitting company data"
+    ],
+    "Data import/export and connectivity": [
+      "Export and import of data",
+      "ODBC compliance",
+      "E-mail and internet publishing",
+      "Online help and rewrite data"
+    ]
+  }
+}

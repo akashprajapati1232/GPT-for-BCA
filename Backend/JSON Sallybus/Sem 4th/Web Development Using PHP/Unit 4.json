@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 4 - PHP and MySQL Database Integration",
+  "main_topics": [
+    "PHP supported databases",
+    "MySQL installation and configuration",
+    "Database connection",
+    "Table creation and alteration",
+    "CRUD operations",
+    "Query execution and results"
+  ],
+  "expanded_subtopics": {
+    "PHP supported databases": [
+      "Common database options for PHP",
+      "Choosing MySQL for web applications"
+    ],
+    "MySQL installation and configuration": [
+      "Installing MySQL on Windows",
+      "Verifying configuration"
+    ],
+    "Database connection": [
+      "Connecting to the server",
+      "Selecting a database"
+    ],
+    "Table creation and alteration": [
+      "Creating tables with SQL",
+      "Altering table structure"
+    ],
+    "CRUD operations": [
+      "Insert, update, and delete records",
+      "Basic query building"
+    ],
+    "Query execution and results": [
+      "Executing SQL queries",
+      "Processing result sets"
+    ]
+  }
+}
