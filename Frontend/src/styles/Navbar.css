@@ -6,15 +6,23 @@
   right: 0;
   z-index: 1000;
   height: var(--navbar-height);
-  transition: background var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  /* Always keep a border-bottom to prevent flickering/white-line on scroll */
+  border-bottom: 1px solid transparent;
+  /* Force GPU compositing layer to eliminate sub-pixel rendering seams */
+  transform: translateZ(0);
+  will-change: transform;
+  transition: background var(--transition-base),
+              box-shadow var(--transition-base),
+              border-color var(--transition-base),
+              backdrop-filter var(--transition-base);
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 26, 0.88);
+  background: rgba(10, 10, 26, 0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 /* ===== INNER LAYOUT ===== */

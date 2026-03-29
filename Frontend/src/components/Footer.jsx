@@ -7,34 +7,114 @@ export default function Footer() {
 
   return (
     <footer className="footer">
+      {/* Gradient top accent line */}
+      <div className="footer-accent-line" />
+
       <div className="container">
-        <div className="footer-main">
-          {/* Brand */}
-          <div className="footer-brand">
+        <div className="footer-grid">
+
+          {/* ── Brand Column ── */}
+          <div className="footer-brand-col">
             <Link to="/" className="footer-logo">
               <img src={faviconImg} alt="GPT for BCA Logo" className="footer-logo-img" />
               <span className="footer-logo-text">GPT for BCA</span>
             </Link>
             <p className="footer-tagline">
-              An AI-powered platform helping BCA students master their curriculum with smart, structured learning resources.
+              An AI-powered platform helping BCA students master their curriculum with smart,
+              structured learning resources — built by students, for students.
             </p>
+            {/* Social Links */}
+            <div className="footer-socials">
+              <a
+                href="https://github.com/akashprajapati1232"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-btn"
+                title="GitHub"
+              >
+                <i className="fa-brands fa-github" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/akash-prajapati1232/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-btn"
+                title="LinkedIn"
+              >
+                <i className="fa-brands fa-linkedin-in" />
+              </a>
+              <a
+                href="https://www.instagram.com/akash.prajapati1232/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-btn"
+                title="Instagram"
+              >
+                <i className="fa-brands fa-instagram" />
+              </a>
+              <a
+                href="https://akashprajapati.rf.gd/?i=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-btn"
+                title="Portfolio"
+              >
+                <i className="fa-solid fa-globe" />
+              </a>
+            </div>
           </div>
 
-          {/* Quick Navigation */}
-          <nav className="footer-nav" aria-label="Footer navigation">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/syllabus">Syllabus</Link>
-            <Link to="/contact">Contact</Link>
-          </nav>
+          {/* ── Quick Links ── */}
+          <div className="footer-links-col">
+            <h4 className="footer-col-title">Quick Links</h4>
+            <ul className="footer-link-list">
+              <li><Link to="/">🏠 Home</Link></li>
+              <li><Link to="/about">✨ About Us</Link></li>
+              <li><Link to="/syllabus">📚 Syllabus</Link></li>
+              <li><Link to="/contact">📬 Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* ── Resources ── */}
+          <div className="footer-links-col">
+            <h4 className="footer-col-title">Resources</h4>
+            <ul className="footer-link-list">
+              <li><Link to="/syllabus">Semester 1 &amp; 2</Link></li>
+              <li><Link to="/syllabus">Semester 3 &amp; 4</Link></li>
+              <li><Link to="/syllabus">Semester 5 &amp; 6</Link></li>
+              <li><Link to="/syllabus">Download PDFs</Link></li>
+            </ul>
+          </div>
+
+          {/* ── AI Access CTA ── */}
+          <div className="footer-cta-col">
+            <h4 className="footer-col-title">Get AI Help</h4>
+            <p className="footer-cta-desc">
+              Ask our AI assistant anything about your BCA syllabus — for free.
+            </p>
+            <Link to="/syllabus" className="footer-cta-btn">
+              <i className="fa-solid fa-robot" />
+              Ask AI Now
+            </Link>
+            <div className="footer-badge">
+              <span className="footer-badge-dot" />
+              Free &amp; Always Available
+            </div>
+          </div>
+
         </div>
 
-        {/* Divider */}
+        {/* ── Divider ── */}
         <div className="footer-divider" />
 
-        {/* Bottom */}
+        {/* ── Bottom Bar ── */}
         <div className="footer-bottom">
-          <p>© {year} GPT for BCA. All rights reserved.</p>
+          <p className="footer-copyright">
+            © {year} <span className="footer-brand-name">GPT for BCA</span>. All rights reserved.
+          </p>
+          <p className="footer-made-with">
+            Made with <span className="footer-heart">❤️</span> by BCA Students
+          </p>
         </div>
       </div>
     </footer>
