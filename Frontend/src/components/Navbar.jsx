@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import ProtectedChatLink from './auth/ProtectedChatLink';
 import faviconImg from '../assets/favicon.png';
 import '../styles/Navbar.css';
 
@@ -47,9 +48,9 @@ export default function Navbar() {
               <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
                 Contact
               </NavLink>
-              <NavLink to="/syllabus" className="navbar-cta">
+              <ProtectedChatLink className="navbar-cta">
                 Get Started
-              </NavLink>
+              </ProtectedChatLink>
             </div>
 
             {/* Hamburger */}
@@ -89,9 +90,9 @@ export default function Navbar() {
         <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleNavClick}>
           Contact
         </NavLink>
-        <NavLink to="/syllabus" className="mobile-cta" onClick={handleNavClick}>
+        <ProtectedChatLink className="mobile-cta" onClick={handleNavClick}>
           Get Started →
-        </NavLink>
+        </ProtectedChatLink>
       </div>
     </>
   );

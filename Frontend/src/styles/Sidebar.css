@@ -1,0 +1,194 @@
+.chat-sidebar {
+  height: 100vh;
+  background: rgba(12, 12, 36, 0.88);
+  border-right: 1px solid var(--color-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px 14px;
+  gap: 14px;
+  z-index: 40;
+}
+
+.chat-sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chat-sidebar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.chat-sidebar-brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 18px rgba(99, 102, 241, 0.65);
+}
+
+.chat-sidebar-close {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-base);
+}
+
+.chat-sidebar-close:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text-primary);
+}
+
+.chat-sidebar-new-btn {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-primary);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.28);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.chat-sidebar-new-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.42);
+}
+
+.chat-sidebar-middle {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-sidebar-mcq-btn {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: var(--radius-md);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.28);
+  color: #7ee6f8;
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+.chat-sidebar-mcq-btn:hover {
+  background: rgba(6, 182, 212, 0.18);
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+.chat-sidebar-section-head {
+  margin-top: 4px;
+  padding: 0 4px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.chat-sidebar-chat-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 3px;
+}
+
+.chat-sidebar-bottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-profile-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(145deg, #6366f1, #06b6d4);
+}
+
+.chat-profile-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.chat-profile-name {
+  font-size: 0.92rem;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-profile-role {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.chat-logout-btn {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-base);
+}
+
+.chat-logout-btn:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-border-hover);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+@media (max-width: 960px) {
+  .chat-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: min(84vw, 320px);
+    transform: translateX(-105%);
+    transition: transform var(--transition-base);
+    box-shadow: 18px 0 50px rgba(0, 0, 0, 0.45);
+  }
+
+  .chat-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .chat-sidebar-close {
+    display: inline-flex;
+  }
+}

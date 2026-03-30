@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
+import ProtectedChatLink from '../components/auth/ProtectedChatLink';
 import '../styles/Home.css';
 
 const features = [
@@ -127,9 +128,9 @@ export default function Home() {
               </p>
 
               <div className="hero-actions">
-                <Link to="/syllabus" className="btn-primary" id="hero-get-started">
+                <ProtectedChatLink className="btn-primary" id="hero-get-started">
                   🚀 Get Started Free
-                </Link>
+                </ProtectedChatLink>
                 <Link to="/about" className="btn-outline" id="hero-learn-more">
                   Learn More →
                 </Link>
@@ -295,11 +296,11 @@ export default function Home() {
               Explore the complete BCA syllabus, download PDFs, and power up your studies with AI.
             </p>
             <div className="home-cta-actions">
-              <Link to="/syllabus" className="btn-primary" id="cta-explore-syllabus">
+              <ProtectedChatLink className="btn-primary" id="cta-explore-syllabus">
+                🤖 Ask AI Now
+              </ProtectedChatLink>
+              <Link to="/syllabus" className="btn-outline" id="cta-contact-us">
                 📚 Explore Syllabus
-              </Link>
-              <Link to="/contact" className="btn-outline" id="cta-contact-us">
-                📬 Contact Us
               </Link>
             </div>
           </div>

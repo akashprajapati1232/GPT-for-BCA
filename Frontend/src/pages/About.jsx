@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ProtectedChatLink from '../components/auth/ProtectedChatLink';
 import '../styles/About.css';
 import akashImg from '../assets/akash-prajapati.webp';
 import vivekImg from '../assets/vivek-yadav.webp';
@@ -109,7 +110,7 @@ export default function About() {
                 time searching and more time learning.
               </p>
               <div style={{ marginTop: '28px' }}>
-                <Link to="/syllabus" className="btn-primary">📚 Explore Syllabus</Link>
+                <ProtectedChatLink className="btn-primary">🤖 Ask AI Now</ProtectedChatLink>
               </div>
             </div>
           </div>

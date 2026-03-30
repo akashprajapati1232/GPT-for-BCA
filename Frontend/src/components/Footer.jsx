@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ProtectedChatLink from './auth/ProtectedChatLink';
 import faviconImg from '../assets/favicon.png';
 import '../styles/Footer.css';
 
@@ -92,14 +93,10 @@ export default function Footer() {
             <p className="footer-cta-desc">
               Ask our AI assistant anything about your BCA syllabus — for free.
             </p>
-            <Link to="/syllabus" className="footer-cta-btn">
+            <ProtectedChatLink className="footer-cta-btn">
               <i className="fa-solid fa-robot" />
               Ask AI Now
-            </Link>
-            <div className="footer-badge">
-              <span className="footer-badge-dot" />
-              Free &amp; Always Available
-            </div>
+            </ProtectedChatLink>
           </div>
 
         </div>
