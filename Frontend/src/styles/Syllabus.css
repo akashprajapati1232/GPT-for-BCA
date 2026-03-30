@@ -1,4 +1,4 @@
-/* ===== SYLLABUS PAGE ===== */
+/* Syllabus accordion, subject cards aur actions ke styles. */
 
 .syllabus-hero {
   padding: 80px 0 64px;
@@ -74,7 +74,7 @@
   transform: translateY(-2px);
 }
 
-/* Warning Note */
+/* Yeh style section ka block hai */
 .syllabus-warning {
   margin-top: 20px;
   display: inline-flex;
@@ -91,7 +91,7 @@
   text-align: left;
 }
 
-/* Searchbar */
+/* Yeh style section ka block hai */
 .syllabus-filter {
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@
   color: var(--color-text-muted);
 }
 
-/* Main Section */
+/* Yeh style section ka block hai */
 .syllabus-section {
   padding: 48px 0 96px;
 }
@@ -139,7 +139,7 @@
   gap: 16px;
 }
 
-/* Semester Accordion Card */
+/* Yeh style section ka block hai */
 .sem-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
@@ -153,7 +153,7 @@
   box-shadow: 0 4px 32px rgba(99, 102, 241, 0.12);
 }
 
-/* Semester Header */
+/* Yeh style section ka block hai */
 .sem-header {
   display: flex;
   align-items: center;
@@ -247,7 +247,7 @@
   color: var(--color-primary-light);
 }
 
-/* Accordion Body */
+/* Yeh style section ka block hai */
 .sem-body {
   border-top: 1px solid var(--color-border);
   overflow: hidden;
@@ -266,7 +266,7 @@
   gap: 16px;
 }
 
-/* Subject Card */
+/* Yeh style section ka block hai */
 .subject-card {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -355,7 +355,7 @@
   flex-shrink: 0;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Yeh style section ka block hai */
 @media (max-width: 640px) {
   .sem-header {
     padding: 16px 18px;

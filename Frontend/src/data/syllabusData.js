@@ -1,3 +1,5 @@
+// Yeh static syllabus dataset hai jo semester-wise subjects aur units return karta hai.
+// Abhi data local rakha gaya hai taaki UI bina backend ke bhi kaam kare.
 const syllabusData = [
   {
     semester: 1,
@@ -344,4 +346,5 @@ const syllabusData = [
   },
 ];
 
+// Is default export ko Syllabus page direct consume karta hai.
 export default syllabusData;

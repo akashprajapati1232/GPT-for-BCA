@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { SignIn, SignUp, useAuth } from '@clerk/clerk-react';
 import { useNavigate } from 'react-router-dom';
-import { useAuthModal } from '../../context/AuthModalContext';
+import useAuthModal from '../../context/useAuthModal';
 import '../../styles/AuthModal.css';
 
+// Clerk widget appearance map taaki modal theme project ke UI se match kare.
 const clerkAppearance = {
   variables: {
     colorPrimary: '#6366f1',
@@ -46,6 +47,7 @@ export default function AuthModal() {
     closeAuthModal,
   } = useAuthModal();
 
+  // Modal open hote hi body scroll lock + ESC close shortcut enable karte hain.
   useEffect(() => {
     if (!isOpen) {
       return undefined;
@@ -67,6 +69,7 @@ export default function AuthModal() {
     };
   }, [isOpen, closeAuthModal]);
 
+  // User login hote hi modal band karke target page par redirect karte hain.
   useEffect(() => {
     if (!isOpen || !isSignedIn) {
       return;

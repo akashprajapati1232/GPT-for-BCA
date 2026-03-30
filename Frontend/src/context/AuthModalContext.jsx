@@ -1,12 +1,12 @@
-import { createContext, useContext, useMemo, useState } from 'react';
-
-const AuthModalContext = createContext(null);
+import { useMemo, useState } from 'react';
+import AuthModalContext from './authModalStore';
 
 export function AuthModalProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const [mode, setMode] = useState('signin');
   const [redirectTo, setRedirectTo] = useState('/chat');
 
+  // Modal open karte waqt mode (signin/signup) aur post-auth redirect set karte hain.
   const openAuthModal = (nextMode = 'signin', nextRedirect = '/chat') => {
     setMode(nextMode);
     setRedirectTo(nextRedirect);
@@ -34,14 +34,4 @@ export function AuthModalProvider({ children }) {
       {children}
     </AuthModalContext.Provider>
   );
-}
-
-export function useAuthModal() {
-  const context = useContext(AuthModalContext);
-
-  if (!context) {
-    throw new Error('useAuthModal must be used within AuthModalProvider');
-  }
-
-  return context;
 }

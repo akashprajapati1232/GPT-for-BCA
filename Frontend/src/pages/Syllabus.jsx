@@ -4,6 +4,7 @@ import '../styles/Syllabus.css';
 
 const subjectIcons = ['📘', '📗', '📙', '📕', '📓', '📔'];
 
+// Single subject accordion card jisme unit list expand/collapse hoti hai.
 function SubjectCard({ subject, index }) {
   const [open, setOpen] = useState(false);
 
@@ -36,6 +37,7 @@ function SubjectCard({ subject, index }) {
   );
 }
 
+// Semester level accordion card jo multiple subjects hold karta hai.
 function SemCard({ sem }) {
   const [open, setOpen] = useState(false);
 
@@ -82,11 +84,12 @@ function SemCard({ sem }) {
   );
 }
 
+// Syllabus page ka main render: hero + semester accordion listing.
 export default function Syllabus() {
 
   return (
     <main className="page-wrapper">
-      {/* ===== HERO ===== */}
+      {/* Hero area jahan download/view shortcuts available hain. */}
       <section className="syllabus-hero">
         <div className="syllabus-hero-bg"></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -119,14 +122,14 @@ export default function Syllabus() {
             </a>
           </div>
 
-          {/* Warning Note */}
+          {/* Important note taaki user latest university update verify kare. */}
           <div className="syllabus-warning">
             ⚠️ <strong>Note:</strong> The syllabus may change over time. Always verify with your institution for the latest updates.
           </div>
         </div>
       </section>
 
-      {/* ===== SYLLABUS LIST ===== */}
+      {/* Semester cards ka complete list section. */}
       <section className="syllabus-section">
         <div className="container">
           {syllabusData.length > 0 ? (

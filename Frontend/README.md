@@ -1,76 +1,120 @@
-# GPT for BCA 🚀
+# Frontend - GPT for BCA
 
-**GPT for BCA** is a student-driven educational platform designed exclusively for Bachelor of Computer Applications (BCA) students. Built by BCA students for BCA students, it aims to eliminate the frustration of scattered study materials and disorganized syllabi. 
+Ye folder GPT for BCA ka React + Vite frontend app contain karta hai.
 
-The platform organizes the complete BCA curriculum—from Semester 1 to Semester 6—in a highly structured, easy-to-navigate interface, and pairs it with the power of Artificial Intelligence. Students can find unit-wise breakdowns, download PDFs of their semester syllabus, and get AI-powered explanations for complex topics.
+## Purpose
+- BCA students ko clean, fast aur responsive learning interface dena.
+- Syllabus pages aur AI chat experience ko single web app me integrate karna.
+- Auth protected chat workspace provide karna (Clerk modal flow).
 
-## 🌟 Key Features
+## Core Modules
+- `src/pages/Home.jsx` -> landing experience + CTA
+- `src/pages/About.jsx` -> story, mission, team, mentor
+- `src/pages/Syllabus.jsx` -> semester/subject/unit accordion listing
+- `src/pages/Contact.jsx` -> validated contact form UI
+- `src/pages/ChatPage.jsx` -> protected chat UI (sidebar + message area)
 
-- **Semester-Wise Structured Syllabus**: Access detailed subject and unit breakdowns for all 6 semesters.
-- **AI-Powered Learning**: Get intelligent explanations, summaries, and Q&A assistance for every topic.
-- **Syllabus Downloads**: One-click PDF downloads for individual semesters or the complete curriculum.
-- **Searchable Topics**: Instantly find subjects, topics, and units using our fast search functionality.
-- **Responsive & Modern Design**: A clean, distraction-free UI designed specifically for an optimal learning experience on both desktop and mobile devices.
+## Auth System (Modal Only)
+- Auth popup modal components:
+  - `src/components/auth/AuthModal.jsx`
+  - `src/components/auth/ProtectedChatLink.jsx`
+  - `src/context/AuthModalContext.jsx`
+- Standalone login/signup routes intentionally use nahi kiye ja rahe.
+- Chat access rule:
+  - Signed-in -> direct `/chat`
+  - Signed-out -> modal open
 
-## 🛠 Tech Stack
+## Styling Strategy
+- Pure CSS (no Tailwind / no Bootstrap)
+- Global design tokens: `src/styles/global.css`
+- Page-specific and component-specific CSS files
+- Shared dark-theme visual language with gradients + glass effects
 
-- **Frontend Framework:** React (v19) combined with Vite for ultra-fast development and build times.
-- **Routing:** React Router v7 for smooth, client-side navigation.
-- **Styling:** Custom vanilla CSS (`global.css`, `Home.css`, `About.css`, `Syllabus.css`, etc.) implementing modern UI patterns and fully responsive layouts.
-- **Data Management:** Local JSON/JS data structures (`syllabusData.js`) serving static curriculum info.
-
-## 📁 Project Structure
+## Project Structure (Frontend)
 
 ```text
-GPT for BCA/
-├── Backend/                 # Contains raw syllabus resources (PDFs, docs) 
-│   └── JSON Sallybus/       # Semester-wise data folders (Sem 2nd, Sem 4th, Sem 6th, etc.)
-└── Frontend/                # The main React Application folder
-    ├── public/              # Public assets (e.g. PDFs for downloading)
-    ├── src/                 # Application Source Code
-    │   ├── assets/          # Static assets like images and icons 
-    │   ├── components/      # Reusable UI components (Navbar, Footer, ScrollToTop)
-    │   ├── data/            # Local data structures (e.g., syllabusData.js)
-    │   ├── pages/           # Route views (Home, About, Contact, Syllabus)
-    │   ├── styles/          # Modular CSS files for pages and components
-    │   ├── App.jsx          # Main application component and routing configuration
-    │   └── main.jsx         # React application entry point
-    ├── index.html           # Base HTML template
-    ├── package.json         # Project metadata and dependencies
-    └── vite.config.js       # Vite configuration
+Frontend/
+├── public/
+│   ├── icons.svg
+│   └── pdfs/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── auth/
+│   │   ├── chat/
+│   │   ├── Footer.jsx
+│   │   ├── Navbar.jsx
+│   │   └── ScrollToTop.jsx
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## 🚀 Getting Started
+## Prerequisites
+- Node.js 18+
+- npm
 
-To run the frontend of this application locally, follow these steps:
+## Setup
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) installed on your machine.
-- `npm` (Node Package Manager).
+```bash
+cd Frontend
+npm install
+```
 
-### Installation
+## Environment Variable
+Create `Frontend/.env`:
 
-1. Navigate to the `Frontend` directory from the project root:
-   ```bash
-   cd Frontend
-   ```
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
 
-2. Install the necessary dependencies:
-   ```bash
-   npm install
-   ```
+## Run Commands
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev      # development server
+npm run build    # production bundle
+npm run preview  # preview built output
+npm run lint     # eslint check
+```
 
-4. Open your browser and visit: `http://localhost:5173/` (or the port specified in your terminal).
+## Route Summary
+- `/` -> Home
+- `/about` -> About
+- `/contact` -> Contact
+- `/syllabus` -> Syllabus
+- `/chat` -> Protected chat page
 
-## 👨‍💻 Meet the Builders
+## UX Rules Implemented
+- Responsive navbar + mobile drawer
+- Popup-based auth flow for CTA buttons
+- Chat page full-height app layout
+- Sidebar collapse behavior on mobile
+- Logout redirects to home page
 
-- **Akash Prajapati** - Full Stack Developer & Project Lead
-- **Vivek Yadav** - UI/UX Designer & Developer
+## Developer Notes
+- Code comments Hinglish me maintain kiye gaye hain.
+- Reusable CTA links ke liye `ProtectedChatLink` use karein.
+- New protected features add karte waqt auth modal context reuse karein.
 
----
-*Built with ❤️ for BCA Students.*
+## Common Issues
+
+### App start nahi ho rahi
+- Ensure dependencies installed hain (`npm install`).
+- Ensure `.env` key present hai.
+
+### Clerk modal render issue
+- `VITE_CLERK_PUBLISHABLE_KEY` valid hona chahiye.
+- Browser cache clear / hard refresh try karein.
+
+### CSS changes reflect nahi ho rahe
+- Dev server restart karein.
+- Hard reload karein.

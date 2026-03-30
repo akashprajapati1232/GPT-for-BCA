@@ -1,4 +1,4 @@
-/* ===== CONTACT PAGE ===== */
+/* Contact page form, info cards aur success state ke styles. */
 
 .contact-hero {
   padding: 80px 0 64px;
@@ -31,7 +31,7 @@
   line-height: 1.75;
 }
 
-/* Contact Section */
+/* Yeh style section ka block hai */
 .contact-section {
   padding: 40px 0 96px;
 }
@@ -43,7 +43,7 @@
   align-items: start;
 }
 
-/* Info Cards */
+/* Yeh style section ka block hai */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@
   color: var(--color-text-secondary);
 }
 
-/* Contact Form */
+/* Yeh style section ka block hai */
 .contact-form-wrapper {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
@@ -225,7 +225,7 @@
   cursor: not-allowed;
 }
 
-/* Success message */
+/* Yeh style section ka block hai */
 .contact-success {
   text-align: center;
   padding: 48px 32px;
@@ -258,7 +258,7 @@
   margin-bottom: 24px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Yeh style section ka block hai */
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;

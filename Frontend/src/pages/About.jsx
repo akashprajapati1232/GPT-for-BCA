@@ -61,10 +61,11 @@ const stats = [
   { num: '100%', label: 'Free to Use', icon: 'fa-solid fa-heart' },
 ];
 
+// About page me project story, team aur mentor details grouped format me dikhte hain.
 export default function About() {
   return (
     <main className="page-wrapper">
-      {/* ===== HERO ===== */}
+      {/* Hero intro: project ka high-level purpose aur positioning. */}
       <section className="about-hero">
         <div className="about-hero-bg"></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -80,7 +81,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ===== STORY ===== */}
+      {/* Story section: problem statement + solution narrative. */}
       <section className="about-story section-sm">
         <div className="container">
           <div className="about-story-grid">
@@ -117,7 +118,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ===== VISION / MISSION ===== */}
+      {/* Mission, vision aur approach cards ka cluster. */}
       <section className="about-vision">
         <div className="container">
           <div className="about-vision-header">
@@ -142,7 +143,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ===== STATS ===== */}
+      {/* Stats snapshot taaki impact quick glance me samajh aaye. */}
       <section className="about-stats">
         <div className="container">
           <div className="about-stats-grid">
@@ -159,7 +160,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ===== TEAM ===== */}
+      {/* Team cards: contributors ke role aur socials. */}
       <section className="about-team section">
         <div className="container">
           <div className="about-team-header">
@@ -208,7 +209,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ===== PROJECT GUIDE ===== */}
+      {/* Mentor highlight section with institute details. */}
       <section className="about-guide section">
         <div className="container">
           <div className="about-team-header">

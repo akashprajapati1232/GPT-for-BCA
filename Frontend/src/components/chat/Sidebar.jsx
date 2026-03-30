@@ -2,6 +2,7 @@ import ChatItem from './ChatItem';
 import { useClerk, useUser } from '@clerk/clerk-react';
 import '../../styles/Sidebar.css';
 
+// Chat sidebar: history, quick actions aur profile/logout controls handle karta hai.
 export default function Sidebar({
   chats,
   activeChatId,
@@ -26,6 +27,7 @@ export default function Sidebar({
     .map((part) => part[0]?.toUpperCase() ?? '')
     .join('') || 'US';
 
+  // Logout ke baad user ko home par bhejne ke liye redirect set hai.
   const handleLogout = async () => {
     await signOut({ redirectUrl: '/' });
   };

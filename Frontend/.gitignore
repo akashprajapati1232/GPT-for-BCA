@@ -1,45 +1,58 @@
-# Dependencies
+# =============================
+# Dependency folders
+# =============================
 node_modules/
+
+# =============================
+# Build / preview outputs
+# =============================
+dist/
+build/
+coverage/
+
+# =============================
+# Environment variables
+# =============================
+.env
+.env.*
+!.env.example
+
+# =============================
+# Tool / cache artifacts
+# =============================
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# =============================
+# Logs
+# =============================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Production build
-dist/
-build/
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE and Editor
+# =============================
+# Editor / IDE
+# =============================
 .vscode/
 .idea/
+*.code-workspace
 *.swp
 *.swo
 *~
-.DS_Store
-*.sublime-project
-*.sublime-workspace
 
-# OS specific
+# =============================
+# OS-specific files
+# =============================
 .DS_Store
 Thumbs.db
-.AppleDouble
-.LSOverride
 
-# Logs
-logs/
-*.log
-
-# Cache
-.cache/
-.eslintcache
-
-# Temporary files
+# =============================
+# Temp files
+# =============================
 tmp/
 temp/

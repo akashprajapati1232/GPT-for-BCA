@@ -8,13 +8,13 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      {/* Gradient top accent line */}
+      {/* Upar wali thin gradient line footer ko visual separation deti hai. */}
       <div className="footer-accent-line" />
 
       <div className="container">
         <div className="footer-grid">
 
-          {/* ── Brand Column ── */}
+          {/* Brand intro + social links ka primary footer column. */}
           <div className="footer-brand-col">
             <Link to="/" className="footer-logo">
               <img src={faviconImg} alt="GPT for BCA Logo" className="footer-logo-img" />
@@ -24,7 +24,7 @@ export default function Footer() {
               An AI-powered platform helping BCA students master their curriculum with smart,
               structured learning resources — built by students, for students.
             </p>
-            {/* Social Links */}
+            {/* External social profiles yahan grouped hain. */}
             <div className="footer-socials">
               <a
                 href="https://github.com/akashprajapati1232"
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── Quick Links ── */}
+          {/* Internal quick navigation links. */}
           <div className="footer-links-col">
             <h4 className="footer-col-title">Quick Links</h4>
             <ul className="footer-link-list">
@@ -76,7 +76,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ── Resources ── */}
+          {/* Semester/resource related shortcuts. */}
           <div className="footer-links-col">
             <h4 className="footer-col-title">Resources</h4>
             <ul className="footer-link-list">
@@ -87,7 +87,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ── AI Access CTA ── */}
+          {/* AI chat CTA jo auth flow handle karta hai. */}
           <div className="footer-cta-col">
             <h4 className="footer-col-title">Get AI Help</h4>
             <p className="footer-cta-desc">
@@ -101,10 +101,10 @@ export default function Footer() {
 
         </div>
 
-        {/* ── Divider ── */}
+        {/* Divider footer content aur bottom copyright bar ko alag karta hai. */}
         <div className="footer-divider" />
 
-        {/* ── Bottom Bar ── */}
+        {/* Bottom legal + maker credit section. */}
         <div className="footer-bottom">
           <p className="footer-copyright">
             © {year} <span className="footer-brand-name">GPT for BCA</span>. All rights reserved.

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
-/* ===== CSS CUSTOM PROPERTIES ===== */
+/* Global design tokens, reset aur reusable utility styles yahan defined hain. */
 :root {
   --color-primary: #6366f1;
   --color-primary-dark: #4f46e5;
@@ -46,7 +46,7 @@
   --navbar-height: 70px;
 }
 
-/* ===== RESET ===== */
+/* Yeh style section ka block hai */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -92,7 +92,7 @@ input, textarea, select {
   font-family: inherit;
 }
 
-/* ===== GLOBAL UTILITIES ===== */
+/* Yeh style section ka block hai */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -108,7 +108,7 @@ input, textarea, select {
   padding: 64px 0;
 }
 
-/* Gradient text utility */
+/* Yeh style section ka block hai */
 .gradient-text {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -116,7 +116,7 @@ input, textarea, select {
   background-clip: text;
 }
 
-/* Glass card utility */
+/* Yeh style section ka block hai */
 .glass-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
@@ -133,7 +133,7 @@ input, textarea, select {
   box-shadow: var(--shadow-card);
 }
 
-/* Primary button */
+/* Yeh style section ka block hai */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -159,7 +159,7 @@ input, textarea, select {
   transform: translateY(0);
 }
 
-/* Outline button */
+/* Yeh style section ka block hai */
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -181,7 +181,7 @@ input, textarea, select {
   transform: translateY(-2px);
 }
 
-/* Section heading */
+/* Yeh style section ka block hai */
 .section-tag {
   display: inline-block;
   padding: 6px 16px;
@@ -211,7 +211,7 @@ input, textarea, select {
   line-height: 1.7;
 }
 
-/* Scrollbar */
+/* Yeh style section ka block hai */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -225,13 +225,13 @@ input, textarea, select {
   border-radius: 3px;
 }
 
-/* Page wrapper (accounts for fixed navbar) */
+/* Yeh style section ka block hai */
 .page-wrapper {
   padding-top: var(--navbar-height);
   min-height: 100vh;
 }
 
-/* ===== ANIMATIONS ===== */
+/* Yeh style section ka block hai */
 @keyframes fadeInUp {
   from {
     opacity: 0;

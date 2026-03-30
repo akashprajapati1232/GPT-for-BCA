@@ -10,9 +10,11 @@ import Contact from './pages/Contact';
 import Syllabus from './pages/Syllabus';
 import ChatPage from './pages/ChatPage';
 import AuthModal from './components/auth/AuthModal';
-import { AuthModalProvider, useAuthModal } from './context/AuthModalContext';
+import { AuthModalProvider } from './context/AuthModalContext';
+import useAuthModal from './context/useAuthModal';
 import './styles/global.css';
 
+// Agar unauthenticated user direct /chat khole to modal open karke home par fallback karte hain.
 function ChatAuthRedirect() {
   const { openAuthModal } = useAuthModal();
 
@@ -23,6 +25,7 @@ function ChatAuthRedirect() {
   return <Navigate to="/" replace />;
 }
 
+// Route level layout control: chat page par navbar/footer hide, baaki pages par show.
 function AppRoutes() {
   const location = useLocation();
   const isChatPage = location.pathname.startsWith('/chat');
@@ -49,7 +52,7 @@ function AppRoutes() {
             </>
           )}
         />
-        {/* Catch-all → Home */}
+        {/* Unknown route aaye to user ko home par bhej do. */}
         <Route path="*" element={<Home />} />
       </Routes>
       {!isChatPage && <Footer />}
@@ -57,6 +60,7 @@ function AppRoutes() {
   );
 }
 
+// Top-level app wrapper jahan router + auth modal context attach hota hai.
 function App() {
   return (
     <Router>

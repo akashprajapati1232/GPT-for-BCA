@@ -1,4 +1,4 @@
-/* ===== ABOUT PAGE ===== */
+/* About page ke story, team, stats aur mentor section ke styles. */
 
 .about-hero {
   padding: 80px 0 64px;
@@ -31,7 +31,7 @@
   line-height: 1.75;
 }
 
-/* Story Section */
+/* Yeh style section ka block hai */
 .about-story {
   padding: 80px 0;
 }
@@ -80,7 +80,7 @@
   margin-bottom: 16px;
 }
 
-/* Vision / Mission Cards */
+/* Yeh style section ka block hai */
 .about-vision {
   padding: 80px 0;
   background: var(--color-bg-secondary);
@@ -161,7 +161,7 @@
   line-height: 1.7;
 }
 
-/* Team Section */
+/* Yeh style section ka block hai */
 .about-team {
   padding: 80px 0;
 }
@@ -326,13 +326,13 @@
   line-height: 1;
 }
 
-/* ===== Guide / Mentor Section — styled like home-cta-inner ===== */
+/* Yeh style section ka block hai */
 .about-guide {
   padding: 80px 0;
-  /* No flat secondary background — let the CTA-inner card be the hero */
+  /* Yeh style section ka block hai */
 }
 
-/* Outer wrapper becomes the glowing CTA-style box */
+/* Yeh style section ka block hai */
 .guide-card-wrapper {
   max-width: 760px;
   margin: 0 auto;
@@ -345,7 +345,7 @@
   overflow: hidden;
 }
 
-/* Radial glow overlay (mirrors home-cta-inner::before) */
+/* Yeh style section ka block hai */
 .guide-card-wrapper::before {
   content: '';
   position: absolute;
@@ -354,7 +354,7 @@
   pointer-events: none;
 }
 
-/* Decorative ambient orb in the bottom-right corner */
+/* Yeh style section ka block hai */
 .guide-card-wrapper::after {
   content: '';
   position: absolute;
@@ -367,7 +367,7 @@
   pointer-events: none;
 }
 
-/* The actual card inside — now a centered flex row on desktop */
+/* Yeh style section ka block hai */
 .guide-card {
   display: flex;
   align-items: center;
@@ -430,7 +430,7 @@
   }
 }
 
-/* Stats */
+/* Yeh style section ka block hai */
 .about-stats {
   padding: 72px 0;
   background: var(--color-bg-secondary);
@@ -529,7 +529,7 @@
   letter-spacing: 0.06em;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Yeh style section ka block hai */
 @media (max-width: 900px) {
   .about-story-grid {
     grid-template-columns: 1fr;

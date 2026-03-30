@@ -1,4 +1,4 @@
-/* ===== NAVBAR ===== */
+/* Navbar ka desktop + mobile drawer behavior yahan style hota hai. */
 .navbar {
   position: fixed;
   top: 0;
@@ -6,9 +6,9 @@
   right: 0;
   z-index: 1000;
   height: var(--navbar-height);
-  /* Always keep a border-bottom to prevent flickering/white-line on scroll */
+  /* Yeh style section ka block hai */
   border-bottom: 1px solid transparent;
-  /* Force GPU compositing layer to eliminate sub-pixel rendering seams */
+  /* Yeh style section ka block hai */
   transform: translateZ(0);
   will-change: transform;
   transition: background var(--transition-base),
@@ -25,7 +25,7 @@
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-/* ===== INNER LAYOUT ===== */
+/* Yeh style section ka block hai */
 .navbar-inner {
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   gap: 16px;
 }
 
-/* ===== LOGO ===== */
+/* Yeh style section ka block hai */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@
   white-space: nowrap;
 }
 
-/* ===== DESKTOP LINKS ===== */
+/* Yeh style section ka block hai */
 .navbar-links {
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@
   background: rgba(99, 102, 241, 0.12);
 }
 
-/* ===== CTA BUTTON ===== */
+/* Yeh style section ka block hai */
 .navbar-cta {
   padding: 9px 22px !important;
   margin-left: 8px;
@@ -126,7 +126,7 @@
   transform: translateY(0) !important;
 }
 
-/* ===== HAMBURGER ===== */
+/* Yeh style section ka block hai */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -171,7 +171,7 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ===== MOBILE OVERLAY ===== */
+/* Yeh style section ka block hai */
 .mobile-overlay {
   display: none;
   position: fixed;
@@ -191,7 +191,7 @@
   pointer-events: auto;
 }
 
-/* ===== MOBILE MENU ===== */
+/* Yeh style section ka block hai */
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -206,7 +206,7 @@
   padding: 12px 20px 24px;
   gap: 4px;
   z-index: 999;
-  /* Hidden state */
+  /* Yeh style section ka block hai */
   opacity: 0;
   transform: translateY(-12px);
   pointer-events: none;
@@ -262,7 +262,7 @@
   background: var(--gradient-primary) !important;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Yeh style section ka block hai */
 @media (max-width: 768px) {
   .navbar-links {
     display: none;

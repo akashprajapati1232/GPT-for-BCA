@@ -3,6 +3,7 @@ import Sidebar from '../components/chat/Sidebar';
 import ChatWindow from '../components/chat/ChatWindow';
 import '../styles/ChatPage.css';
 
+// Starter history taaki UI first load par empty na lage.
 const starterChats = [
   {
     id: 'chat-1',
@@ -77,6 +78,7 @@ const starterMessages = {
   ],
 };
 
+// Dummy AI reply helper jo keyword ke basis par quick response deta hai.
 function buildMockReply(question) {
   const text = question.toLowerCase();
 
@@ -95,6 +97,7 @@ function buildMockReply(question) {
   return 'Nice question. I will keep the explanation simple, accurate, and focused on what matters most for your BCA exams.';
 }
 
+// Chat page me sidebar state, active chat aur message simulation manage hota hai.
 export default function ChatPage() {
   const [chats, setChats] = useState(starterChats);
   const [activeChatId, setActiveChatId] = useState(starterChats[0].id);
@@ -113,6 +116,7 @@ export default function ChatPage() {
   const activeChat = chats.find((chat) => chat.id === activeChatId) ?? chats[0];
   const messages = messagesByChat[activeChatId] ?? [];
 
+  // Chat switch karte hi mobile drawer close kar dete hain.
   const handleSelectChat = (chatId) => {
     setActiveChatId(chatId);
     setSidebarOpen(false);
@@ -147,6 +151,7 @@ export default function ChatPage() {
     setSidebarOpen(false);
   };
 
+  // User message append + delayed mock AI response ka flow.
   const handleSendMessage = (content) => {
     const text = content.trim();
     if (!text) {

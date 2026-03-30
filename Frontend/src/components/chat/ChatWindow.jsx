@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import MessageInput from './MessageInput';
 import '../../styles/ChatWindow.css';
 
+// Chat header + messages list + input wrapper ka main layout component.
 export default function ChatWindow({
   chatTitle,
   messages,
@@ -10,6 +11,7 @@ export default function ChatWindow({
 }) {
   const endRef = useRef(null);
 
+  // Naya message aate hi auto-scroll latest message tak le jaata hai.
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [messages]);

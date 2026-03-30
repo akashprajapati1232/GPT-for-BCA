@@ -35,6 +35,7 @@ const infoItems = [
 
 const initialForm = { name: '', email: '', subject: '', message: '' };
 
+// Contact page me form validation + success state dono local level par handle hote hain.
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
@@ -70,7 +71,7 @@ export default function Contact() {
       return;
     }
     setLoading(true);
-    // Simulate async submit
+    // Abhi backend connect nahi hai, isliye async submit simulate kiya gaya hai.
     await new Promise(r => setTimeout(r, 1400));
     setLoading(false);
     setSubmitted(true);
@@ -84,7 +85,7 @@ export default function Contact() {
 
   return (
     <main className="page-wrapper">
-      {/* ===== HERO ===== */}
+      {/* Hero section jahan contact intent clear kiya gaya hai. */}
       <section className="contact-hero">
         <div className="contact-hero-bg"></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -99,11 +100,11 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ===== CONTACT SECTION ===== */}
+      {/* Main contact block: info cards + form side by side. */}
       <section className="contact-section">
         <div className="container">
           <div className="contact-grid">
-            {/* Info Side */}
+            {/* Left panel me static contact information cards hain. */}
             <div className="contact-info">
               <h2 className="contact-info-title">Contact Information</h2>
               <p className="contact-info-desc">
@@ -129,7 +130,7 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Form Side */}
+            {/* Right panel me form / success state conditional render hota hai. */}
             <div className="contact-form-wrapper">
               {submitted ? (
                 <div className="contact-success">

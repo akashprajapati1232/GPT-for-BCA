@@ -1,5 +1,6 @@
 import '../../styles/ChatItem.css';
 
+// Sidebar me ek single chat history row render karta hai.
 export default function ChatItem({ chat, isActive, onClick }) {
   return (
     <button

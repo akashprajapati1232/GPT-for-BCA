@@ -1,7 +1,8 @@
 import { useAuth } from '@clerk/clerk-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuthModal } from '../../context/AuthModalContext';
+import useAuthModal from '../../context/useAuthModal';
 
+// Reusable link jo chat access se pehle auth check karta hai.
 export default function ProtectedChatLink({
   children,
   onClick,
@@ -11,6 +12,7 @@ export default function ProtectedChatLink({
   const { isSignedIn } = useAuth();
   const { openAuthModal } = useAuthModal();
 
+  // Signed-in user ko direct chat bhejo, warna auth modal khol do.
   const handleClick = (event) => {
     onClick?.(event);
 

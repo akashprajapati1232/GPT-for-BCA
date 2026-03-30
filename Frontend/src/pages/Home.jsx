@@ -61,6 +61,7 @@ const chatMessages = [
   { role: 'ai', text: 'BCA Sem 3 includes: Data Structures, DBMS, Computer Networks, OOP with Java, and Mathematics III.' },
 ];
 
+// Hero input placeholder ke liye typing animation component.
 function TypingText() {
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [displayed, setDisplayed] = useState('');
@@ -96,9 +97,9 @@ function TypingText() {
 export default function Home() {
   return (
     <main className="page-wrapper">
-      {/* ===== HERO ===== */}
+      {/* Hero section: primary messaging + product preview card. */}
       <section className="hero">
-        {/* Background */}
+        {/* Background visual layers jisse hero me depth aati hai. */}
         <div className="hero-bg">
           <div className="hero-orb hero-orb-1" />
           <div className="hero-orb hero-orb-2" />
@@ -109,7 +110,7 @@ export default function Home() {
 
         <div className="container">
           <div className="hero-content">
-            {/* ===== LEFT ===== */}
+            {/* Left side: headline, CTA aur quick stats. */}
             <div className="hero-left">
               <div className="hero-badge">
                 <span className="hero-badge-dot" />
@@ -159,11 +160,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ===== RIGHT — AI Chat Panel ===== */}
+            {/* Right side: sample AI chat UI preview. */}
             <div className="hero-right">
               <div className="ai-panel">
                 <div className="ai-panel-inner">
-                  {/* Panel header */}
+                  {/* Mini app window style header with online status. */}
                   <div className="ai-panel-header">
                   <div className="ai-panel-dots">
                     <span className="dot dot-red" />
@@ -180,7 +181,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Chat messages */}
+                {/* Example user/assistant messages for visual demo. */}
                 <div className="ai-chat-body">
                   {chatMessages.map((msg, i) => (
                     <div key={i} className={`ai-msg ai-msg-${msg.role}`}>
@@ -196,7 +197,7 @@ export default function Home() {
                     </div>
                   ))}
 
-                  {/* Typing indicator */}
+                  {/* Typing indicator se assistant live lagta hai. */}
                   <div className="ai-msg ai-msg-ai ai-typing-indicator">
                     <div className="ai-avatar">🤖</div>
                     <div className="ai-bubble">
@@ -207,7 +208,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Input bar */}
+                {/* Demo input row (interactive nahi, sirf showcase). */}
                 <div className="ai-panel-input">
                   <div className="ai-input-field">
                     <span className="ai-input-placeholder">
@@ -223,7 +224,7 @@ export default function Home() {
                 </div>
                 </div>
 
-                {/* Floating badges */}
+                {/* Floating badges hero card ko dynamic feel dete hain. */}
                 <div className="ai-badge ai-badge-1">
                   <span>✅</span> Sem 1 Complete
                 </div>
@@ -238,7 +239,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FEATURES ===== */}
+      {/* Feature cards: platform ke core benefits explain karte hain. */}
       <section className="features section">
         <div className="container">
           <div className="features-header">
@@ -261,7 +262,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HOW IT WORKS ===== */}
+      {/* Simple 4-step flow taaki user onboarding fast ho. */}
       <section className="how-it-works">
         <div className="container">
           <div className="how-header">
@@ -284,7 +285,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CTA ===== */}
+      {/* Final CTA section jo user ko chat/syllabus actions deta hai. */}
       <section className="home-cta section">
         <div className="container">
           <div className="home-cta-inner">

@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import '../../styles/MessageInput.css';
 
+// Bottom input bar jahan se user message send karta hai.
 export default function MessageInput({ onSend }) {
   const [message, setMessage] = useState('');
 
+  // Empty message block karke valid text parent ko bhejte hain.
   const handleSubmit = (event) => {
     event.preventDefault();
     const trimmed = message.trim();
