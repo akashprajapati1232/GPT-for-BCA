@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Syllabus from './pages/Syllabus';
 import ChatPage from './pages/ChatPage';
+import ProfilePage from './pages/ProfilePage';
 import AuthModal from './components/auth/AuthModal';
 import { AuthModalProvider } from './context/AuthModalContext';
 import useAuthModal from './context/useAuthModal';
@@ -28,7 +29,7 @@ function ChatAuthRedirect() {
 // Route level layout control: chat page par navbar/footer hide, baaki pages par show.
 function AppRoutes() {
   const location = useLocation();
-  const isChatPage = location.pathname.startsWith('/chat');
+  const isChatPage = location.pathname.startsWith('/chat') || location.pathname.startsWith('/chat/profile');
 
   return (
     <>
@@ -45,6 +46,19 @@ function AppRoutes() {
             <>
               <SignedIn>
                 <ChatPage />
+              </SignedIn>
+              <SignedOut>
+                <ChatAuthRedirect />
+              </SignedOut>
+            </>
+          )}
+        />
+        <Route
+          path="/chat/profile"
+          element={(
+            <>
+              <SignedIn>
+                <ProfilePage />
               </SignedIn>
               <SignedOut>
                 <ChatAuthRedirect />

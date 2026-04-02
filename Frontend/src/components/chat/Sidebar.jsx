@@ -1,38 +1,18 @@
 import ChatItem from './ChatItem';
-import { useClerk, useUser } from '@clerk/clerk-react';
 import faviconImg from '../../assets/favicon.png';
 import '../../styles/Sidebar.css';
 
-// Chat sidebar: history, quick actions aur profile/logout controls handle karta hai.
+// Chat sidebar: history, quick actions, and close button.
 export default function Sidebar({
   chats,
   activeChatId,
   isOpen,
   isDesktopCollapsed,
-  onClose,
   onNewChat,
   onSelectChat,
+  onClose,
 }) {
-  const { user } = useUser();
-  const { signOut } = useClerk();
 
-  const displayName =
-    user?.fullName ||
-    user?.firstName ||
-    user?.username ||
-    user?.primaryEmailAddress?.emailAddress ||
-    'BCA Student';
-
-  const nameParts = displayName.trim().split(/\s+/).filter(Boolean);
-  const initials = nameParts
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase() ?? '')
-    .join('') || 'US';
-
-  // Logout ke baad user ko home par bhejne ke liye redirect set hai.
-  const handleLogout = async () => {
-    await signOut({ redirectUrl: '/' });
-  };
 
   return (
     <aside
@@ -44,14 +24,17 @@ export default function Sidebar({
         .filter(Boolean)
         .join(' ')}
     >
+      {/* Top: Brand + Close button */}
       <div className="chat-sidebar-top">
         <div className="chat-sidebar-brand">
           <img src={faviconImg} alt="GPT for BCA" className="chat-sidebar-brand-logo" />
           <span className="chat-sidebar-brand-text">GPT for BCA</span>
         </div>
+
+        {/* Close sidebar button */}
         <button
           type="button"
-          className="chat-sidebar-close"
+          className="chat-sidebar-close-btn"
           onClick={onClose}
           aria-label="Close sidebar"
         >
@@ -59,10 +42,12 @@ export default function Sidebar({
         </button>
       </div>
 
+      {/* New Chat button */}
       <button type="button" className="chat-sidebar-new-btn" onClick={onNewChat}>
         <span>＋</span> New Chat
       </button>
 
+      {/* Middle: MCQ + chat list */}
       <div className="chat-sidebar-middle">
         <button type="button" className="chat-sidebar-mcq-btn">
           🎯 Practice MCQs
@@ -85,19 +70,6 @@ export default function Sidebar({
             </div>
           </>
         )}
-      </div>
-
-      <div className="chat-sidebar-bottom">
-        <div className="chat-profile">
-          <div className="chat-profile-avatar">{initials}</div>
-          <div className="chat-profile-meta">
-            <span className="chat-profile-name">{displayName}</span>
-            <span className="chat-profile-role">BCA Student</span>
-          </div>
-        </div>
-        <button type="button" className="chat-logout-btn" onClick={handleLogout}>
-          Sign Out
-        </button>
       </div>
     </aside>
   );

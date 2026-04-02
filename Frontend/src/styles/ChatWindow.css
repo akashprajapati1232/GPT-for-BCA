@@ -17,6 +17,10 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   flex-shrink: 0;
+  /* Allow dropdown to escape header bounds */
+  overflow: visible;
+  position: relative;
+  z-index: 50;
 }
 
 .chat-window-toggle-btn {
@@ -29,6 +33,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  cursor: pointer;
   transition: all var(--transition-base);
   flex-shrink: 0;
 }
@@ -61,6 +66,144 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ── Header user avatar + dropdown ── */
+.chat-user-menu {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: auto; /* push to the right */
+}
+
+.chat-header-user-menu {
+  margin-left: auto;
+}
+
+.chat-user-avatar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px 3px 3px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  color: var(--color-text-secondary);
+}
+
+.chat-user-avatar-btn:hover {
+  border-color: var(--color-border-hover);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-text-primary);
+}
+
+.chat-user-avatar-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.chat-user-avatar-initials {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #6366f1, #06b6d4);
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.chat-user-avatar-caret {
+  font-size: 0.5rem;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Dropdown anchored to right so it never overflows */
+.chat-user-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  background: rgba(15, 15, 46, 0.98);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(99, 102, 241, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 200;
+  /* overflow:hidden was clipping button click areas — removed */
+  animation: dropdownFadeIn 0.18s ease forwards;
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateY(-6px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.chat-user-dropdown-header {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px 10px;
+  gap: 2px;
+}
+
+.chat-user-dropdown-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-user-dropdown-role {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.chat-user-dropdown-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 0 10px;
+}
+
+.chat-user-dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.chat-user-dropdown-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-text-primary);
+}
+
+.chat-user-dropdown-item.logout {
+  color: #f87171;
+}
+
+.chat-user-dropdown-item.logout:hover {
+  background: rgba(248, 113, 113, 0.1);
+  color: #fca5a5;
+}
+
+.chat-user-dropdown-icon {
+  font-size: 0.95rem;
+  flex-shrink: 0;
 }
 
 /* ── Messages area ── */
@@ -265,6 +408,7 @@
 @media (max-width: 960px) {
   .chat-window-header {
     padding-inline: 14px;
+    gap: 8px;
   }
 
   .chat-window-messages {
@@ -273,5 +417,19 @@
 
   .chat-bubble {
     max-width: 88%;
+  }
+
+  /* Prevent dropdown from overflowing viewport on mobile */
+  .chat-user-dropdown {
+    /* keep within right-edge of screen */
+    right: 0;
+    left: auto;
+    max-width: calc(100vw - 24px);
+    min-width: 180px;
+  }
+
+  /* Avatar button: hide the caret label on very small screens */
+  .chat-user-avatar-caret {
+    display: none;
   }
 }

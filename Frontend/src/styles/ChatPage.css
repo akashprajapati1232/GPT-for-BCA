@@ -1,6 +1,8 @@
 /* Chat page shell: two-column layout with collapsible sidebar support */
 .chat-page {
   height: 100vh;
+  width: 100%;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
   background: var(--gradient-hero);
@@ -37,7 +39,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity var(--transition-base);
-    z-index: 39;
+    z-index: 150;
   }
 
   .chat-page-overlay.show {

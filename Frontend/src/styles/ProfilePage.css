@@ -1,0 +1,183 @@
+/* Profile Page: full-page wrapper around Clerk UserProfile */
+.profile-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(99, 102, 241, 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 75%, rgba(6, 182, 212, 0.09) 0%, transparent 45%),
+    var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Header bar ── */
+.profile-page-header {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 28px 0;
+  position: relative;
+}
+
+.profile-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.profile-back-btn:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text-primary);
+  background: rgba(99, 102, 241, 0.08);
+  transform: translateX(-2px);
+}
+
+.profile-back-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.profile-page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Clerk wrapper ── */
+.profile-clerk-wrapper {
+  width: 100%;
+  max-width: 960px;
+  padding: 28px 28px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Override Clerk default card styles for dark mode ── */
+.profile-clerk-wrapper .cl-rootBox,
+.profile-clerk-wrapper .clerk-root-box {
+  width: 100%;
+}
+
+.profile-clerk-wrapper .cl-card,
+.profile-clerk-wrapper .clerk-card {
+  background: rgba(15, 15, 46, 0.95) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.profile-clerk-wrapper .cl-navbar {
+  background: rgba(10, 10, 30, 0.85) !important;
+  border-right: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg) !important;
+}
+
+.profile-clerk-wrapper .cl-navbarButton {
+  color: var(--color-text-secondary) !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 500 !important;
+  transition: all var(--transition-base) !important;
+}
+
+.profile-clerk-wrapper .cl-navbarButton:hover,
+.profile-clerk-wrapper .cl-navbarButton[data-active='true'] {
+  background: rgba(99, 102, 241, 0.12) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.profile-clerk-wrapper .cl-headerTitle {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  color: var(--color-text-primary) !important;
+}
+
+.profile-clerk-wrapper .cl-headerSubtitle {
+  color: var(--color-text-secondary) !important;
+}
+
+.profile-clerk-wrapper .cl-formButtonPrimary,
+.profile-clerk-wrapper .clerk-btn-primary {
+  background: var(--gradient-primary) !important;
+  border-radius: var(--radius-full) !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35) !important;
+  transition: all var(--transition-base) !important;
+  font-family: var(--font-heading) !important;
+}
+
+.profile-clerk-wrapper .cl-formButtonPrimary:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5) !important;
+}
+
+.profile-clerk-wrapper .cl-formFieldInput,
+.profile-clerk-wrapper .clerk-field-input {
+  background: rgba(26, 26, 62, 0.8) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-text-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: border-color var(--transition-base) !important;
+}
+
+.profile-clerk-wrapper .cl-formFieldInput:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+}
+
+.profile-clerk-wrapper .cl-formFieldLabel,
+.profile-clerk-wrapper .clerk-field-label {
+  color: var(--color-text-secondary) !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+}
+
+.profile-clerk-wrapper .cl-profileSectionTitle {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.profile-clerk-wrapper .cl-dividerLine {
+  background: var(--color-border) !important;
+}
+
+.profile-clerk-wrapper .cl-badge {
+  background: rgba(99, 102, 241, 0.15) !important;
+  color: var(--color-primary-light) !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  border-radius: var(--radius-full) !important;
+}
+
+.profile-clerk-wrapper .cl-avatarBox {
+  border: 2px solid var(--color-primary) !important;
+  border-radius: 50% !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .profile-page-header {
+    padding: 16px 16px 0;
+  }
+
+  .profile-clerk-wrapper {
+    padding: 20px 12px 36px;
+  }
+}

@@ -46,7 +46,16 @@ export default function ChatPage() {
   const [messagesByChat, setMessagesByChat] = useState({});
   const [sidebarOpen, setSidebarOpen] = useState(false);        // mobile drawer
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false); // desktop collapse
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 960px)').matches);
   const [isAiTyping, setIsAiTyping] = useState(false);
+
+  // Track viewport changes (mobile vs desktop)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 960px)');
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
   const chatCounterRef = useRef(1);
 
   // Mobile: lock scroll when sidebar drawer is open
@@ -81,7 +90,6 @@ export default function ChatPage() {
 
   // Toggle sidebar: mobile = open drawer, desktop = collapse
   const handleToggleSidebar = () => {
-    const isMobile = window.matchMedia('(max-width: 960px)').matches;
     if (isMobile) {
       setSidebarOpen((prev) => !prev);
     } else {
@@ -90,8 +98,12 @@ export default function ChatPage() {
   };
 
   const handleCloseSidebar = () => {
-    setSidebarOpen(false);
-    setSidebarCollapsed(false);
+    // On desktop: collapse the sidebar. On mobile: close the drawer.
+    if (isMobile) {
+      setSidebarOpen(false);
+    } else {
+      setSidebarCollapsed(true);
+    }
   };
 
   // Send message + delayed mock AI response with typing state
@@ -159,9 +171,9 @@ export default function ChatPage() {
         activeChatId={activeChatId}
         isOpen={sidebarOpen}
         isDesktopCollapsed={sidebarCollapsed}
-        onClose={handleCloseSidebar}
         onNewChat={handleNewChat}
         onSelectChat={handleSelectChat}
+        onClose={handleCloseSidebar}
       />
 
       <button
@@ -178,6 +190,7 @@ export default function ChatPage() {
           onSendMessage={handleSendMessage}
           onToggleSidebar={handleToggleSidebar}
           isAiTyping={isAiTyping}
+          isSidebarOpen={isMobile ? sidebarOpen : !sidebarCollapsed}
         />
       </section>
     </main>
