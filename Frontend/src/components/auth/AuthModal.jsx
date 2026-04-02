@@ -11,14 +11,21 @@ const clerkAppearance = {
     colorText: '#f1f5f9',
     colorTextSecondary: '#94a3b8',
     colorBackground: '#0f0f2e',
-    colorInputBackground: 'rgba(255, 255, 255, 0.06)',
+    colorInputBackground: 'rgba(255, 255, 255, 0.08)',
     colorInputText: '#f1f5f9',
     borderRadius: '12px',
     fontFamily: 'Inter, sans-serif',
   },
   elements: {
-    rootBox: 'auth-modal-clerk-root',
-    card: 'auth-modal-clerk-card',
+    // Root wrapper — must be 100% wide so card doesn't overflow
+    rootBox: {
+      className: 'auth-modal-clerk-root',
+      style: { width: '100%', display: 'block' },
+    },
+    card: {
+      className: 'auth-modal-clerk-card',
+      style: { width: '100%', maxWidth: '100%', minWidth: 0 },
+    },
     headerTitle: 'auth-modal-clerk-title',
     headerSubtitle: 'auth-modal-clerk-subtitle',
     formButtonPrimary: 'auth-modal-clerk-primary-btn',
@@ -26,7 +33,8 @@ const clerkAppearance = {
     formFieldLabel: 'auth-modal-clerk-label',
     formFieldErrorText: 'auth-modal-clerk-error',
     formFieldHintText: 'auth-modal-clerk-hint',
-    otpCodeFieldInput: 'auth-modal-clerk-input auth-modal-clerk-otp-input',
+    // OTP: only apply the specific OTP class, not the regular input class
+    otpCodeFieldInput: 'auth-modal-clerk-otp-input',
     socialButtonsBlockButton: 'auth-modal-clerk-social-btn',
     socialButtonsBlockButtonText: 'auth-modal-clerk-social-btn-text',
     dividerText: 'auth-modal-clerk-divider-text',

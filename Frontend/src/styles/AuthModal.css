@@ -1,27 +1,37 @@
-/* Auth popup modal ke layout, contrast aur responsiveness ke styles. */
+/* =============================================
+   AUTH MODAL — Layout, Clerk Overrides, & Mobile
+   ============================================= */
+
+/* ---------- Overlay ---------- */
 .auth-modal-layer {
   position: fixed;
   inset: 0;
   z-index: 2200;
   display: grid;
   place-items: center;
-  padding: clamp(12px, 4vw, 32px);
+  padding: clamp(10px, 4vw, 32px);
+  box-sizing: border-box;
 }
 
 .auth-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(1, 3, 15, 0.72);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(1, 3, 15, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
+/* ---------- Panel ---------- */
 .auth-modal-panel {
   position: relative;
   z-index: 1;
   width: min(980px, 100%);
-  max-height: min(92vh, 860px);
-  overflow: auto;
+  max-height: min(94vh, 880px);
+  overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 22px;
   border: 1px solid rgba(129, 140, 248, 0.32);
   background:
@@ -32,9 +42,23 @@
     0 30px 80px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(255, 255, 255, 0.03),
     0 0 36px rgba(79, 70, 229, 0.18);
-  padding: clamp(18px, 2.5vw, 28px);
+  padding: clamp(16px, 2.5vw, 28px);
+  box-sizing: border-box;
 }
 
+/* Smooth scrollbar */
+.auth-modal-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.auth-modal-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.auth-modal-panel::-webkit-scrollbar-thumb {
+  background: rgba(129, 140, 248, 0.3);
+  border-radius: 4px;
+}
+
+/* ---------- Close btn ---------- */
 .auth-modal-head {
   display: flex;
   justify-content: flex-end;
@@ -42,18 +66,20 @@
 }
 
 .auth-modal-close {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 999px;
-  border: 1px solid rgba(165, 180, 252, 0.55);
+  border: 1px solid rgba(165, 180, 252, 0.5);
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 1rem;
   background: rgba(12, 19, 44, 0.98);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.34);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all var(--transition-base);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 200ms ease;
 }
 
 .auth-modal-close:hover {
@@ -63,28 +89,41 @@
   transform: translateY(-1px);
 }
 
+/* ---------- Two-column content ---------- */
 .auth-modal-content {
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 420px);
-  gap: clamp(14px, 2vw, 24px);
+  grid-template-columns: 1fr minmax(0, 420px);
+  gap: clamp(14px, 2vw, 28px);
+  align-items: start;
 }
 
+/* ---------- Left info pane ---------- */
 .auth-modal-info {
   padding: clamp(6px, 1vw, 12px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .auth-modal-info .section-tag {
   background: rgba(99, 102, 241, 0.18);
   border-color: rgba(129, 140, 248, 0.45);
   color: #a5b4fc;
+  font-size: clamp(0.65rem, 1.2vw, 0.75rem);
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 1px solid;
+  display: inline-block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .auth-modal-info h2 {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-size: clamp(1.4rem, 3vw, 2.3rem);
   line-height: 1.18;
   margin-bottom: 12px;
   color: #f8fafc;
@@ -94,34 +133,42 @@
   color: #c0cae1;
   line-height: 1.75;
   max-width: 44ch;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
 }
 
+/* ---------- Right form pane ---------- */
 .auth-modal-form-wrap {
   min-width: 0;
   width: 100%;
   max-width: 420px;
   justify-self: start;
   align-self: start;
-  padding-top: 28px;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
 
+/* ---------- Login / Sign Up toggle ---------- */
 .auth-modal-switch {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   background: rgba(15, 23, 52, 0.92);
   border: 1px solid rgba(129, 140, 248, 0.24);
   border-radius: 14px;
-  padding: 6px;
-  margin-bottom: 12px;
+  padding: 5px;
+  margin-bottom: 14px;
 }
 
 .auth-modal-switch button {
   flex: 1;
-  padding: 9px 8px;
+  padding: 10px 8px;
   border-radius: 10px;
   color: #9fb0d1;
   font-weight: 600;
-  transition: all var(--transition-base);
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 200ms ease;
 }
 
 .auth-modal-switch button:hover {
@@ -134,26 +181,45 @@
   box-shadow: inset 0 0 0 1px rgba(129, 140, 248, 0.55);
 }
 
+/* ---------- Clerk form container ---------- */
 .auth-modal-form {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
+/* ---------- Clerk root & card overrides ---------- */
 .auth-modal-clerk-root {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  justify-content: stretch !important;
 }
 
 .auth-modal-clerk-card {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid rgba(129, 140, 248, 0.28);
-  background: linear-gradient(180deg, rgba(16, 23, 54, 0.96) 0%, rgba(13, 19, 45, 0.94) 100%);
-  box-shadow: none;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(129, 140, 248, 0.28) !important;
+  background: linear-gradient(180deg, rgba(16, 23, 54, 0.96) 0%, rgba(13, 19, 45, 0.94) 100%) !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
 }
 
+/* Make Clerk's inner wrapper fill width */
+.auth-modal-clerk-root > div,
+.auth-modal-clerk-root .cl-card,
+.auth-modal-clerk-root [class*="cl-rootBox"],
+.auth-modal-clerk-root [class*="cl-signIn-root"],
+.auth-modal-clerk-root [class*="cl-signUp-root"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* ---------- Clerk text elements ---------- */
 .auth-modal-clerk-title {
   font-family: var(--font-heading);
   color: #f8fafc;
@@ -168,11 +234,17 @@
   font-weight: 600;
 }
 
+/* ---------- Clerk regular inputs ---------- */
 .auth-modal-clerk-input {
+  width: 100% !important;
+  box-sizing: border-box !important;
   border: 1px solid rgba(129, 140, 248, 0.35) !important;
   color: #f8fafc !important;
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   border-radius: 10px !important;
+  font-size: 0.95rem !important;
+  padding: 10px 14px !important;
+  transition: border-color 200ms ease, box-shadow 200ms ease !important;
 }
 
 .auth-modal-clerk-input::placeholder {
@@ -180,85 +252,127 @@
 }
 
 .auth-modal-clerk-input:focus {
-  border-color: rgba(129, 140, 248, 0.7) !important;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.18) !important;
-}
-
-/* OTP / verification code input boxes */
-.auth-modal-clerk-root [data-localization-key="formInputLabel__code"],
-.auth-modal-clerk-root .cl-otpCodeField {
-  display: flex !important;
-  gap: 8px !important;
-  justify-content: center !important;
-}
-
-.auth-modal-clerk-root .cl-otpCodeFieldInput,
-.auth-modal-clerk-root input[type="text"][maxlength="1"],
-.auth-modal-clerk-root input[inputmode="numeric"],
-.auth-modal-clerk-root [data-otp-input],
-.auth-modal-clerk-root .cl-formFieldInput__code {
-  width: 48px !important;
-  height: 52px !important;
-  text-align: center !important;
-  font-size: 1.4rem !important;
-  font-weight: 700 !important;
-  color: #f8fafc !important;
-  background: rgba(99, 102, 241, 0.12) !important;
-  border: 2px solid rgba(129, 140, 248, 0.45) !important;
-  border-radius: 12px !important;
-  caret-color: #818cf8 !important;
-  transition: all 200ms ease !important;
-}
-
-.auth-modal-clerk-root .cl-otpCodeFieldInput:focus,
-.auth-modal-clerk-root input[type="text"][maxlength="1"]:focus,
-.auth-modal-clerk-root input[inputmode="numeric"]:focus,
-.auth-modal-clerk-root [data-otp-input]:focus,
-.auth-modal-clerk-root .cl-formFieldInput__code:focus {
-  border-color: rgba(129, 140, 248, 0.9) !important;
-  background: rgba(99, 102, 241, 0.2) !important;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.22) !important;
+  border-color: rgba(129, 140, 248, 0.75) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2) !important;
   outline: none !important;
 }
 
+/* =============================================
+   OTP / VERIFICATION CODE INPUT BOXES
+   Core fix: reset the broken Clerk defaults
+   ============================================= */
+
+/* Container row of OTP boxes */
+.auth-modal-clerk-root .cl-otpCodeField,
+.auth-modal-clerk-root [class*="otpCodeField"] {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+  padding: 8px 0 !important;
+  margin: 0 auto !important;
+}
+
+/* Each individual OTP digit box */
+.auth-modal-clerk-root .cl-otpCodeFieldInput,
+.auth-modal-clerk-root [class*="otpCodeFieldInput"],
+.auth-modal-clerk-otp-input {
+  /* Fixed square dimensions */
+  width: 46px !important;
+  height: 52px !important;
+  min-width: 46px !important;
+  max-width: 46px !important;
+  flex: 0 0 46px !important;
+
+  /* Text appearance */
+  text-align: center !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #f8fafc !important;
+  line-height: 52px !important;
+
+  /* Kill any inherited padding that could offset text */
+  padding: 0 !important;
+
+  /* Box model */
+  box-sizing: border-box !important;
+
+  /* Background & border */
+  background: rgba(99, 102, 241, 0.1) !important;
+  border: 2px solid rgba(129, 140, 248, 0.4) !important;
+  border-radius: 12px !important;
+
+  /* Caret */
+  caret-color: #818cf8 !important;
+
+  /* Remove any pseudo-element text cursor artifacts */
+  overflow: hidden !important;
+
+  /* Smooth transitions */
+  transition: border-color 200ms ease, background 200ms ease, box-shadow 200ms ease !important;
+
+  /* Reset any weird outline / box-shadow from browser or Clerk */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* OTP focus state */
+.auth-modal-clerk-root .cl-otpCodeFieldInput:focus,
+.auth-modal-clerk-root [class*="otpCodeFieldInput"]:focus,
+.auth-modal-clerk-otp-input:focus {
+  border-color: #818cf8 !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25) !important;
+  outline: none !important;
+}
+
+/* OTP filled state */
 .auth-modal-clerk-root .cl-otpCodeFieldInput:not(:placeholder-shown),
-.auth-modal-clerk-root input[type="text"][maxlength="1"]:not(:placeholder-shown),
-.auth-modal-clerk-root input[inputmode="numeric"]:not(:placeholder-shown) {
-  border-color: rgba(129, 140, 248, 0.75) !important;
+.auth-modal-clerk-root [class*="otpCodeFieldInput"]:not(:placeholder-shown) {
+  border-color: rgba(129, 140, 248, 0.7) !important;
   background: rgba(99, 102, 241, 0.18) !important;
 }
 
-/* Direct class applied via Clerk elements map */
-.auth-modal-clerk-otp-input {
-  width: 48px !important;
+/* Fix: Clerk sometimes wraps each input in a div, ensure those wrappers don't distort sizing */
+.auth-modal-clerk-root .cl-otpCodeField > div,
+.auth-modal-clerk-root [class*="otpCodeField"] > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 46px !important;
   height: 52px !important;
-  text-align: center !important;
-  font-size: 1.4rem !important;
-  font-weight: 700 !important;
-  color: #f8fafc !important;
-  background: rgba(99, 102, 241, 0.12) !important;
-  border: 2px solid rgba(129, 140, 248, 0.45) !important;
-  border-radius: 12px !important;
-  caret-color: #818cf8 !important;
+  flex: 0 0 46px !important;
 }
 
-.auth-modal-clerk-otp-input:focus {
-  border-color: rgba(129, 140, 248, 0.9) !important;
-  background: rgba(99, 102, 241, 0.2) !important;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.22) !important;
-}
-
+/* ---------- Primary button ---------- */
 .auth-modal-clerk-primary-btn {
-  font-family: var(--font-heading);
-  letter-spacing: 0.02em;
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.02em !important;
   color: #fff !important;
   background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%) !important;
   box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35) !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  padding: 12px 20px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  border: none !important;
+  transition: transform 150ms ease, box-shadow 150ms ease !important;
 }
 
+.auth-modal-clerk-primary-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.45) !important;
+}
+
+/* ---------- Social / misc ---------- */
 .auth-modal-clerk-social-btn {
-  border: 1px solid rgba(129, 140, 248, 0.24);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(129, 140, 248, 0.24) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
 }
 
 .auth-modal-clerk-social-btn-text {
@@ -290,33 +404,135 @@
   display: none;
 }
 
+/* =============================================
+   RESPONSIVE — Tablet (≤ 960px)
+   ============================================= */
 @media (max-width: 960px) {
   .auth-modal-content {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .auth-modal-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .auth-modal-info p {
+    max-width: 100%;
   }
 
   .auth-modal-form-wrap {
     max-width: 100%;
+    width: 100%;
     padding-top: 0;
+    justify-self: stretch;
   }
 }
 
+/* =============================================
+   RESPONSIVE — Mobile (≤ 580px)
+   ============================================= */
 @media (max-width: 580px) {
   .auth-modal-layer {
-    padding: 10px;
+    padding: 8px;
+    align-items: flex-end;
   }
 
   .auth-modal-panel {
-    border-radius: 16px;
-    padding: 14px;
-  }
-
-  .auth-modal-info h2 {
-    font-size: 1.35rem;
+    border-radius: 20px 20px 16px 16px;
+    padding: 14px 14px 20px;
+    width: 100%;
+    max-height: 96vh;
   }
 
   .auth-modal-close {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
+  .auth-modal-head {
+    margin-bottom: 6px;
+  }
+
+  .auth-modal-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .auth-modal-info p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .auth-modal-info .section-tag {
+    font-size: 0.6rem;
+    padding: 5px 12px;
+  }
+
+  .auth-modal-switch {
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .auth-modal-switch button {
+    padding: 9px 6px;
+    font-size: 0.85rem;
+  }
+
+  /* OTP boxes scale down gracefully on small screens */
+  .auth-modal-clerk-root .cl-otpCodeField,
+  .auth-modal-clerk-root [class*="otpCodeField"] {
+    gap: 7px !important;
+  }
+
+  .auth-modal-clerk-root .cl-otpCodeFieldInput,
+  .auth-modal-clerk-root [class*="otpCodeFieldInput"],
+  .auth-modal-clerk-otp-input {
+    width: 40px !important;
+    height: 46px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    flex: 0 0 40px !important;
+    font-size: 1.15rem !important;
+    line-height: 46px !important;
+    border-radius: 10px !important;
+  }
+
+  .auth-modal-clerk-root .cl-otpCodeField > div,
+  .auth-modal-clerk-root [class*="otpCodeField"] > div {
+    width: 40px !important;
+    height: 46px !important;
+    flex: 0 0 40px !important;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — Very small (≤ 380px)
+   ============================================= */
+@media (max-width: 380px) {
+  .auth-modal-clerk-root .cl-otpCodeField,
+  .auth-modal-clerk-root [class*="otpCodeField"] {
+    gap: 5px !important;
+  }
+
+  .auth-modal-clerk-root .cl-otpCodeFieldInput,
+  .auth-modal-clerk-root [class*="otpCodeFieldInput"],
+  .auth-modal-clerk-otp-input {
+    width: 36px !important;
+    height: 42px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    flex: 0 0 36px !important;
+    font-size: 1rem !important;
+    line-height: 42px !important;
+    border-radius: 8px !important;
+  }
+
+  .auth-modal-clerk-root .cl-otpCodeField > div,
+  .auth-modal-clerk-root [class*="otpCodeField"] > div {
+    width: 36px !important;
+    height: 42px !important;
+    flex: 0 0 36px !important;
   }
 }
