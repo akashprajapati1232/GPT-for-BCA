@@ -1,11 +1,16 @@
-/* Chat page shell ka two-column responsive layout yahan handle hota hai. */
+/* Chat page shell: two-column layout with collapsible sidebar support */
 .chat-page {
   height: 100vh;
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   background: var(--gradient-hero);
   overflow: hidden;
   position: relative;
+  transition: grid-template-columns var(--transition-base);
+}
+
+.chat-page.sidebar-collapsed {
+  grid-template-columns: 0 minmax(0, 1fr);
 }
 
 .chat-main {
@@ -17,7 +22,8 @@
 }
 
 @media (max-width: 960px) {
-  .chat-page {
+  .chat-page,
+  .chat-page.sidebar-collapsed {
     grid-template-columns: 1fr;
   }
 

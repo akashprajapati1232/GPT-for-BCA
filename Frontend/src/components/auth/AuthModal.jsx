@@ -26,6 +26,7 @@ const clerkAppearance = {
     formFieldLabel: 'auth-modal-clerk-label',
     formFieldErrorText: 'auth-modal-clerk-error',
     formFieldHintText: 'auth-modal-clerk-hint',
+    otpCodeFieldInput: 'auth-modal-clerk-input auth-modal-clerk-otp-input',
     socialButtonsBlockButton: 'auth-modal-clerk-social-btn',
     socialButtonsBlockButtonText: 'auth-modal-clerk-social-btn-text',
     dividerText: 'auth-modal-clerk-divider-text',

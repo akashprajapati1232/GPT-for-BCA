@@ -1,5 +1,6 @@
 import ChatItem from './ChatItem';
 import { useClerk, useUser } from '@clerk/clerk-react';
+import faviconImg from '../../assets/favicon.png';
 import '../../styles/Sidebar.css';
 
 // Chat sidebar: history, quick actions aur profile/logout controls handle karta hai.
@@ -7,6 +8,7 @@ export default function Sidebar({
   chats,
   activeChatId,
   isOpen,
+  isDesktopCollapsed,
   onClose,
   onNewChat,
   onSelectChat,
@@ -33,11 +35,19 @@ export default function Sidebar({
   };
 
   return (
-    <aside className={`chat-sidebar ${isOpen ? 'open' : ''}`}>
+    <aside
+      className={[
+        'chat-sidebar',
+        isOpen ? 'open' : '',
+        isDesktopCollapsed ? 'desktop-collapsed' : '',
+      ]
+        .filter(Boolean)
+        .join(' ')}
+    >
       <div className="chat-sidebar-top">
         <div className="chat-sidebar-brand">
-          <span className="chat-sidebar-brand-dot" />
-          <span>GPT for BCA</span>
+          <img src={faviconImg} alt="GPT for BCA" className="chat-sidebar-brand-logo" />
+          <span className="chat-sidebar-brand-text">GPT for BCA</span>
         </div>
         <button
           type="button"
@@ -50,28 +60,31 @@ export default function Sidebar({
       </div>
 
       <button type="button" className="chat-sidebar-new-btn" onClick={onNewChat}>
-        + New Chat
+        <span>＋</span> New Chat
       </button>
 
       <div className="chat-sidebar-middle">
         <button type="button" className="chat-sidebar-mcq-btn">
-          Practice MCQs
+          🎯 Practice MCQs
         </button>
 
-        <div className="chat-sidebar-section-head">
-          <span>All Chats</span>
-        </div>
-
-        <div className="chat-sidebar-chat-list">
-          {chats.map((chat) => (
-            <ChatItem
-              key={chat.id}
-              chat={chat}
-              isActive={chat.id === activeChatId}
-              onClick={() => onSelectChat(chat.id)}
-            />
-          ))}
-        </div>
+        {chats.length > 0 && (
+          <>
+            <div className="chat-sidebar-section-head">
+              <span>Recent Chats</span>
+            </div>
+            <div className="chat-sidebar-chat-list">
+              {chats.map((chat) => (
+                <ChatItem
+                  key={chat.id}
+                  chat={chat}
+                  isActive={chat.id === activeChatId}
+                  onClick={() => onSelectChat(chat.id)}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="chat-sidebar-bottom">
@@ -79,11 +92,11 @@ export default function Sidebar({
           <div className="chat-profile-avatar">{initials}</div>
           <div className="chat-profile-meta">
             <span className="chat-profile-name">{displayName}</span>
-            <span className="chat-profile-role">Student</span>
+            <span className="chat-profile-role">BCA Student</span>
           </div>
         </div>
         <button type="button" className="chat-logout-btn" onClick={handleLogout}>
-          Logout
+          Sign Out
         </button>
       </div>
     </aside>

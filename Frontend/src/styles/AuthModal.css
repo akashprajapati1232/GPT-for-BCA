@@ -169,9 +169,10 @@
 }
 
 .auth-modal-clerk-input {
-  border: 1px solid rgba(129, 140, 248, 0.25);
+  border: 1px solid rgba(129, 140, 248, 0.35) !important;
   color: #f8fafc !important;
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
 }
 
 .auth-modal-clerk-input::placeholder {
@@ -179,7 +180,72 @@
 }
 
 .auth-modal-clerk-input:focus {
-  border-color: rgba(129, 140, 248, 0.6);
+  border-color: rgba(129, 140, 248, 0.7) !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.18) !important;
+}
+
+/* OTP / verification code input boxes */
+.auth-modal-clerk-root [data-localization-key="formInputLabel__code"],
+.auth-modal-clerk-root .cl-otpCodeField {
+  display: flex !important;
+  gap: 8px !important;
+  justify-content: center !important;
+}
+
+.auth-modal-clerk-root .cl-otpCodeFieldInput,
+.auth-modal-clerk-root input[type="text"][maxlength="1"],
+.auth-modal-clerk-root input[inputmode="numeric"],
+.auth-modal-clerk-root [data-otp-input],
+.auth-modal-clerk-root .cl-formFieldInput__code {
+  width: 48px !important;
+  height: 52px !important;
+  text-align: center !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #f8fafc !important;
+  background: rgba(99, 102, 241, 0.12) !important;
+  border: 2px solid rgba(129, 140, 248, 0.45) !important;
+  border-radius: 12px !important;
+  caret-color: #818cf8 !important;
+  transition: all 200ms ease !important;
+}
+
+.auth-modal-clerk-root .cl-otpCodeFieldInput:focus,
+.auth-modal-clerk-root input[type="text"][maxlength="1"]:focus,
+.auth-modal-clerk-root input[inputmode="numeric"]:focus,
+.auth-modal-clerk-root [data-otp-input]:focus,
+.auth-modal-clerk-root .cl-formFieldInput__code:focus {
+  border-color: rgba(129, 140, 248, 0.9) !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.22) !important;
+  outline: none !important;
+}
+
+.auth-modal-clerk-root .cl-otpCodeFieldInput:not(:placeholder-shown),
+.auth-modal-clerk-root input[type="text"][maxlength="1"]:not(:placeholder-shown),
+.auth-modal-clerk-root input[inputmode="numeric"]:not(:placeholder-shown) {
+  border-color: rgba(129, 140, 248, 0.75) !important;
+  background: rgba(99, 102, 241, 0.18) !important;
+}
+
+/* Direct class applied via Clerk elements map */
+.auth-modal-clerk-otp-input {
+  width: 48px !important;
+  height: 52px !important;
+  text-align: center !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #f8fafc !important;
+  background: rgba(99, 102, 241, 0.12) !important;
+  border: 2px solid rgba(129, 140, 248, 0.45) !important;
+  border-radius: 12px !important;
+  caret-color: #818cf8 !important;
+}
+
+.auth-modal-clerk-otp-input:focus {
+  border-color: rgba(129, 140, 248, 0.9) !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.22) !important;
 }
 
 .auth-modal-clerk-primary-btn {

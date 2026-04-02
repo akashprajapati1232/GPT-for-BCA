@@ -4,26 +4,27 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding: 10px 10px 9px;
+  gap: 2px;
+  padding: 9px 10px 8px;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
-  background: rgba(255, 255, 255, 0.02);
-  transition: all var(--transition-base);
+  background: transparent;
+  transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
 .chat-history-item:hover {
-  border-color: var(--color-border-hover);
-  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+  background: rgba(99, 102, 241, 0.08);
 }
 
 .chat-history-item.active {
   background: rgba(99, 102, 241, 0.14);
-  border-color: rgba(99, 102, 241, 0.42);
+  border-color: rgba(99, 102, 241, 0.38);
 }
 
 .chat-history-title {
-  font-size: 0.89rem;
+  font-size: 0.87rem;
   color: var(--color-text-primary);
   font-weight: 600;
   white-space: nowrap;
@@ -32,7 +33,7 @@
 }
 
 .chat-history-preview {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   color: var(--color-text-secondary);
   white-space: nowrap;
   overflow: hidden;
@@ -40,6 +41,6 @@
 }
 
 .chat-history-time {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--color-text-muted);
 }
