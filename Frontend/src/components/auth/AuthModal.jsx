@@ -102,6 +102,7 @@ export default function AuthModal() {
       />
 
       <div className="auth-modal-panel">
+        {/* ── Sticky header — always visible, never scrolls away ── */}
         <div className="auth-modal-head">
           <button
             type="button"
@@ -113,50 +114,44 @@ export default function AuthModal() {
           </button>
         </div>
 
-        <div className="auth-modal-content">
-          <div className="auth-modal-info">
-            <div className="section-tag">Access GPT for BCA</div>
-            <h2>Continue with your AI study assistant</h2>
-            <p>
-              Log in or create an account to open your personalized chat workspace and get
-              semester-wise help instantly.
-            </p>
-          </div>
+        {/* ── Scrollable body — only this region overflows ── */}
+        <div className="auth-modal-body">
+          <div className="auth-modal-content">
+            <div className="auth-modal-form-wrap">
+              <div className="auth-modal-switch">
+                <button
+                  type="button"
+                  className={mode === 'signin' ? 'active' : ''}
+                  onClick={() => setMode('signin')}
+                >
+                  Login
+                </button>
+                <button
+                  type="button"
+                  className={mode === 'signup' ? 'active' : ''}
+                  onClick={() => setMode('signup')}
+                >
+                  Sign Up
+                </button>
+              </div>
 
-          <div className="auth-modal-form-wrap">
-            <div className="auth-modal-switch">
-              <button
-                type="button"
-                className={mode === 'signin' ? 'active' : ''}
-                onClick={() => setMode('signin')}
-              >
-                Login
-              </button>
-              <button
-                type="button"
-                className={mode === 'signup' ? 'active' : ''}
-                onClick={() => setMode('signup')}
-              >
-                Sign Up
-              </button>
-            </div>
-
-            <div className="auth-modal-form">
-              {mode === 'signin' ? (
-                <SignIn
-                  routing="virtual"
-                  forceRedirectUrl={redirectTo}
-                  fallbackRedirectUrl={redirectTo}
-                  appearance={clerkAppearance}
-                />
-              ) : (
-                <SignUp
-                  routing="virtual"
-                  forceRedirectUrl={redirectTo}
-                  fallbackRedirectUrl={redirectTo}
-                  appearance={clerkAppearance}
-                />
-              )}
+              <div className="auth-modal-form">
+                {mode === 'signin' ? (
+                  <SignIn
+                    routing="virtual"
+                    forceRedirectUrl={redirectTo}
+                    fallbackRedirectUrl={redirectTo}
+                    appearance={clerkAppearance}
+                  />
+                ) : (
+                  <SignUp
+                    routing="virtual"
+                    forceRedirectUrl={redirectTo}
+                    fallbackRedirectUrl={redirectTo}
+                    appearance={clerkAppearance}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>

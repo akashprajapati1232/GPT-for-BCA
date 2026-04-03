@@ -24,14 +24,16 @@
   padding: 0;
 }
 
-/* ---------- Panel ---------- */
+/* ---------- Panel — flex column, NO scroll here ---------- */
 .auth-modal-panel {
   position: relative;
   z-index: 1;
-  width: min(980px, 100%);
+  width: min(480px, 100%);
   max-height: min(94vh, 880px);
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* Panel itself must NOT scroll — head stays sticky */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   border-radius: 22px;
   border: 1px solid rgba(129, 140, 248, 0.32);
   background:
@@ -42,27 +44,62 @@
     0 30px 80px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(255, 255, 255, 0.03),
     0 0 36px rgba(79, 70, 229, 0.18);
-  padding: clamp(16px, 2.5vw, 28px);
   box-sizing: border-box;
 }
 
-/* Smooth scrollbar */
-.auth-modal-panel::-webkit-scrollbar {
-  width: 4px;
-}
-.auth-modal-panel::-webkit-scrollbar-track {
-  background: transparent;
-}
-.auth-modal-panel::-webkit-scrollbar-thumb {
-  background: rgba(129, 140, 248, 0.3);
-  border-radius: 4px;
+/* ---------- Scrollable body — everything BELOW the header ---------- */
+.auth-modal-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* iOS momentum scroll */
+  -webkit-overflow-scrolling: touch;
+  /* Prevent scroll bleeding into the page behind */
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  padding: 0 clamp(16px, 2.5vw, 28px) clamp(20px, 3vw, 32px);
+  box-sizing: border-box;
 }
 
-/* ---------- Close btn ---------- */
+/* Themed scrollbar — webkit */
+.auth-modal-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.auth-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.auth-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(129, 140, 248, 0.35);
+  border-radius: 99px;
+}
+
+.auth-modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(129, 140, 248, 0.6);
+}
+
+/* Firefox */
+.auth-modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(129, 140, 248, 0.35) transparent;
+}
+
+/* ---------- Sticky header — always above the scroll ---------- */
 .auth-modal-head {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  align-items: center;
+  padding: clamp(12px, 2vw, 18px) clamp(16px, 2.5vw, 28px) clamp(8px, 1vw, 12px);
+  /* Glass blur so it doesn't hard-cut content scrolling under it */
+  background: rgba(13, 19, 49, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .auth-modal-close {
@@ -89,61 +126,17 @@
   transform: translateY(-1px);
 }
 
-/* ---------- Two-column content ---------- */
+/* ---------- Single-column centered content ---------- */
 .auth-modal-content {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 420px);
-  gap: clamp(14px, 2vw, 28px);
-  align-items: start;
-}
-
-/* ---------- Left info pane ---------- */
-.auth-modal-info {
-  padding: clamp(6px, 1vw, 12px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 0;
+  align-items: stretch;
 }
 
-.auth-modal-info .section-tag {
-  background: rgba(99, 102, 241, 0.18);
-  border-color: rgba(129, 140, 248, 0.45);
-  color: #a5b4fc;
-  font-size: clamp(0.65rem, 1.2vw, 0.75rem);
-  letter-spacing: 0.08em;
-  padding: 6px 14px;
-  border-radius: 99px;
-  border: 1px solid;
-  display: inline-block;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.auth-modal-info h2 {
-  font-family: var(--font-heading);
-  font-size: clamp(1.4rem, 3vw, 2.3rem);
-  line-height: 1.18;
-  margin-bottom: 12px;
-  color: #f8fafc;
-}
-
-.auth-modal-info p {
-  color: #c0cae1;
-  line-height: 1.75;
-  max-width: 44ch;
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
-}
-
-/* ---------- Right form pane ---------- */
+/* ---------- Form pane ---------- */
 .auth-modal-form-wrap {
   min-width: 0;
   width: 100%;
-  max-width: 420px;
-  justify-self: start;
-  align-self: start;
-  padding-top: 20px;
   box-sizing: border-box;
 }
 
@@ -209,7 +202,7 @@
 }
 
 /* Make Clerk's inner wrapper fill width */
-.auth-modal-clerk-root > div,
+.auth-modal-clerk-root>div,
 .auth-modal-clerk-root .cl-card,
 .auth-modal-clerk-root [class*="cl-rootBox"],
 .auth-modal-clerk-root [class*="cl-signIn-root"],
@@ -337,8 +330,8 @@
 }
 
 /* Fix: Clerk sometimes wraps each input in a div, ensure those wrappers don't distort sizing */
-.auth-modal-clerk-root .cl-otpCodeField > div,
-.auth-modal-clerk-root [class*="otpCodeField"] > div {
+.auth-modal-clerk-root .cl-otpCodeField>div,
+.auth-modal-clerk-root [class*="otpCodeField"]>div {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -408,25 +401,9 @@
    RESPONSIVE — Tablet (≤ 960px)
    ============================================= */
 @media (max-width: 960px) {
-  .auth-modal-content {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .auth-modal-info {
-    text-align: center;
-    align-items: center;
-  }
-
-  .auth-modal-info p {
-    max-width: 100%;
-  }
-
   .auth-modal-form-wrap {
     max-width: 100%;
     width: 100%;
-    padding-top: 0;
-    justify-self: stretch;
   }
 }
 
@@ -435,39 +412,31 @@
    ============================================= */
 @media (max-width: 580px) {
   .auth-modal-layer {
-    padding: 8px;
+    padding: 0;
     align-items: flex-end;
   }
 
   .auth-modal-panel {
-    border-radius: 20px 20px 16px 16px;
-    padding: 14px 14px 20px;
+    border-radius: 24px 24px 0 0;
     width: 100%;
-    max-height: 96vh;
+    max-height: 92dvh;
+    /* dvh adapts to mobile browser chrome */
+  }
+
+  .auth-modal-head {
+    padding: 14px 16px 10px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  /* Safe-area padding for notched iPhones */
+  .auth-modal-body {
+    padding: 0 16px calc(20px + env(safe-area-inset-bottom, 0px));
   }
 
   .auth-modal-close {
     width: 34px;
     height: 34px;
     font-size: 0.9rem;
-  }
-
-  .auth-modal-head {
-    margin-bottom: 6px;
-  }
-
-  .auth-modal-info h2 {
-    font-size: 1.3rem;
-  }
-
-  .auth-modal-info p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .auth-modal-info .section-tag {
-    font-size: 0.6rem;
-    padding: 5px 12px;
   }
 
   .auth-modal-switch {
@@ -499,8 +468,8 @@
     border-radius: 10px !important;
   }
 
-  .auth-modal-clerk-root .cl-otpCodeField > div,
-  .auth-modal-clerk-root [class*="otpCodeField"] > div {
+  .auth-modal-clerk-root .cl-otpCodeField>div,
+  .auth-modal-clerk-root [class*="otpCodeField"]>div {
     width: 40px !important;
     height: 46px !important;
     flex: 0 0 40px !important;
@@ -511,6 +480,7 @@
    RESPONSIVE — Very small (≤ 380px)
    ============================================= */
 @media (max-width: 380px) {
+
   .auth-modal-clerk-root .cl-otpCodeField,
   .auth-modal-clerk-root [class*="otpCodeField"] {
     gap: 5px !important;
@@ -529,8 +499,8 @@
     border-radius: 8px !important;
   }
 
-  .auth-modal-clerk-root .cl-otpCodeField > div,
-  .auth-modal-clerk-root [class*="otpCodeField"] > div {
+  .auth-modal-clerk-root .cl-otpCodeField>div,
+  .auth-modal-clerk-root [class*="otpCodeField"]>div {
     width: 36px !important;
     height: 42px !important;
     flex: 0 0 36px !important;

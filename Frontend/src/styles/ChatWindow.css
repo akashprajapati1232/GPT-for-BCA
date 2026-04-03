@@ -1,9 +1,13 @@
 /* Chat window: header, messages area, scroll behavior */
 .chat-window {
-  height: 100vh;
+  height: 100vh;           /* fallback */
+  height: 100dvh;          /* excludes mobile browser chrome */
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-width: 0;
+  min-height: 0;
+  /* When inside a flex parent (chat-main), stretch to fill it */
+  flex: 1;
 }
 
 /* ── Header ── */
@@ -212,6 +216,8 @@
   padding: 24px 20px 16px;
   display: flex;
   flex-direction: column;
+  /* CRITICAL: min-height:0 lets this grid row actually shrink */
+  min-height: 0;
   background:
     radial-gradient(circle at 8% 8%, rgba(99, 102, 241, 0.12) 0%, transparent 28%),
     radial-gradient(circle at 88% 18%, rgba(6, 182, 212, 0.09) 0%, transparent 28%),
@@ -431,5 +437,12 @@
   /* Avatar button: hide the caret label on very small screens */
   .chat-user-avatar-caret {
     display: none;
+  }
+}
+
+/* Ensure input bar never hides behind the phone's home bar */
+@media (max-width: 960px) {
+  .chat-input-wrap {
+    padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
   }
 }
