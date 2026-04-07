@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 3 - Graph Theory",
+  "main_topics": [
+    "Graph Theory"
+  ],
+  "expanded_subtopics": {
+    "Graph Theory": [
+      "Definition of a Graph",
+      "Finite and infinite Graphs",
+      "Incidence and Degree of a vertex",
+      "Null Graph",
+      "Sub graphs",
+      "Walks",
+      "Paths",
+      "Circuits",
+      "Connected",
+      "Disconnected graphs and Components",
+      "Euler Graph",
+      "Hamiltonian Path and Hamiltonian Circuits",
+      "Solved numerical examples"
+    ]
+  }
+}

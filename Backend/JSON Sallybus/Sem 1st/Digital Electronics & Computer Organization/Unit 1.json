@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 1 - Logic Gates and Circuit Design",
+  "main_topics": [
+    "Logic Gates and Circuit Design",
+    "Boolean laws"
+  ],
+  "expanded_subtopics": {
+    "Logic Gates and Circuit Design": [
+      "Logic gates and circuit Gates (OR, AND, NOR, NAND, XOR & XNOR)",
+      "Demogran's laws",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ],
+    "Boolean laws": [
+      "Boolean laws",
+      "Circuit designing techniques (SOP, POS, K-Map)",
+      "Local and global case-study perspective",
+      "Practical conservation and sustainability actions",
+      "Business workflow and transaction lifecycle"
+    ]
+  }
+}

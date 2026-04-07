@@ -1,0 +1,18 @@
+{
+  "unit": "Unit 3 - Deadlocks",
+  "main_topics": [
+    "Deadlocks"
+  ],
+  "expanded_subtopics": {
+    "Deadlocks": [
+      "System Model",
+      "Deadlock Characterization",
+      "Methods for Handling Deadlocks",
+      "Deadlock prevention",
+      "Deadlock Avoidance",
+      "Deadlock Detection",
+      "Recovery from Deadlock",
+      "Real-world OS behavior examples"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 2 - Operators and I/O Functions",
+  "main_topics": [
+    "Operators",
+    "Built-in I/O Functions",
+    "Preprocessor directives"
+  ],
+  "expanded_subtopics": {
+    "Operators": [
+      "Types of operators",
+      "Precedence and Associativity",
+      "Expression",
+      "Statement and types of statements Build in Ope",
+      "Core concepts and terminology"
+    ],
+    "Built-in I/O Functions": [
+      "Printf()",
+      "Scanf()",
+      "Getch()",
+      "Getchar()",
+      "Putchar()",
+      "Concept of header files",
+      "Common programming errors and debugging tips"
+    ],
+    "Preprocessor directives": [
+      "#include",
+      "#define",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ]
+  }
+}

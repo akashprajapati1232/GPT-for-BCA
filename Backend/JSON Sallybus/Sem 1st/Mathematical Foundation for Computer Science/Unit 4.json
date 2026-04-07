@@ -1,0 +1,30 @@
+{
+  "unit": "Unit 4 - Trees and Matrix Representation",
+  "main_topics": [
+    "Trees and Matrix Representation",
+    "Matrix Representation of graphs"
+  ],
+  "expanded_subtopics": {
+    "Trees and Matrix Representation": [
+      "Properties of Trees",
+      "Distance and Centres in a Tree",
+      "Rooted and Binary Trees",
+      "Spanning Trees and Fundamental Circuits",
+      "Cutset",
+      "Properties of a Cutset",
+      "Solved numerical examples"
+    ],
+    "Matrix Representation of graphs": [
+      "Incidence matrix",
+      "Circuit matrix",
+      "Fundamental Circuit matrix",
+      "Cutset matrix",
+      "Path matrix",
+      "Adjacency matrix Planar and Dual Graphs Planar Graphs",
+      "Kurtowski's two Graphs",
+      "Different Representations of a Planar Graph",
+      "Detection of Planarity",
+      "Solved numerical examples"
+    ]
+  }
+}

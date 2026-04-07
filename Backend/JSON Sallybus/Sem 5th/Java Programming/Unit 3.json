@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 3 - Packages Exceptions and Multithreading",
+  "main_topics": [
+    "Packages and Interfaces",
+    "Exception Handling",
+    "Multithreaded Programming",
+    "Thread Synchronization and Communication"
+  ],
+  "expanded_subtopics": {
+    "Packages and Interfaces": [
+      "Package creation and organization",
+      "Access protection and importing packages",
+      "Interface definition and implementation"
+    ],
+    "Exception Handling": [
+      "Exception types and hierarchy",
+      "Try catch multiple catch and finally",
+      "Throw throws and user-defined exceptions"
+    ],
+    "Multithreaded Programming": [
+      "Java thread model and main thread",
+      "Creating and managing multiple threads",
+      "Thread lifecycle methods isAlive and join"
+    ],
+    "Thread Synchronization and Communication": [
+      "Thread priorities and scheduling basics",
+      "Synchronization and race condition control",
+      "Inter-thread communication concepts"
+    ]
+  }
+}

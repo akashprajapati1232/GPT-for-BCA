@@ -1,0 +1,30 @@
+{
+  "unit": "Unit 5 - Functions",
+  "main_topics": [
+    "Functions",
+    "Parameter passing",
+    "Storage classes"
+  ],
+  "expanded_subtopics": {
+    "Functions": [
+      "Functions Basic types of function",
+      "Declaration and definition",
+      "Function call",
+      "Types of function",
+      "Common programming errors and debugging tips"
+    ],
+    "Parameter passing": [
+      "Parameter passing",
+      "Call by value",
+      "Call by reference",
+      "Scope of variable",
+      "Core concepts and terminology"
+    ],
+    "Storage classes": [
+      "Storage classes",
+      "Recursion",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ]
+  }
+}

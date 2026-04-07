@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 2 - Frequency Distribution and Central Tendency",
+  "main_topics": [
+    "Frequency distributions",
+    "Measures of central tendency"
+  ],
+  "expanded_subtopics": {
+    "Frequency distributions": [
+      "Frequency distributions",
+      "Histograms and frequency polygons",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ],
+    "Measures of central tendency": [
+      "Mean",
+      "Mode",
+      "Median",
+      "Dispersion",
+      "Mean deviation and standard deviation",
+      "Moments",
+      "Skewness",
+      "Kurtosis",
+      "Solved numerical examples"
+    ]
+  }
+}

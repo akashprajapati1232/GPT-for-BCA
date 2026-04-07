@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 1 - Roots of Equations",
+  "main_topics": [
+    "Roots of Equations"
+  ],
+  "expanded_subtopics": {
+    "Roots of Equations": [
+      "Bisections Method",
+      "False Position Method",
+      "Newton's Raphson Method",
+      "Rate of convergence of Newton's method",
+      "Solved numerical examples"
+    ]
+  }
+}

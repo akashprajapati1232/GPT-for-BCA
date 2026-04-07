@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 5 - Global Environmental Issues",
+  "main_topics": [
+    "Global Warming and Climate Change",
+    "Ozone Depletion and Acid Rain",
+    "Energy Resources",
+    "Biodiversity Loss and Species Extinction"
+  ],
+  "expanded_subtopics": {
+    "Global Warming and Climate Change": [
+      "Global warming overview",
+      "Climate change impacts",
+      "Basic mitigation strategies"
+    ],
+    "Ozone Depletion and Acid Rain": [
+      "Causes of ozone depletion",
+      "Acid rain formation",
+      "Environmental impacts"
+    ],
+    "Energy Resources": [
+      "Conventional energy resources",
+      "Non-conventional energy resources",
+      "Energy conservation practices"
+    ],
+    "Biodiversity Loss and Species Extinction": [
+      "Global biodiversity loss",
+      "Causes of species extinction",
+      "Conservation strategies"
+    ]
+  }
+}

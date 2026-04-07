@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 5 - Transport and Upper Layers",
+  "main_topics": [
+    "Transport and upper layers in OSI Model"
+  ],
+  "expanded_subtopics": {
+    "Transport and upper layers in OSI Model": [
+      "Transport layer functions",
+      "Connection management",
+      "Functions of session layers",
+      "Presentation layer and application layer",
+      "Layer-wise role and data flow understanding"
+    ]
+  }
+}

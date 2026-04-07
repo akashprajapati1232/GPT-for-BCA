@@ -1,0 +1,37 @@
+{
+  "unit": "Unit 3 - Control Structures",
+  "main_topics": [
+    "Control structures",
+    "Decision making structures",
+    "Loop Control structures",
+    "Other statements"
+  ],
+  "expanded_subtopics": {
+    "Control structures": [
+      "Control structures",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases"
+    ],
+    "Decision making structures": [
+      "If",
+      "If-else",
+      "Nested If-else",
+      "Switch",
+      "Common programming errors and debugging tips"
+    ],
+    "Loop Control structures": [
+      "While",
+      "Do-while",
+      "For",
+      "Nested for loop",
+      "Common programming errors and debugging tips"
+    ],
+    "Other statements": [
+      "Break",
+      "Continue",
+      "Goto",
+      "Exit",
+      "Core concepts and terminology"
+    ]
+  }
+}

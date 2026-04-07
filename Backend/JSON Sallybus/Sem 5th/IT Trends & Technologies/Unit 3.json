@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 3 - Wireless and Mobile Technologies",
+  "main_topics": [
+    "Wireless Communication Fundamentals",
+    "Mobile Network Generations",
+    "Mobile and IP Telephony",
+    "Ad-hoc Sensor and GIS Systems",
+    "Cellular Architecture"
+  ],
+  "expanded_subtopics": {
+    "Wireless Communication Fundamentals": [
+      "Bluetooth",
+      "WiFi",
+      "WiMax",
+      "LiFi"
+    ],
+    "Mobile Network Generations": [
+      "2G 3G 4G and 5G services",
+      "Coverage speed and latency comparison",
+      "Use cases of mobile broadband"
+    ],
+    "Mobile and IP Telephony": [
+      "IMEI and SIM concepts",
+      "IP telephony and softphone basics",
+      "Voice mail services"
+    ],
+    "Ad-hoc Sensor and GIS Systems": [
+      "Ad-hoc networks",
+      "Sensor networks",
+      "GIS and ISP role in connectivity"
+    ],
+    "Cellular Architecture": [
+      "Mobile computing overview",
+      "Cell and base station concepts",
+      "Mobile switching office and handoff"
+    ]
+  }
+}

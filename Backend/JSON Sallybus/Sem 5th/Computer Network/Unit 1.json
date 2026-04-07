@@ -1,0 +1,41 @@
+{
+  "unit": "Unit 1 - Network Fundamentals and Models",
+  "main_topics": [
+    "Basic Concepts",
+    "OSI and TCP/IP Models",
+    "Digital Transmission",
+    "Interfaces and Modems"
+  ],
+  "expanded_subtopics": {
+    "Basic Concepts": [
+      "Components of data communication",
+      "Distributed processing",
+      "Standards and organizations",
+      "Line configuration",
+      "Topology",
+      "Transmission mode",
+      "And categories of networks",
+      "Layer-wise role and data flow understanding"
+    ],
+    "OSI and TCP/IP Models": [
+      "Layers and their functions",
+      "Comparison of models",
+      "Layer-wise role and data flow understanding",
+      "Common security threats and protection methods"
+    ],
+    "Digital Transmission": [
+      "Digital Transmission",
+      "Layer-wise role and data flow understanding",
+      "Common security threats and protection methods",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ],
+    "Interfaces and Modems": [
+      "DTE-DCE Interface",
+      "Modems",
+      "Cable modems",
+      "Layer-wise role and data flow understanding",
+      "Common security threats and protection methods"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unit": "Unit 2 - Transmission Media",
+  "main_topics": [
+    "Transmission Media"
+  ],
+  "expanded_subtopics": {
+    "Transmission Media": [
+      "Guided and unguided",
+      "Attenuation",
+      "Distortion",
+      "Noise",
+      "Throughput",
+      "Propagation speed and time",
+      "Wavelength",
+      "Shannon capacity",
+      "Comparison of media",
+      "Layer-wise role and data flow understanding"
+    ]
+  }
+}

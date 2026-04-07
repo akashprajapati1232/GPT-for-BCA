@@ -1,0 +1,19 @@
+{
+  "unit": "Unit 5 - AWT Controls",
+  "main_topics": [
+    "Introducing Awt And Awt Controls",
+    "Working with Frame Windows - working with Graphic"
+  ],
+  "expanded_subtopics": {
+    "Introducing Awt And Awt Controls": [
+      "AWT Classes - Window fundamentals",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Working with Frame Windows - working with Graphic": [
+      "Controls fundamentals - Labels - using Buttons - Applying check Boxes - Check Box group - Choice controls - Using a Text field - Using a Text Area - Understanding Layout Managers (Flow Layout only) - Menu Bars and Menus",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ]
+  }
+}

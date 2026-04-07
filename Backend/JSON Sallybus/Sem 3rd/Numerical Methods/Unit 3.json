@@ -1,0 +1,18 @@
+{
+  "unit": "Unit 3 - Numerical Differentiation and Integration",
+  "main_topics": [
+    "Numerical Differentiation and Integration"
+  ],
+  "expanded_subtopics": {
+    "Numerical Differentiation and Integration": [
+      "Introduction",
+      "Direct methods",
+      "Maxima and minima of a tabulated function",
+      "General Quadratic formula",
+      "Trapezoidal rule",
+      "Simpson 's One third rule",
+      "Simpson's three- eight rule",
+      "Solved numerical examples"
+    ]
+  }
+}

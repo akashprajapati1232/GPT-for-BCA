@@ -1,0 +1,28 @@
+{
+  "unit": "Unit 3 - Memories",
+  "main_topics": [
+    "Memories",
+    "PROM and EPROM",
+    "Hard Disk"
+  ],
+  "expanded_subtopics": {
+    "Memories": [
+      "Memories ROMs",
+      "PROMs",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ],
+    "PROM and EPROM": [
+      "EPROMs",
+      "RAMs",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ],
+    "Hard Disk": [
+      "Hard Disk",
+      "Floppy Disk and CD-ROM",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ]
+  }
+}

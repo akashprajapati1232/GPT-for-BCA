@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 6 - Sorting and Searching",
+  "main_topics": [
+    "Sorting Techniques",
+    "Searching Techniques"
+  ],
+  "expanded_subtopics": {
+    "Sorting Techniques": [
+      "Sorting Techniques",
+      "Insertion sort",
+      "Selection sort",
+      "Merge sort",
+      "Heap sort",
+      "Common programming errors and debugging tips"
+    ],
+    "Searching Techniques": [
+      "Linear search",
+      "Binary search and hashing",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases"
+    ]
+  }
+}

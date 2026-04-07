@@ -1,0 +1,55 @@
+{
+  "unit": "Unit 1 - Introduction to Computers",
+  "main_topics": [
+    "Introduction to Computers",
+    "Mini Computers",
+    "Programming Languages",
+    "Memory Types",
+    "Secondary Storage Devices (FD, CD, HD, Pen drive)",
+    "Simple Addition"
+  ],
+  "expanded_subtopics": {
+    "Introduction to Computers": [
+      "Introduction to Computers Introduction",
+      "Characteristics of Computers",
+      "Block diagram of computer",
+      "Types of computers and features",
+      "Core concepts and terminology"
+    ],
+    "Mini Computers": [
+      "Mini Computers",
+      "Micro Computers",
+      "Mainframe Computers",
+      "Super Computers",
+      "Core concepts and terminology"
+    ],
+    "Programming Languages": [
+      "Types of Programming Languages (Machine Languages, Assembly Languages, High Level Languages).Data Organization",
+      "Drives",
+      "Files",
+      "Directories",
+      "Hardware-software interaction perspective"
+    ],
+    "Memory Types": [
+      "Types of Memory (Primary And Secondary) RAM",
+      "ROM",
+      "PROM",
+      "EPROM",
+      "Real-world OS behavior examples"
+    ],
+    "Secondary Storage Devices (FD, CD, HD, Pen drive)": [
+      "Secondary Storage Devices (FD, CD, HD, Pen drive) I/O Devices (Scanners, Plotters, LCD, Plasma Display) Number Systems",
+      "Introduction to Binary",
+      "Octal",
+      "Hexadecimal system Conversion",
+      "Core concepts and terminology"
+    ],
+    "Simple Addition": [
+      "Simple Addition",
+      "Subtraction",
+      "Multiplication",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

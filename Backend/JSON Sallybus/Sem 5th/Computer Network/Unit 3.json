@@ -1,0 +1,51 @@
+{
+  "unit": "Unit 3 - Telephony and Data Link Protocols",
+  "main_topics": [
+    "Telephony",
+    "Error detection and correction",
+    "Data link control protocols",
+    "Point to point controls",
+    "ISDN"
+  ],
+  "expanded_subtopics": {
+    "Telephony": [
+      "Multiplexing",
+      "Layer-wise role and data flow understanding",
+      "Common security threats and protection methods"
+    ],
+    "Error detection and correction": [
+      "Many to one",
+      "One to many",
+      "WDM",
+      "TDM",
+      "FDM",
+      "Circuit switching",
+      "Packet switching and message switching",
+      "Layer-wise role and data flow understanding"
+    ],
+    "Data link control protocols": [
+      "Line discipline",
+      "Flow control",
+      "Error control",
+      "Synchronous and asynchronous protocols",
+      "Character and bit oriented protocols",
+      "Link access procedures",
+      "Layer-wise role and data flow understanding"
+    ],
+    "Point to point controls": [
+      "Transmission states",
+      "PPP layers",
+      "LCP",
+      "Authentication",
+      "NCP",
+      "Layer-wise role and data flow understanding"
+    ],
+    "ISDN": [
+      "Services",
+      "Historical outline",
+      "Subscriber's access",
+      "ISDN Layers and broadcast ISDN",
+      "Layer-wise role and data flow understanding"
+    ]
+  }
+}

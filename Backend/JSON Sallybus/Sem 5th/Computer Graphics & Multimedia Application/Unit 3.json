@@ -1,0 +1,30 @@
+{
+  "unit": "Unit 3 - Geometrical Transformations",
+  "main_topics": [
+    "2D Transformations",
+    "Composition of 2D Transformations",
+    "3D Transformations"
+  ],
+  "expanded_subtopics": {
+    "2D Transformations": [
+      "Geometrical Transformation 2D Transformation",
+      "Homogeneous Coordinates and Matrix Representation of 2D Transformations",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ],
+    "Composition of 2D Transformations": [
+      "Composition of 2D Transformations",
+      "The Window-to-Viewport Transformations",
+      "Layer-wise role and data flow understanding",
+      "Common security threats and protection methods",
+      "Tool-based practical workflow"
+    ],
+    "3D Transformations": [
+      "Introduction to 3D Transformations Matrix",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 2 - Processes and Scheduling",
+  "main_topics": [
+    "Processes",
+    "CPU Scheduling",
+    "Process Synchronization"
+  ],
+  "expanded_subtopics": {
+    "Processes": [
+      "Process Concept",
+      "Process Scheduling",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ],
+    "CPU Scheduling": [
+      "Basic Concepts",
+      "Scheduling Criteria",
+      "Scheduling Algorithms",
+      "Multiple - Processor Scheduling",
+      "Real-world OS behavior examples"
+    ],
+    "Process Synchronization": [
+      "Background",
+      "The Critical - Section Problem",
+      "Synchronization Hardware",
+      "Semaphores",
+      "Classical Problems of Synchronization",
+      "Real-world OS behavior examples"
+    ]
+  }
+}

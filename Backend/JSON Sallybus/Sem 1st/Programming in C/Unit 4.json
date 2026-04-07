@@ -1,0 +1,47 @@
+{
+  "unit": "Unit 4 - Simple Arithmetic Problems",
+  "main_topics": [
+    "Simple Arithmetic Problems",
+    "Sum of first n numbers",
+    "Table generation for n",
+    "Cosine series",
+    "Factors of a number"
+  ],
+  "expanded_subtopics": {
+    "Simple Arithmetic Problems": [
+      "Simple Arithmetic Problems Addition / Multiplication of integers",
+      "Determining if a number is +ve / -ve / even / odd",
+      "Maximum of 2 numbers",
+      "Numbers",
+      "Core concepts and terminology"
+    ],
+    "Sum of first n numbers": [
+      "Sum of first n numbers",
+      "Given n numbers",
+      "Integer division",
+      "Digit reversing",
+      "Core concepts and terminology"
+    ],
+    "Table generation for n": [
+      "Table generation for n",
+      "Ab",
+      "Factorial",
+      "Sine series",
+      "Core concepts and terminology"
+    ],
+    "Cosine series": [
+      "Cosine series",
+      "NC r",
+      "Pascal Triangle",
+      "Prime number",
+      "Layer-wise role and data flow understanding"
+    ],
+    "Factors of a number": [
+      "Factors of a number",
+      "Other problems such as Perfect number",
+      "GCD numbers etc (Write algorithms and draw flowchart)",
+      "Swapping",
+      "Core concepts and terminology"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "unit": "Unit 4 - Trees",
+  "main_topics": [
+    "Trees"
+  ],
+  "expanded_subtopics": {
+    "Trees": [
+      "Introduction and terminology",
+      "Traversal of binary trees",
+      "Recursive algorithms for tree operations such as traversal",
+      "Insertion",
+      "Deletion",
+      "Binary Search Tree",
+      "Common programming errors and debugging tips"
+    ]
+  }
+}

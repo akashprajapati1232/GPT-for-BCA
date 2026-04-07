@@ -1,0 +1,21 @@
+{
+  "unit": "Unit 2 - Stacks and Queues",
+  "main_topics": [
+    "Stacks and Queues"
+  ],
+  "expanded_subtopics": {
+    "Stacks and Queues": [
+      "Introduction and primitive operations on stack",
+      "Stack application",
+      "Infix",
+      "Postfix",
+      "Prefix expressions",
+      "Evaluation of postfix expression",
+      "Conversion between prefix",
+      "Infix and postfix",
+      "Introduction and primitive operation on queues",
+      "D- queues and priority queues",
+      "Common programming errors and debugging tips"
+    ]
+  }
+}

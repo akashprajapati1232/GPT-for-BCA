@@ -1,0 +1,25 @@
+{
+  "unit": "Unit 5 - Multimedia Fundamentals",
+  "main_topics": [
+    "Multimedia Fundamentals",
+    "Multimedia Storage and Delivery",
+    "Computer Animation Basics"
+  ],
+  "expanded_subtopics": {
+    "Multimedia Fundamentals": [
+      "Definition of multimedia",
+      "Elements of multimedia content",
+      "Role of multimedia in interactive applications"
+    ],
+    "Multimedia Storage and Delivery": [
+      "CD-ROM and multimedia highway concept",
+      "Digital media distribution basics",
+      "Media format and compatibility considerations"
+    ],
+    "Computer Animation Basics": [
+      "Animation design principles",
+      "Types of animation",
+      "Using animation functions in multimedia projects"
+    ]
+  }
+}

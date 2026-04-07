@@ -1,0 +1,17 @@
+{
+  "unit": "Unit 3 - Linked Lists",
+  "main_topics": [
+    "Lists"
+  ],
+  "expanded_subtopics": {
+    "Lists": [
+      "Introduction to linked lists",
+      "Sequential and linked lists",
+      "Operations such as traversal",
+      "Insertion",
+      "Deletion searching",
+      "Two way lists and Use of headers",
+      "Common programming errors and debugging tips"
+    ]
+  }
+}

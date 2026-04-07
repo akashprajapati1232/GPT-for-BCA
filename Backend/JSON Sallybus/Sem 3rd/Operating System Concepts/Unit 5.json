@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 5 - Information Management",
+  "main_topics": [
+    "Information Management",
+    "File System Implementation"
+  ],
+  "expanded_subtopics": {
+    "Information Management": [
+      "Introduction",
+      "A Simple File system",
+      "General Model of a File System",
+      "Symbolic File System",
+      "Basic File System",
+      "Access Control Verification",
+      "Logical File System",
+      "Physical File system File - System Interface",
+      "File Concept",
+      "Access Methods",
+      "Directory Structure",
+      "Protection",
+      "Real-world OS behavior examples"
+    ],
+    "File System Implementation": [
+      "File - System Structure",
+      "Allocation Methods",
+      "Free- Space Management",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ]
+  }
+}

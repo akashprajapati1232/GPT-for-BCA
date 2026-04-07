@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 4 - Applets and Event Handling",
+  "main_topics": [
+    "Applets And Event Handling",
+    "Applets and other topics",
+    "The Applet class"
+  ],
+  "expanded_subtopics": {
+    "Applets And Event Handling": [
+      "I/O",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Applets and other topics": [
+      "I/O Basics Reading console Input - writing console output - The Print Writer class - Reading and Writing Files",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "The Applet class": [
+      "Applet Basics - Applet Architecture - Applet Skeleton - Applet Display method - Requesting Repainting - HTML APPLET tag- Passing Parameters to Applet - Audio Clip Interface",
+      "Event Handling Mechanisms - Delegation Event Model - Event classes (The Action Event Item Event, Key Event, Mouse Event) - Sources of Events - Event Listener Interfaces (Action Listener, Item Listener, Key Listener, Mouse Listener) - Adapter Classes",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ]
+  }
+}

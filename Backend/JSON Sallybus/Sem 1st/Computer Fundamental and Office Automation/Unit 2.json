@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 2 - Algorithm and Flowcharts",
+  "main_topics": [
+    "Algorithm and Flowcharts",
+    "Flowchart"
+  ],
+  "expanded_subtopics": {
+    "Algorithm and Flowcharts": [
+      "Definition",
+      "Characteristics",
+      "Advantages and disadvantages",
+      "Examples",
+      "Stepwise problem-solving approach"
+    ],
+    "Flowchart": [
+      "Definition",
+      "Define symbols of flowchart",
+      "Advantages and disadvantages",
+      "Examples",
+      "Stepwise problem-solving approach"
+    ]
+  }
+}

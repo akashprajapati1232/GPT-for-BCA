@@ -1,0 +1,25 @@
+{
+  "unit": "Unit 4 - Introduction to Environment",
+  "main_topics": [
+    "Environment and Its Components",
+    "Environmental Pollution",
+    "Population and Natural Resources"
+  ],
+  "expanded_subtopics": {
+    "Environment and Its Components": [
+      "Introduction to environment",
+      "Components of environment",
+      "Need of environmental education"
+    ],
+    "Environmental Pollution": [
+      "Types of pollution",
+      "Effects on human beings",
+      "Effects on environment"
+    ],
+    "Population and Natural Resources": [
+      "Human population explosion",
+      "Exploitation of natural resources",
+      "Sustainable resource use"
+    ]
+  }
+}

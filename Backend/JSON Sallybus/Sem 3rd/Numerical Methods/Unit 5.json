@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 5 - Solution of Differential Equations",
+  "main_topics": [
+    "Solution of Differential Equations"
+  ],
+  "expanded_subtopics": {
+    "Solution of Differential Equations": [
+      "Euler's method",
+      "Picard 's method",
+      "Fourth-order Ranga - Kutta method",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ]
+  }
+}

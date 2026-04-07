@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 2 - Classes and Objects",
+  "main_topics": [
+    "Classes and Objects"
+  ],
+  "expanded_subtopics": {
+    "Classes and Objects": [
+      "Encapsulation",
+      "Information hiding",
+      "Abstract data types",
+      "Object & classes",
+      "Attributes",
+      "Methods",
+      "C++ class declaration",
+      "State identity and behaviour of an object",
+      "Constructors and destructors",
+      "Instantiation of objects",
+      "Default parameter value",
+      "Object types",
+      "C++ garbage collection",
+      "Dynamic memory allocation",
+      "Meta class / abstract classes",
+      "Object modeling with simple examples"
+    ]
+  }
+}

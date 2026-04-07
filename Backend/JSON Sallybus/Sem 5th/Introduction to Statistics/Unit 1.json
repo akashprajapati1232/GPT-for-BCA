@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 1 - Combinatorics",
+  "main_topics": [
+    "Combinatorics"
+  ],
+  "expanded_subtopics": {
+    "Combinatorics": [
+      "Permutation and Combination",
+      "Repetition and Constrained Repetition",
+      "Binomial Coefficients",
+      "Binomial Theorem",
+      "Solved numerical examples"
+    ]
+  }
+}

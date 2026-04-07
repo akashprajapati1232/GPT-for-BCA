@@ -1,0 +1,46 @@
+{
+  "unit": "Unit 4 - Client-side Scripting",
+  "main_topics": [
+    "Introduction to Client Side Scripting",
+    "Variables in JS",
+    "JS Popup Boxes",
+    "Working with Arrays",
+    "Validation of Forms"
+  ],
+  "expanded_subtopics": {
+    "Introduction to Client Side Scripting": [
+      "Introduction to Client Side Scripting",
+      "Introduction to Java Script",
+      "JavaScript Types",
+      "Hands-on page implementation examples",
+      "Validation, usability, and performance basics"
+    ],
+    "Variables in JS": [
+      "Variables in JS",
+      "Operators in JS Conditions Statements",
+      "Java Script Loops",
+      "Hands-on page implementation examples",
+      "Validation, usability, and performance basics"
+    ],
+    "JS Popup Boxes": [
+      "JS Popup Boxes",
+      "JS Events",
+      "JS Arrays",
+      "Hands-on page implementation examples",
+      "Validation, usability, and performance basics"
+    ],
+    "Working with Arrays": [
+      "Working with Arrays",
+      "JS Objects JS Functions",
+      "Using Java Script in Real time",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases"
+    ],
+    "Validation of Forms": [
+      "Validation of Forms",
+      "Related Examples",
+      "Hands-on page implementation examples",
+      "Validation, usability, and performance basics"
+    ]
+  }
+}

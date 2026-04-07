@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 5 - Memory Organization",
+  "main_topics": [
+    "Memory Organization"
+  ],
+  "expanded_subtopics": {
+    "Memory Organization": [
+      "Basic cell of static and dynamic RAM",
+      "Building large memories using chips",
+      "Associative memory",
+      "Cache memory organisation and Virtual memory organisation",
+      "Real-world OS behavior examples"
+    ]
+  }
+}

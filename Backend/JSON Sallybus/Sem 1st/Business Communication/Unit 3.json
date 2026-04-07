@@ -1,0 +1,29 @@
+{
+  "unit": "Unit 3 - Written Communication Purpose of writing",
+  "main_topics": [
+    "Written Communication",
+    "Principle of Effective writing",
+    "Electronic Writing Process"
+  ],
+  "expanded_subtopics": {
+    "Written Communication": [
+      "Written Communication Purpose of writing",
+      "Clarity in Writing",
+      "Professional communication etiquette",
+      "Common mistakes in business communication"
+    ],
+    "Principle of Effective writing": [
+      "Principle of Effective writing",
+      "Writing Techniques",
+      "Professional communication etiquette",
+      "Common mistakes in business communication"
+    ],
+    "Electronic Writing Process": [
+      "Electronic Writing Process",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs",
+      "Professional communication etiquette",
+      "Common mistakes in business communication"
+    ]
+  }
+}

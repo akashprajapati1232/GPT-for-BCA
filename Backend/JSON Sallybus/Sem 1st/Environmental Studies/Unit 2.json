@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 2 - Natural Resources and Environmental Pollution",
+  "main_topics": [
+    "Natural Resources",
+    "Management of Natural Resources",
+    "Air Water and Soil Pollution",
+    "Solid Waste Management"
+  ],
+  "expanded_subtopics": {
+    "Natural Resources": [
+      "Renewable resources",
+      "Non-renewable resources",
+      "Global status distribution and production"
+    ],
+    "Management of Natural Resources": [
+      "Individual managed resources",
+      "Community managed resources",
+      "Government managed resources"
+    ],
+    "Air Water and Soil Pollution": [
+      "Causes of pollution",
+      "Consequences of pollution",
+      "Control measures"
+    ],
+    "Solid Waste Management": [
+      "Collection and segregation",
+      "Transportation and disposal",
+      "3R's: reduce reuse recycle"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "unit": "Unit 4 - Correlation Regression and Curve Fitting",
+  "main_topics": [
+    "Correlation and Regression",
+    "Curve fitting",
+    "Chi-square test",
+    "Signification test"
+  ],
+  "expanded_subtopics": {
+    "Correlation and Regression": [
+      "Linear Correlation",
+      "Measure of Correlation",
+      "Least Square Regression lines",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ],
+    "Curve fitting": [
+      "Method of least square",
+      "Least square line",
+      "Least squares Parabola",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ],
+    "Chi-square test": [
+      "Definition of chi-square",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ],
+    "Signification test": [
+      "Contingency test",
+      "Coefficient of contingency",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ]
+  }
+}

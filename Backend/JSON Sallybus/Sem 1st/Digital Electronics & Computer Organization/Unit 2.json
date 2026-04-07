@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 2 - Combinational Building Blocks",
+  "main_topics": [
+    "Combinational Building Blocks"
+  ],
+  "expanded_subtopics": {
+    "Combinational Building Blocks": [
+      "Multiplexes",
+      "Decoder",
+      "Encoder",
+      "Adder and Subtracter",
+      "Business workflow and transaction lifecycle"
+    ]
+  }
+}

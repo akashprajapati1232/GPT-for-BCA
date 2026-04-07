@@ -1,0 +1,20 @@
+{
+  "unit": "Unit 3 - CSS Concepts",
+  "main_topics": [
+    "Concept of CSS"
+  ],
+  "expanded_subtopics": {
+    "Concept of CSS": [
+      "Creating Style Sheet",
+      "CSS Properties",
+      "CSS Styling (Background, Text Format, Controlling Fonts)",
+      "Working with block elements and objects",
+      "Working with Lists and Tables",
+      "CSS Id and Class",
+      "Box Model(Introduction, Border properties, Padding Properties, Margin properties) CSS Advanced(Grouping, Dimension, Display, Positioning, Floating, Align, Pseudo class, Navigation Bar, Image Sprites, Attribute sector)",
+      "CSS Color",
+      "Creating page Layout and Site Designs",
+      "Hands-on page implementation examples"
+    ]
+  }
+}

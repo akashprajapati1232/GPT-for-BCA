@@ -1,0 +1,29 @@
+{
+  "unit": "Unit 6 - Spreadsheets and Database Packages",
+  "main_topics": [
+    "Spreadsheets and Database Packages",
+    "MS-Excel",
+    "MS-PowerPoint"
+  ],
+  "expanded_subtopics": {
+    "Spreadsheets and Database Packages": [
+      "Spreadsheets and Database packages Purpose",
+      "Usage",
+      "Command",
+      "Practical query and schema design scenarios",
+      "Common anomalies and how to avoid them"
+    ],
+    "MS-Excel": [
+      "MS-Excel",
+      "Creation of files in MS-Access",
+      "Switching between application",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "MS-PowerPoint": [
+      "MS-PowerPoint",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "unit": "Unit 5 - Files and Exception Handling",
+  "main_topics": [
+    "Files and Exception Handling"
+  ],
+  "expanded_subtopics": {
+    "Files and Exception Handling": [
+      "Streams and files",
+      "Namespaces",
+      "Exception handling",
+      "Generic Classes",
+      "Core concepts and terminology"
+    ]
+  }
+}

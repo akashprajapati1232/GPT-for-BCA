@@ -1,0 +1,19 @@
+{
+  "unit": "Unit 5 - Directed Graphs",
+  "main_topics": [
+    "Directed Graphs"
+  ],
+  "expanded_subtopics": {
+    "Directed Graphs": [
+      "Definition",
+      "Some types of Digraphs",
+      "Digraphs and Binary relations",
+      "Directed paths and Connectedness",
+      "Euler Digraphs",
+      "Trees with directed edges",
+      "Fundamental Circuits in Digraphs",
+      "Adjacency Matrix of a Digraph",
+      "Core concepts and terminology"
+    ]
+  }
+}

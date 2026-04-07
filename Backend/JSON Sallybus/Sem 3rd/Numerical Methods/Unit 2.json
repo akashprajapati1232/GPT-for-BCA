@@ -1,0 +1,20 @@
+{
+  "unit": "Unit 2 - Interpolation and Extrapolation",
+  "main_topics": [
+    "Interpolation and Extrapolation"
+  ],
+  "expanded_subtopics": {
+    "Interpolation and Extrapolation": [
+      "Finite Differences",
+      "The operator E",
+      "Newton's Forward and Backward Differences",
+      "Newton's dividend differences formulae",
+      "Lagrange's Interpolation formula for unequal Intervals",
+      "Gauss's Interpolation formula",
+      "Starling formula",
+      "Bessel's formula",
+      "Laplace-Everett formula",
+      "Solved numerical examples"
+    ]
+  }
+}

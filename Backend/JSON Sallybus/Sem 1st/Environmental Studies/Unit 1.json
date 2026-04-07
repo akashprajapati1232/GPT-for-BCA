@@ -1,0 +1,32 @@
+{
+  "unit": "Unit 1 - Understanding the Environment",
+  "main_topics": [
+    "Environment",
+    "Ecosystem",
+    "Functions of Ecosystem",
+    "Ecosystem Services"
+  ],
+  "expanded_subtopics": {
+    "Environment": [
+      "Concept of environment",
+      "Importance of environment",
+      "Major components of environment"
+    ],
+    "Ecosystem": [
+      "Concept of ecosystem",
+      "Structure of ecosystem",
+      "Biotic and abiotic components"
+    ],
+    "Functions of Ecosystem": [
+      "Food chain",
+      "Food web",
+      "Ecological pyramids",
+      "Energy flow"
+    ],
+    "Ecosystem Services": [
+      "Provisioning services",
+      "Regulating services",
+      "Cultural services"
+    ]
+  }
+}

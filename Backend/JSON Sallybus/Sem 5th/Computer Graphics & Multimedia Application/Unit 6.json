@@ -1,0 +1,25 @@
+{
+  "unit": "Unit 6 - Uses of Multimedia",
+  "main_topics": [
+    "Applications of Multimedia",
+    "Multimedia Project Stages",
+    "Tools Skills and Training"
+  ],
+  "expanded_subtopics": {
+    "Applications of Multimedia": [
+      "Educational applications",
+      "Business and marketing applications",
+      "Entertainment and communication applications"
+    ],
+    "Multimedia Project Stages": [
+      "Planning and requirement analysis",
+      "Design and content development",
+      "Testing and deployment"
+    ],
+    "Tools Skills and Training": [
+      "Hardware and software requirements",
+      "Core skills for multimedia development",
+      "Training and career opportunities in multimedia"
+    ]
+  }
+}

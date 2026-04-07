@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 2 - Mathematical Logic",
+  "main_topics": [
+    "Mathematical Logic Connectives",
+    "Equivalence formulae Normal forms"
+  ],
+  "expanded_subtopics": {
+    "Mathematical Logic Connectives": [
+      "Mathematical Logic Connectives",
+      "Negation",
+      "Conjunction",
+      "Disjunction",
+      "Conditional",
+      "Bi- conditional",
+      "Statement formulas",
+      "Tautology and contradiction",
+      "Core concepts and terminology"
+    ],
+    "Equivalence formulae Normal forms": [
+      "Principle conjunctive and disjunctive normal forms",
+      "Theory of inferences for statement calculus validating using truth tables",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

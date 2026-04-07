@@ -1,0 +1,20 @@
+{
+  "unit": "Unit 5 - Editors and Word Processors",
+  "main_topics": [
+    "Editors and Word Processors",
+    "Examples"
+  ],
+  "expanded_subtopics": {
+    "Editors and Word Processors": [
+      "Editors and Word Processors Basic Concepts",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ],
+    "Examples": [
+      "MS-Word",
+      "Introduction to desktop publishing",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

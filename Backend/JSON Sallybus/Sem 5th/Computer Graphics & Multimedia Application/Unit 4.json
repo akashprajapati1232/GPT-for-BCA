@@ -1,0 +1,25 @@
+{
+  "unit": "Unit 4 - Curves Surfaces and Solid Modeling",
+  "main_topics": [
+    "Representing Curves and Surfaces",
+    "Solid Modeling",
+    "Model Representation Techniques"
+  ],
+  "expanded_subtopics": {
+    "Representing Curves and Surfaces": [
+      "Polygon meshes",
+      "Cubic curves",
+      "Quadric surfaces"
+    ],
+    "Solid Modeling": [
+      "Representing solids",
+      "Regularized Boolean set operations",
+      "Primitive instancing and sweep representations"
+    ],
+    "Model Representation Techniques": [
+      "Boundary representations",
+      "Spatial partitioning representations",
+      "Constructive solid geometry comparison"
+    ]
+  }
+}

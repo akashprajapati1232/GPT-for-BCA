@@ -1,0 +1,53 @@
+{
+  "unit": "Unit 1 - E-governance and Cyber Crime",
+  "main_topics": [
+    "E-governance",
+    "E-governance websites & services",
+    "Digital Locker",
+    "Malware",
+    "Types of cyber crime like email fraud",
+    "Identity theft"
+  ],
+  "expanded_subtopics": {
+    "E-governance": [
+      "E-governance",
+      "E-democracy",
+      "Government efforts to encourage citizen participation",
+      "PPP model",
+      "Core concepts and terminology"
+    ],
+    "E-governance websites & services": [
+      "E-governance websites & services",
+      "MP ONLINE services",
+      "UIDI & Aadhar",
+      "E governance mobile apps like UMANG",
+      "Hands-on page implementation examples"
+    ],
+    "Digital Locker": [
+      "Digital Locker",
+      "Digital Library",
+      "Introduction to cyber crime",
+      "Types of attacks like spyware",
+      "Business workflow and transaction lifecycle"
+    ],
+    "Malware": [
+      "Malware",
+      "Spam mail",
+      "Logic bombs",
+      "Denial of service",
+      "Core concepts and terminology"
+    ],
+    "Types of cyber crime like email fraud": [
+      "Types of cyber crime like email fraud",
+      "Phishing",
+      "Spoofing",
+      "Hacking",
+      "Core concepts and terminology"
+    ],
+    "Identity theft": [
+      "Identity theft",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

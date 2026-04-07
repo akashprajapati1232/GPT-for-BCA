@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 4 - Windows Operating Environment",
+  "main_topics": [
+    "Windows Operating Environment",
+    "Desktop",
+    "Windows Accessories"
+  ],
+  "expanded_subtopics": {
+    "Windows Operating Environment": [
+      "Windows Operating Environment Features of MS - Windows",
+      "Control Panel",
+      "Taskbar",
+      "Local and global case-study perspective",
+      "Practical conservation and sustainability actions"
+    ],
+    "Desktop": [
+      "Desktop",
+      "Windows Application",
+      "Icons",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Windows Accessories": [
+      "Windows Accessories",
+      "Notepad",
+      "Paintbrush",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

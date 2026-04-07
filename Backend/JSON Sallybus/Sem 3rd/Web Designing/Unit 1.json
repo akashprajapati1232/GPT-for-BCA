@@ -1,0 +1,28 @@
+{
+  "unit": "Unit 1 - Web Basics and HTML Introduction",
+  "main_topics": [
+    "Introduction",
+    "Introduction to HTML"
+  ],
+  "expanded_subtopics": {
+    "Introduction": [
+      "Basic principles involved in developing a web site",
+      "Planning process",
+      "Domains and Hosting",
+      "Responsive Web Designing",
+      "Types of Websites (Static and Dynamic Websites)",
+      "Web Standards and W3C recommendations",
+      "Hands-on page implementation examples"
+    ],
+    "Introduction to HTML": [
+      "What is HTML",
+      "HTML Documents",
+      "Basic structure of an HTML document",
+      "Creating an HTML document",
+      "Mark up Tags",
+      "Heading-Paragraphs",
+      "Line Breaks",
+      "Hands-on page implementation examples"
+    ]
+  }
+}

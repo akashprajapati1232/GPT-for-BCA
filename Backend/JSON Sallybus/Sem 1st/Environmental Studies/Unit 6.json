@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 6 - Environmental Law and Policy",
+  "main_topics": [
+    "Constitutional Provisions and Environment Protection Act",
+    "National Green Tribunal Act",
+    "National Environment Policy"
+  ],
+  "expanded_subtopics": {
+    "Constitutional Provisions and Environment Protection Act": [
+      "Article 21",
+      "Article 48A",
+      "Article 51A",
+      "Environment Protection Act 1986"
+    ],
+    "National Green Tribunal Act": [
+      "Purpose of National Green Tribunal",
+      "National Green Tribunal Act 2010",
+      "Role in environmental justice"
+    ],
+    "National Environment Policy": [
+      "National Environment Policy 2006",
+      "Policy goals and principles",
+      "Implementation perspective"
+    ]
+  }
+}

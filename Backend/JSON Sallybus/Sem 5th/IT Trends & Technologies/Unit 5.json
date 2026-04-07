@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 5 - MIS and System Development",
+  "main_topics": [
+    "Introduction to MIS",
+    "Considerations for system planning",
+    "Fact Finding Process and Techniques",
+    "Decision table"
+  ],
+  "expanded_subtopics": {
+    "Introduction to MIS": [
+      "Introduction to MIS",
+      "System Development Life Cycle",
+      "Various phases of system development",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Considerations for system planning": [
+      "Considerations for system planning",
+      "Initial Investigation",
+      "Determining Users Requirements and Analysis",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Fact Finding Process and Techniques": [
+      "Fact Finding Process and Techniques",
+      "Data Analysis",
+      "Data Dictionary",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ],
+    "Decision table": [
+      "Decision table",
+      "Decision tree & form design process",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

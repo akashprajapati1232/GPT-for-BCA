@@ -1,0 +1,39 @@
+{
+  "unit": "Unit 1 - Java Data Types and Operators",
+  "main_topics": [
+    "Java Data Types And Operators",
+    "Genesis of Java",
+    "Data types",
+    "Arrays",
+    "Operator"
+  ],
+  "expanded_subtopics": {
+    "Java Data Types And Operators": [
+      "Java Data Types And Operators",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Genesis of Java": [
+      "Creation of Java - why java is important to internet - The java Buzz words - An overview of Java Object Oriented Programming",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Data types": [
+      "Simple types - Integers - Floating point types - characters - Booleans - A closer Look at Literals - Variables - Type conversion and casting - Automatic type promotion in Expressions - Strings",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Arrays": [
+      "One Dimensional Array - Multi Dimensional Array",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "Operator": [
+      "Arithmetic Operators - Bitwise operators - Relational operators - Boolean Logical operators - Assignment operators - Conditional operators-Operator Precedence",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ]
+  }
+}

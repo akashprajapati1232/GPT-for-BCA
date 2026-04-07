@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 3 - Probability and Distributions",
+  "main_topics": [
+    "Elementary probability theory",
+    "Theoretical distribution"
+  ],
+  "expanded_subtopics": {
+    "Elementary probability theory": [
+      "Definition",
+      "Conditional probability",
+      "Probability distribution",
+      "Mathematical expectation",
+      "Solved numerical examples"
+    ],
+    "Theoretical distribution": [
+      "Binomial",
+      "Poisson and Normal distribution",
+      "Relation between the binomial",
+      "Poisoned Normal distribution",
+      "Solved numerical examples"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unit": "Unit 1 - Graphics Introduction and Scan Conversion",
+  "main_topics": [
+    "Introduction",
+    "Scan"
+  ],
+  "expanded_subtopics": {
+    "Introduction": [
+      "The Advantages of Interactive Graphics",
+      "Representative Uses of Computer Graphics",
+      "Classification of Application Development of Hardware and software for computer Graphics",
+      "Conceptual Framework for Interactive Graphics",
+      "Overview",
+      "Tool-based practical workflow"
+    ],
+    "Scan": [
+      "Converting Lines",
+      "Scan Converting Circles",
+      "Scan Converting Ellipses",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ]
+  }
+}

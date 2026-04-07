@@ -1,0 +1,39 @@
+{
+  "unit": "Unit 2 - Display and Clipping",
+  "main_topics": [
+    "Hardcopy Technologies",
+    "Video Controller",
+    "Image Scanners",
+    "Clipping Algorithms"
+  ],
+  "expanded_subtopics": {
+    "Hardcopy Technologies": [
+      "Hardcopy Technologies",
+      "Display Technologies",
+      "Raster-Scan Display System",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ],
+    "Video Controller": [
+      "Video Controller",
+      "Random-Scan Display processor",
+      "Input Devices for Operator Interaction",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ],
+    "Image Scanners": [
+      "Image Scanners",
+      "Working exposure on graphics tools like Dream Weaver",
+      "D Effects etc",
+      "Tool-based practical workflow",
+      "Quality and optimization considerations"
+    ],
+    "Clipping Algorithms": [
+      "Clipping Southland- Cohen Algorithm",
+      "Cyrus-Beck Algorithm",
+      "Midpoint Subdivision Algorithm",
+      "Stepwise problem-solving approach",
+      "Dry-run and trace table practice"
+    ]
+  }
+}

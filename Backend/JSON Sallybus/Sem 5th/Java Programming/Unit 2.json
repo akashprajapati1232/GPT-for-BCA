@@ -1,0 +1,21 @@
+{
+  "unit": "Unit 2 - Classes Methods and Inheritance",
+  "main_topics": [
+    "Introducing Classes",
+    "A Closer Look at Methods and classes"
+  ],
+  "expanded_subtopics": {
+    "Introducing Classes": [
+      "INTRODUCING CLASSES",
+      "METHODS AND INHERITANCE Class Fundamentals - Declaring objects - Assigning object Reference variables - Introducing Methods - Constructors - Garbage collection - Finalize () Method - Stack class",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ],
+    "A Closer Look at Methods and classes": [
+      "Overloading Methods - Using object as parameters - Argument passing - Returning objects - Recursion - Introducing Access control - understanding static - Introducing final - Nested and Inner classes - String class - Using command line arguments",
+      "Inheritance Basics - Using super - creating Multilevel Hierarchy - Method overriding - Dynamic Method Dispatch - Using Abstract class - Using final with inheritance - The object class",
+      "Object modeling with simple examples",
+      "Best practices for readable and maintainable code"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "unit": "Unit 4 - AI Cloud IoT and Big Data",
+  "main_topics": [
+    "Artificial Intelligence and Expert Systems",
+    "Cloud computing- Introduction",
+    "Services",
+    "IoT Introduction"
+  ],
+  "expanded_subtopics": {
+    "Artificial Intelligence and Expert Systems": [
+      "Artificial Intelligence and Expert system - Concepts of AI & Expert Systems",
+      "Merits and Demerits of Expert system",
+      "Application of Expert system and Al",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Cloud computing- Introduction": [
+      "Cloud computing- Introduction",
+      "Types",
+      "Application",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Services": [
+      "Services",
+      "Google play store",
+      "Apple store",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "IoT Introduction": [
+      "IOT- Introduction",
+      "Application & use",
+      "Big data- Introduction",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

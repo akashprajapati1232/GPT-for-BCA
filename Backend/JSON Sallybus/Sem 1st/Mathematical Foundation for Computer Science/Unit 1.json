@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 1 - Matrix Theory",
+  "main_topics": [
+    "Matrix Theory",
+    "Elementary row (column) operations",
+    "Rank of a Matrix"
+  ],
+  "expanded_subtopics": {
+    "Matrix Theory": [
+      "Matrix Theory Review of fundamentals",
+      "Equivalent matrices",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ],
+    "Elementary row (column) operations": [
+      "Elementary row (column) operations",
+      "Rank of a matrix by reducing it to the normal form",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Rank of a Matrix": [
+      "Rank of a matrix by reducing it to echelon form",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ]
+  }
+}

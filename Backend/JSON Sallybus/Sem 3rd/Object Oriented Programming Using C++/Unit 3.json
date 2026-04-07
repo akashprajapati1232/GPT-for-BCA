@@ -1,0 +1,23 @@
+{
+  "unit": "Unit 3 - Inheritance and Polymorphism",
+  "main_topics": [
+    "Inheritance and Polymorphism"
+  ],
+  "expanded_subtopics": {
+    "Inheritance and Polymorphism": [
+      "Inheritance",
+      "Class hierarchy",
+      "Derivation - public",
+      "Private & protected",
+      "Aggregation",
+      "Composition vs classification hierarchies",
+      "Polymorphism",
+      "Categorization of polymorphism techniques",
+      "Method polymorphism",
+      "Polymorphism by parameter",
+      "Operator overloading",
+      "Parametric Polymorphism",
+      "Object modeling with simple examples"
+    ]
+  }
+}

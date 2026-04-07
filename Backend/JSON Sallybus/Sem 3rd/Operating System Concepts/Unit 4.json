@@ -1,0 +1,27 @@
+{
+  "unit": "Unit 4 - Device Management",
+  "main_topics": [
+    "Device Management",
+    "Secondary Storage Structure"
+  ],
+  "expanded_subtopics": {
+    "Device Management": [
+      "Techniques for Device Management",
+      "Dedicated Devices",
+      "Shared Devices",
+      "Virtual Devices",
+      "Input or Output Devices",
+      "Storage Devices",
+      "Buffering",
+      "Real-world OS behavior examples"
+    ],
+    "Secondary Storage Structure": [
+      "Disk Structure",
+      "Disk Scheduling",
+      "Disk Management",
+      "Swap- Space Management",
+      "Disk Reliability",
+      "Common programming errors and debugging tips"
+    ]
+  }
+}

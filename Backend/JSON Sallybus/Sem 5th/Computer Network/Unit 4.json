@@ -1,0 +1,22 @@
+{
+  "unit": "Unit 4 - Network Layer and Devices",
+  "main_topics": [
+    "Devices"
+  ],
+  "expanded_subtopics": {
+    "Devices": [
+      "Repeaters",
+      "Bridges",
+      "Gateways",
+      "Routers",
+      "The Network Layer",
+      "Design issues",
+      "Routing algorithms",
+      "Congestion control Algorithms",
+      "Quality of service",
+      "Internet working",
+      "Network- Layer in the internet",
+      "Layer-wise role and data flow understanding"
+    ]
+  }
+}

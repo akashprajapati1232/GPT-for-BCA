@@ -1,0 +1,29 @@
+{
+  "unit": "Unit 1 - OOP Fundamentals",
+  "main_topics": [
+    "Introduction",
+    "Basic terms and ideas"
+  ],
+  "expanded_subtopics": {
+    "Introduction": [
+      "Introducing Object - Oriented Approach",
+      "Relating to other paradigms {Functional",
+      "Data decomposition}",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Basic terms and ideas": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Review of C",
+      "Difference between C and C++ - cin",
+      "Cout",
+      "New",
+      "Delete",
+      "Operators",
+      "Core concepts and terminology"
+    ]
+  }
+}

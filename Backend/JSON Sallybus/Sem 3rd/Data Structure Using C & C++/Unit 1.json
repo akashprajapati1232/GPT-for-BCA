@@ -1,0 +1,19 @@
+{
+  "unit": "Unit 1 - Arrays and Sparse Matrices",
+  "main_topics": [
+    "Data Structure Fundamentals",
+    "Sparse Arrays"
+  ],
+  "expanded_subtopics": {
+    "Data Structure Fundamentals": [
+      "Introduction to Data Structure and its Characteristics Array Representation of single and multidimensional arrays",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases"
+    ],
+    "Sparse Arrays": [
+      "Sparse arrays - lower and upper triangular matrices and Tri diagonal matrices with Vector Representation also",
+      "Common programming errors and debugging tips",
+      "Typical coding exercises and use cases"
+    ]
+  }
+}

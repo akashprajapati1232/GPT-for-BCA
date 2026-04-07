@@ -1,0 +1,13 @@
+{
+  "unit": "Unit 4 - Solution of Linear Equations",
+  "main_topics": [
+    "Solution of Linear Equation"
+  ],
+  "expanded_subtopics": {
+    "Solution of Linear Equation": [
+      "Gauss's Elimination method and Gauss's Siedel iterative method",
+      "Solved numerical examples",
+      "Exam-oriented short methods and checks"
+    ]
+  }
+}

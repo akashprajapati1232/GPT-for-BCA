@@ -1,0 +1,25 @@
+{
+  "unit": "Unit 7 - Environmental Protocols and Movements",
+  "main_topics": [
+    "Earth Summit and IPCC",
+    "Kyoto and Montreal Protocols",
+    "Environmental Movements"
+  ],
+  "expanded_subtopics": {
+    "Earth Summit and IPCC": [
+      "Earth Summit objectives and outcomes",
+      "Role of IPCC in climate monitoring",
+      "Global climate reporting mechanisms"
+    ],
+    "Kyoto and Montreal Protocols": [
+      "Kyoto Protocol commitments",
+      "Montreal Protocol and ozone protection",
+      "Difference between climate and ozone treaties"
+    ],
+    "Environmental Movements": [
+      "Green Belt Movement",
+      "Chipko Movement",
+      "Community participation in conservation"
+    ]
+  }
+}

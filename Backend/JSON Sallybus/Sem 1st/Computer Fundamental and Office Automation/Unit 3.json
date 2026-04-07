@@ -1,0 +1,28 @@
+{
+  "unit": "Unit 3 - Operating System Basics",
+  "main_topics": [
+    "Operating System and Services in O.S",
+    "Files and Directories",
+    "Batch Files"
+  ],
+  "expanded_subtopics": {
+    "Operating System and Services in O.S": [
+      "Operating System and Services in O.S",
+      "DOS History",
+      "Real-world OS behavior examples",
+      "Comparison of key techniques and trade-offs"
+    ],
+    "Files and Directories": [
+      "Files and Directories",
+      "Internal and External Commands",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Batch Files": [
+      "Batch Files",
+      "Types of Operative System",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}

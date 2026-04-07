@@ -1,0 +1,26 @@
+{
+  "unit": "Unit 5 - Web Hosting and SEO",
+  "main_topics": [
+    "Web Hosting",
+    "SEO Concepts"
+  ],
+  "expanded_subtopics": {
+    "Web Hosting": [
+      "Web Hosting Basics",
+      "Types of Hosting Packages",
+      "Registering domains",
+      "Defining Name Servers",
+      "Using Control Panel",
+      "Creating Emails in Cpanel",
+      "Using FTP Client",
+      "Hands-on page implementation examples"
+    ],
+    "SEO Concepts": [
+      "Basics of SEO",
+      "Importance of SEO",
+      "On page Optimization Basics",
+      "Hands-on page implementation examples",
+      "Validation, usability, and performance basics"
+    ]
+  }
+}

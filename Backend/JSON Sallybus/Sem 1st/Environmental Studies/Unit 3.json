@@ -1,0 +1,31 @@
+{
+  "unit": "Unit 3 - Biodiversity and Issues in Environment",
+  "main_topics": [
+    "Concept of Biodiversity",
+    "Threats and Conservation",
+    "Climate Change",
+    "Environmental Education and Ethics"
+  ],
+  "expanded_subtopics": {
+    "Concept of Biodiversity": [
+      "Levels of biodiversity",
+      "Values of biodiversity",
+      "Biodiversity hot spots"
+    ],
+    "Threats and Conservation": [
+      "Threats to biodiversity",
+      "Conservation of biodiversity",
+      "Need for biodiversity protection"
+    ],
+    "Climate Change": [
+      "Causes of climate change",
+      "Consequences of climate change",
+      "Mitigation and adaptation overview"
+    ],
+    "Environmental Education and Ethics": [
+      "Objectives of environmental education",
+      "Environmental ethics",
+      "Role of awareness in sustainability"
+    ]
+  }
+}

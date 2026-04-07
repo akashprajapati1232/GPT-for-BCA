@@ -1,0 +1,40 @@
+{
+  "unit": "Unit 1 - OS Introduction and Memory Management",
+  "main_topics": [
+    "Introduction",
+    "Memory Management",
+    "Segmentation Virtual Memory"
+  ],
+  "expanded_subtopics": {
+    "Introduction": [
+      "Introduction",
+      "What is an operating system",
+      "Simple Batch Systems",
+      "Multi-programmed Batch systems",
+      "Time- Sharing Systems",
+      "Personal - Computer Systems",
+      "Parallel systems",
+      "Distributed systems",
+      "Real- Time Systems",
+      "Real-world OS behavior examples"
+    ],
+    "Memory Management": [
+      "Background",
+      "Logical versus physical Address space",
+      "Swapping",
+      "Contiguous allocation",
+      "Paging",
+      "Real-world OS behavior examples"
+    ],
+    "Segmentation Virtual Memory": [
+      "Demand Paging",
+      "Page Replacement",
+      "Page- replacement Algorithms",
+      "Performance of Demand Paging",
+      "Allocation of Frames",
+      "Thrashing",
+      "Other Considerations",
+      "Real-world OS behavior examples"
+    ]
+  }
+}

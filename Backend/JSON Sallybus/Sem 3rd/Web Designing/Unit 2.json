@@ -1,0 +1,18 @@
+{
+  "unit": "Unit 2 - HTML Elements",
+  "main_topics": [
+    "Elements of HTML"
+  ],
+  "expanded_subtopics": {
+    "Elements of HTML": [
+      "HTML Tags",
+      "Working with Text",
+      "Working with Lists",
+      "Tables and Frames",
+      "Working with Hyperlinks",
+      "Images and Multimedia",
+      "Working with Forms and controls",
+      "Hands-on page implementation examples"
+    ]
+  }
+}

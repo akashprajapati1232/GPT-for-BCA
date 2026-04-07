@@ -3,41 +3,6 @@ import Sidebar from '../components/chat/Sidebar';
 import ChatWindow from '../components/chat/ChatWindow';
 import '../styles/ChatPage.css';
 
-// Mock AI reply based on keywords (backend integration aane par replace hoga)
-function buildMockReply(question, semester) {
-  const text = question.toLowerCase();
-  const semInfo = semester ? ` (Semester ${semester})` : '';
-
-  if (text.includes('mcq')) {
-    return `Great choice${semInfo}! I can generate topic-wise MCQs with answers and short explanations to help you with quick revision. Which subject should I start with?`;
-  }
-
-  if (text.includes('syllabus') || text.includes('semester')) {
-    return `I can map your questions semester-wise and subject-wise${semInfo}. Tell me your semester and I will break the syllabus into daily study goals.`;
-  }
-
-  if (text.includes('notes') || text.includes('short')) {
-    return `Here are concise notes-style responses: definition, key points, example, and the likely exam question pattern. What subject${semInfo}?`;
-  }
-
-  if (text.includes('dbms') || text.includes('database')) {
-    return `DBMS covers Normalization (1NF→BCNF), ER Diagrams, SQL queries, and Transaction management${semInfo}. Which topic do you want to dive into?`;
-  }
-
-  if (text.includes('java') || text.includes('oop')) {
-    return `Java OOP pillars: Encapsulation, Inheritance, Polymorphism, and Abstraction${semInfo}. I can give exam-focused definitions, code examples, or MCQs. Where should we start?`;
-  }
-
-  if (text.includes('network') || text.includes('osi')) {
-    return `Computer Networks key topics${semInfo}: OSI model (7 layers), TCP/IP, IP addressing, routing protocols. Want a quick-revision table or detailed notes?`;
-  }
-
-  if (text.includes('os') || text.includes('operating')) {
-    return `Operating Systems covers CPU scheduling (FCFS, SJF, Round Robin), memory management, deadlocks, and file systems${semInfo}. Which area do you want covered?`;
-  }
-
-  return `Nice question${semInfo}! I will keep the explanation simple, accurate, and focused on what matters most for your BCA exams. Could you share a bit more context?`;
-}
 
 // Chat page: manages sidebar state, active chat and message simulation
 export default function ChatPage() {
@@ -106,8 +71,8 @@ export default function ChatPage() {
     }
   };
 
-  // Send message + delayed mock AI response with typing state
-  const handleSendMessage = (content, semester) => {
+  // Send message to actual backend via fetch
+  const handleSendMessage = async (content, semester) => {
     const text = content.trim();
     if (!text || isAiTyping) return;
 
@@ -146,13 +111,23 @@ export default function ChatPage() {
 
     setIsAiTyping(true);
 
-    // Simulate AI delay (600–900ms)
-    const delay = 600 + Math.random() * 300;
-    window.setTimeout(() => {
+    try {
+      const response = await fetch("http://localhost:5001/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.details || data.error || "Failed to fetch response from backend");
+      }
+
       const aiMessage = {
         id: `${chatId}-assistant-${Date.now()}`,
         role: 'assistant',
-        text: buildMockReply(text, semester),
+        text: data.reply,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
 
@@ -160,8 +135,21 @@ export default function ChatPage() {
         ...prev,
         [chatId]: [...(prev[chatId] ?? []), aiMessage],
       }));
+    } catch (error) {
+      console.error("Chat Error:", error);
+      const errorMessage = {
+        id: `${chatId}-error-${Date.now()}`,
+        role: 'assistant',
+        text: `Error: ${error.message}. Please try again later.`,
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      };
+      setMessagesByChat((prev) => ({
+        ...prev,
+        [chatId]: [...(prev[chatId] ?? []), errorMessage],
+      }));
+    } finally {
       setIsAiTyping(false);
-    }, delay);
+    }
   };
 
   return (

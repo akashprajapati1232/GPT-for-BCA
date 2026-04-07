@@ -1,0 +1,21 @@
+{
+  "unit": "Unit 4 - Sequential Building Blocks",
+  "main_topics": [
+    "Sequential Building Blocks",
+    "Counters"
+  ],
+  "expanded_subtopics": {
+    "Sequential Building Blocks": [
+      "Sequential Building Blocks Flip-Flop (RS, D, JK, Master-slave & & T flip-flops)",
+      "Registers & Shift registers",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ],
+    "Counters": [
+      "Counters",
+      "Synchronous and Asynchronous Designing method",
+      "Business workflow and transaction lifecycle",
+      "Risk, compliance, and customer trust factors"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "unit": "Unit 2 - E-commerce and E-payment Systems",
+  "main_topics": [
+    "E-Commerce-introductions",
+    "Electronic Payment Systems"
+  ],
+  "expanded_subtopics": {
+    "E-Commerce-introductions": [
+      "E-Commerce-introductions",
+      "Concepts",
+      "Advantages and Disadvantages",
+      "Technology in E- Commerce",
+      "Business workflow and transaction lifecycle"
+    ],
+    "Electronic Payment Systems": [
+      "Introduction",
+      "Types of Electronic Payment Systems",
+      "RTGS",
+      "IMPS",
+      "NEFT",
+      "Payment gateway",
+      "Debit& credit card",
+      "Internet banking",
+      "Mobile wallet",
+      "UPI",
+      "BHIM",
+      "PAYTM app",
+      "Online shopping",
+      "Online marketing",
+      "Business workflow and transaction lifecycle"
+    ]
+  }
+}

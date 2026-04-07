@@ -1,0 +1,18 @@
+{
+  "unit": "Unit 5 - Sampling and Hypothesis Testing",
+  "main_topics": [
+    "Basic of sampling theory"
+  ],
+  "expanded_subtopics": {
+    "Basic of sampling theory": [
+      "Sample mean and variance",
+      "Students t-test",
+      "Test of Hypotheses and significance",
+      "Degree of freedom",
+      "Z-test",
+      "Small and large sampling",
+      "Introduction to Monte Carlo method",
+      "Solved numerical examples"
+    ]
+  }
+}

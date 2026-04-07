@@ -1,0 +1,38 @@
+{
+  "unit": "Unit 1 - Introduction to C Language",
+  "main_topics": [
+    "Introduction to C Language",
+    "Language Fundamentals",
+    "Identifiers",
+    "Data Types"
+  ],
+  "expanded_subtopics": {
+    "Introduction to C Language": [
+      "Introduction to ‘C' Language History",
+      "Structures of ‘C' Programming",
+      "Function as building blocks",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Language Fundamentals": [
+      "Language Fundamentals Character set",
+      "C Tokens",
+      "Keywords",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Identifiers": [
+      "Identifiers",
+      "Variables",
+      "Constant",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ],
+    "Data Types": [
+      "Data Types",
+      "And Comments",
+      "Core concepts and terminology",
+      "Applications and practice-oriented examples"
+    ]
+  }
+}
