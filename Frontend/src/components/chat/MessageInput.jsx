@@ -11,10 +11,16 @@ const SEMESTERS = [
   { value: '6', label: 'Semester 6' },
 ];
 
-// Bottom input bar with semester selector and send button.
+const AI_MODELS = [
+  { value: 'qwen3:8b', label: '⚡ Qwen3' },
+  { value: 'phi3',     label: '🔬 Phi-3' },
+];
+
+// Bottom input bar with semester selector, model switcher and send button.
 export default function MessageInput({ onSend, isAiTyping }) {
-  const [message, setMessage] = useState('');
+  const [message, setMessage]   = useState('');
   const [semester, setSemester] = useState('');
+  const [model, setModel]       = useState('qwen3:8b'); // default model
 
   // Shift+Enter = newline, Enter = send
   const handleKeyDown = (event) => {
@@ -27,7 +33,7 @@ export default function MessageInput({ onSend, isAiTyping }) {
   const submitMessage = () => {
     const trimmed = message.trim();
     if (!trimmed || isAiTyping) return;
-    onSend(trimmed, semester);
+    onSend(trimmed, semester, model);
     setMessage('');
   };
 
@@ -39,6 +45,7 @@ export default function MessageInput({ onSend, isAiTyping }) {
   return (
     <div className="chat-input-wrap">
       <div className="chat-input-toolbar">
+        {/* Semester filter */}
         <select
           id="semester-selector"
           className="chat-semester-select"
@@ -50,6 +57,22 @@ export default function MessageInput({ onSend, isAiTyping }) {
           {SEMESTERS.map((sem) => (
             <option key={sem.value} value={sem.value}>
               {sem.label}
+            </option>
+          ))}
+        </select>
+
+        {/* Model switcher */}
+        <select
+          id="model-selector"
+          className="chat-model-select"
+          value={model}
+          onChange={(e) => setModel(e.target.value)}
+          aria-label="Select AI model"
+          title="Switch AI model"
+        >
+          {AI_MODELS.map((m) => (
+            <option key={m.value} value={m.value}>
+              {m.label}
             </option>
           ))}
         </select>
@@ -85,6 +108,7 @@ export default function MessageInput({ onSend, isAiTyping }) {
 
       <p className="chat-input-hint">
         GPT for BCA may make mistakes — verify important answers.
+        &nbsp;·&nbsp; Using <span className="chat-model-badge">{AI_MODELS.find(m => m.value === model)?.label ?? model}</span>
       </p>
     </div>
   );

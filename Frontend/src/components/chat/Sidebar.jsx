@@ -8,11 +8,13 @@ export default function Sidebar({
   activeChatId,
   isOpen,
   isDesktopCollapsed,
+  loadingChats,
   onNewChat,
   onSelectChat,
   onClose,
+  onRenameChat,
+  onDeleteChat,
 }) {
-
 
   return (
     <aside
@@ -53,7 +55,13 @@ export default function Sidebar({
           🎯 Practice MCQs
         </button>
 
-        {chats.length > 0 && (
+        {loadingChats ? (
+          <div className="chat-sidebar-loading">
+            <span className="chat-sidebar-loading-dot" />
+            <span className="chat-sidebar-loading-dot" />
+            <span className="chat-sidebar-loading-dot" />
+          </div>
+        ) : chats.length > 0 ? (
           <>
             <div className="chat-sidebar-section-head">
               <span>Recent Chats</span>
@@ -65,10 +73,14 @@ export default function Sidebar({
                   chat={chat}
                   isActive={chat.id === activeChatId}
                   onClick={() => onSelectChat(chat.id)}
+                  onRename={(newTitle) => onRenameChat(chat.id, newTitle)}
+                  onDelete={() => onDeleteChat(chat.id)}
                 />
               ))}
             </div>
           </>
+        ) : (
+          <p className="chat-sidebar-empty">No chats yet. Start a new one!</p>
         )}
       </div>
     </aside>

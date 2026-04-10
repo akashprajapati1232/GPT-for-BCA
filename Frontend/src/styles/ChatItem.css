@@ -1,16 +1,14 @@
-/* Sidebar chat history item row ke hover/active styles. */
+/* ── Chat history item row ─────────────────────────────────────────────────── */
 .chat-history-item {
+  position: relative;
   width: 100%;
-  text-align: left;
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 9px 10px 8px;
+  align-items: stretch;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: transparent;
   transition: all var(--transition-fast);
-  cursor: pointer;
+  overflow: visible;
 }
 
 .chat-history-item:hover {
@@ -23,6 +21,22 @@
   border-color: rgba(99, 102, 241, 0.38);
 }
 
+/* ── Main clickable content area ────────────────────────────────────────────── */
+.chat-history-content {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 6px 8px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* ── Text snippets ──────────────────────────────────────────────────────────── */
 .chat-history-title {
   font-size: 0.87rem;
   color: var(--color-text-primary);
@@ -43,4 +57,107 @@
 .chat-history-time {
   font-size: 0.7rem;
   color: var(--color-text-muted);
+}
+
+/* ── Rename input ───────────────────────────────────────────────────────────── */
+.chat-history-rename-input {
+  width: 100%;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  border-radius: 6px;
+  color: var(--color-text-primary);
+  font-size: 0.87rem;
+  font-weight: 600;
+  padding: 3px 6px;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.chat-history-rename-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ── 3-dot button ───────────────────────────────────────────────────────────── */
+.chat-history-dots-btn {
+  flex-shrink: 0;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--transition-fast), color var(--transition-fast),
+    background var(--transition-fast);
+  padding: 0;
+  line-height: 1;
+  align-self: center;
+  margin-right: 4px;
+}
+
+/* Show on item hover or when menu is open */
+.chat-history-item:hover .chat-history-dots-btn,
+.chat-history-item.active .chat-history-dots-btn,
+.chat-history-dots-btn[aria-expanded='true'] {
+  opacity: 1;
+}
+
+.chat-history-dots-btn:hover {
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Dropdown menu ──────────────────────────────────────────────────────────── */
+.chat-history-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 500;
+  min-width: 140px;
+  background: #1a1a30;
+  border: 1px solid var(--color-border-hover);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: menuFadeIn 0.12s ease;
+}
+
+@keyframes menuFadeIn {
+  from { opacity: 0; transform: translateY(-4px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+
+.chat-history-menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.chat-history-menu-item:hover {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--color-text-primary);
+}
+
+.chat-history-menu-item--danger:hover {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fca5a5;
 }
